@@ -1,0 +1,791 @@
+/* ===================================
+   1. Global CSS
+====================================== */
+
+.one-page-content-wrapper {
+    margin-top: 30px;    
+}
+
+.small-menu .one-page-content-wrapper {
+    margin-top: 0;
+}
+
+.elementor-widget-container p:last-of-type {
+    margin-bottom: 0;
+}
+
+.coco-gradient-text {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cocobasic-milestone .elementor-counter-number-wrapper > *,
+.cocobasic-milestone .elementor-counter .elementor-counter-title {
+    text-align: left !important;
+}
+
+.cocobasic-milestone .elementor-counter-number-prefix {
+    display: none;
+}
+
+.cocobasic-milestone-row .elementor-column {
+    width: 25% !important;
+}
+
+.cocobasic-top-section-radius {
+    border-radius: 25px 25px 0 0;
+}
+
+.cocobasic-last-section-radius {
+    border-radius: 0 0 25px 25px;
+}
+
+.cocobasic-title {
+    width: auto !important;
+    margin-left: -165px;
+}
+
+.small-menu .cocobasic-title {
+    margin-left: -10%;
+}
+
+
+/* ===================================
+   2. Image PopUp (PreetyPhoto) CSS
+====================================== */
+
+div.pp_default .pp_loaderIcon {
+    display: none !important;
+}
+
+div.pp_default a.pp_arrow_previous {
+    background-image: url(././../images/nav_left.png);
+    background-size: 20px 20px;    
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -99999999px;
+    transition: transform .3s ease;
+}
+
+div.pp_default a.pp_arrow_next {
+    background-image: url(././../images/nav_right.png);
+    background-size: 20px 20px;    
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -99999999px;
+    transition: transform .3s ease;
+}
+
+div.pp_default a.pp_arrow_previous:hover {
+    transform: translateX(-5px);
+}
+
+div.pp_default a.pp_arrow_next:hover {
+    transform: translateX(5px);
+}
+
+div.pp_default .pp_close {
+    background-image: url(./../images/close.png);
+    background-size: 30px 30px;
+    margin-top: 5px;
+    text-indent: -99999999px;
+    font-size: 0;
+    line-height: 0;    
+}
+
+div.pp_default .pp_next:hover {
+    background: url(././../images/nav_right.png);
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    background-size: 20px;
+}
+
+div.pp_default .pp_previous:hover {
+    background: url(././../images/nav_left.png);
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: 5% 50%;
+    background-size: 20px;    
+}
+
+div.pp_default .pp_nav .currentTextHolder {
+    padding: 0 0 0 20px;
+    color: #fff;
+}
+
+div.pp_default .pp_content_container .pp_details {
+    margin-top: 30px !important;
+    z-index: 3;
+}
+
+div.pp_default .pp_description {
+    font-size: 15px;
+    line-height: 30px;
+    position: absolute;
+    top: -30px;
+    margin: 0;
+    color: #fff;
+    font-weight: 400;
+}
+
+/* ===================================
+    3. Skills Section CSS
+====================================== */
+
+.skills-holder {
+    position: relative;
+}
+
+.skills-holder > div:last-of-type {
+    margin-bottom: 0;
+}
+
+.skill-holder {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    justify-items: center;
+    height: 60px;
+    position: relative;
+}
+
+.skill-holder:after {
+    clear: both;
+    display: block;
+    content: "";
+}
+
+.skill-percent {
+    font-size: 45px;
+    line-height: 100%;
+    font-weight: 700;
+    width: 100px;
+    float: right;
+    color: #554247;
+    letter-spacing: -1px;
+}
+
+.skill {
+    width: calc(100% - 70px);
+    height: 3px;
+    background-color: #545454;
+    position: relative;
+}
+
+.skill-text {
+    color: #000;
+    font-size: 12px;
+    line-height: 100%;
+    font-weight: 600;
+    letter-spacing: 5px;
+    position: relative;
+    z-index: 3;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 35px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.skill-fill {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 10%;
+    height: 60px;
+    transition: width .7s;
+    background-color: #fff;
+    max-width: 97%;
+    z-index: 2;
+}
+
+.skill-fill-mask {
+    width: 10%;
+    position: absolute;
+    top: -30px;
+    left: 0;
+    height: 60px;
+    transition: width .7s;
+    background-color: #000;
+    z-index: 1;
+    max-width: 99%;
+}
+
+.skill-num {
+    font-size: 22px;
+    color: #ffffff;
+    margin-left: 30px;
+}
+
+/* ===================================
+    4. Portfolio CSS
+====================================== */
+
+.grid-item.animate.show-it.no-transition {
+    transition: none;
+}
+
+.grid-item a.item-link {
+    display: block;
+    position: relative;
+    z-index: initial;
+}
+
+.grid-item a.item-link:after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #2c2c2c;
+    position: absolute;
+    transition: background .5s ease;
+    z-index: 0;
+    bottom: -1px !important;
+    left: 0;
+}
+
+.grid > div:last-of-type a.item-link:after {	
+    background: transparent;
+}
+
+.portfolio-text-holder {
+    padding: 35px 20px;
+}
+
+.portfolio-text-holder > * {
+    display: inline-block;
+    vertical-align: 0;
+}
+
+.portfolio-image {
+    position: absolute;
+    bottom: -75%;
+    right: 20px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s, opacity 0.5s ease, bottom 0.5s ease;
+    z-index: 2;
+    max-width: 400px;
+}
+
+.grid-item.active-item .portfolio-image {
+    visibility: visible;
+    opacity: 1;
+    bottom: -90px;
+}
+
+.grid {
+    width: 100%;
+    position: relative;
+    display: block;
+    padding: 0;
+    list-style: none;
+}
+
+.grid-item {    
+    transition: background-color .3s;
+}
+
+.grid-item.active-item {
+    background-color: #151515;
+}
+
+.grid-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: none;
+    max-width: none;    
+}
+
+.grid-item {
+    width: 100%;
+}
+
+.portfolio-text-holder p {
+    color: #fff;
+    margin-bottom: 0;    
+}
+
+.portfolio-num {
+    font-size: 17px;
+    line-height: 100%;
+    color: #fff;
+}
+
+.portfolio-text {
+    font-size: 30px;
+    line-height: 100%;
+    color: #fff;
+    margin-left: 15px;
+    padding: 0;
+    margin-right: 10px;
+}
+
+#portfolio-grid.portfoio-items-mask .grid-item {
+    opacity: 0.2;
+}
+
+.grid-item.portfolio-content-loading {
+    opacity: 1 !important;
+}
+
+.portfolio-load-content-holder {
+    opacity: 0;
+    transform: translateY(70px);
+    transition: transform .5s ease, opacity .5s ease;   
+}
+
+.portfolio-load-content-holder.show {
+    transform: translateY(0);
+    opacity: 1;
+    padding: 50px 0;
+}
+
+.portfolio-load-content-holder.show.viceversa {
+    opacity: 0;
+    transform: translateY(70px);
+}
+
+.portfolio-content-wrapper {
+    display: none;
+}
+
+.portfolio-content-wrapper.show {
+    display: block;
+}
+
+.close-icon {
+    background-image: url(./../images/close-left-arrow.png);
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin-bottom: 45px;
+    background-size: 46px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    background-position: -5px 0;
+}
+
+.close-icon:hover {
+    transform: translateX(-5px);
+}
+
+#portfolio-grid {    
+    transition: all .5s ease;
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+#portfolio-grid.hide {
+    opacity: 0;
+    transform: translateY(70px);    
+}
+
+.grid-item a.item-link.portfolio-content-loading:after, 
+.ajax-portfolio.portfolio-content-loading .portfolio-text-holder {
+    opacity: 1;
+}
+
+.more-posts-portfolio-holder.hide {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    cursor: default;
+    display: none;
+}
+
+.more-posts-portfolio-holder {
+    color: #fff;
+    min-height: 1px;
+    padding: 30px 25px 0;
+}
+
+.more-posts-portfolio, 
+.no-more-posts-portfolio, 
+.more-posts-portfolio-loading {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    line-height: 30px;    
+    position: relative;
+    display: inline-block;
+}
+
+.more-posts-portfolio {
+    cursor: pointer;
+    transition: .35s ease-out;
+}
+
+.more-posts-portfolio:hover {
+    opacity: 0.8 !important;
+}
+
+.no-more-posts-portfolio, 
+.more-posts-portfolio-loading {
+    display: none;
+}
+
+.more-posts-portfolio-holder.scroll {
+    margin-top: 50px;    
+}
+
+.more-posts-portfolio-holder.scroll .more-posts-portfolio, 
+.more-posts-portfolio-holder.scroll .no-more-posts-portfolio {
+    display: none !important;       
+}
+
+.single.single-portfolio .content-holder {
+    width: 1100px;
+    max-width: 95%;
+    background-color: #000000;
+    padding: 100px;
+}
+
+/* ===================================
+    5. ImageSlider CSS
+====================================== */
+
+.owl-carousel .owl-item {
+    width: 100%;
+}
+
+.owl-theme .owl-nav.disabled + .owl-dots {
+    margin-top: 13px;
+    margin-bottom: 40px;
+    line-height: 0;
+    text-align: left;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    margin: 0;
+    background-color: #fff;
+    transition: all .3s ease;
+    width: 30px;
+    height: 10px;
+    border-radius: 0;
+}
+
+.owl-theme .owl-dots .owl-dot {
+    transition: all .3s ease;
+    margin-right: 10px;
+}
+
+.owl-theme .owl-dots .owl-dot:hover span {
+    background-color: #362F47;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+    background-color: #362F47;
+}
+
+
+/* ===================================
+    6. Button CSS
+====================================== */
+
+[data-elementor-type="wp-page"] a.coco-button {
+    color: #fff;
+    font-size: 12px;
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+
+[data-elementor-type="wp-page"] a.coco-button:hover {
+    color: #fff;    
+}
+
+[data-elementor-type="wp-page"] a.coco-button span {
+    transition: .3s;
+    display: inline-block;
+    margin-left: 50px;
+}
+
+[data-elementor-type="wp-page"] a.coco-button:hover span {
+    transform: translateX(-8px);
+}
+
+[data-elementor-type="wp-page"] a.coco-button:before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    border: 2px solid #fff;
+    background: transparent;
+    border-radius: 90%;
+    top: -8px;
+    position: absolute;
+    transition: .3s;
+}
+
+[data-elementor-type="wp-page"] a.coco-button:hover:before {
+    width: calc(100% + 30px);
+    height: 52px;
+    border-radius: 50px;
+    top: -18px;
+}
+
+[data-elementor-type="wp-page"] a.coco-button:after {    
+    display: none !important;
+}
+
+[data-elementor-type="wp-page"] a.coco-button-underline {
+    font-family: 'Alata', sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 110%;
+    position: relative;
+    color: #fff;
+    z-index: 1;
+}
+
+[data-elementor-type="wp-page"] a.coco-button-underline:after {
+    content: '';
+    display: block;
+    width: 108%;
+    height: 20px;
+    background-color: #96dfff;
+    position: absolute;
+    transition: bottom .3s;
+    left: -4%;
+    bottom: 5px;
+    z-index: -1;
+}
+
+[data-elementor-type="wp-page"] a.coco-button-underline:hover:after {
+    bottom: -5px;
+}
+
+
+/* ===================================
+    7. Latest Posts CSS
+====================================== */
+
+.home-blog-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.home-blog-list > li {
+    width: calc(50% - 70px);
+    margin-bottom: 60px;
+}
+
+.home-blog-list > li:nth-last-child(-n+2) {
+    margin-bottom: 0;
+}
+
+.home-blog-list > li:nth-child(2n) {
+    margin-left: 140px;
+}
+
+.home-blog-list h4 {    
+    font-size: 20px;
+    line-height: 150%;
+    font-weight: 600;
+    margin-top: 50px;    
+}
+
+.home-blog-list h4 a:after {    
+    display: none;
+}
+
+.home-blog-list .home-blog-image {    
+    overflow: hidden;
+}
+
+.home-blog-list li img {
+    height: 260px;
+    object-fit: cover;
+    transition: .3s ease;
+}
+
+.home-blog-list li img:hover {
+    transform: scale(1.1);
+}
+
+.home-blog-list .home-blog-excerpt {
+    margin-top: 20px;
+    margin-bottom: 45px;
+}
+
+.home-blog-list a.coco-button {
+    color: #000;        
+}
+
+.home-blog-list a.coco-button:hover {
+    color: #000;        
+}
+
+.home-blog-list a.coco-button:before {
+    border-color: #000; 
+}
+
+
+/* ===================================
+    8. Testimonial Carousel Slider CSS
+====================================== */
+
+.elementor-widget-coco-carouseltestimonial .swiper-slide {
+    width: auto;
+    overflow: hidden;
+}
+
+.elementor-widget-coco-carouseltestimonial .swiper-slide-quote-image img {
+    width: 35px;
+    margin-bottom: 30px;
+}
+
+.elementor-widget-coco-carouseltestimonial .swiper-slide-testimonial-text {
+    width: 360px;
+    max-width: 90%;
+    margin-right: 100px;
+    margin-bottom: 60px;
+}
+
+.elementor-widget-coco-carouseltestimonial img.testimonial-slide-img {
+    width: 80px;
+    margin-bottom: 15px;
+    border-radius: 90%;
+}
+
+.elementor-widget-coco-carouseltestimonial .swiper-slide-name {
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+.elementor-widget-coco-carouseltestimonial .swiper-slide-position {
+    font-size: 12px;
+    margin: 0;
+    letter-spacing: 5px;
+}
+
+.elementor-widget-coco-carouseltestimonial .swiper-wrapper > div:last-of-type:before {
+    display: none;
+}
+
+.elementor-widget-coco-carouseltestimonial .swiper-scrollbar-drag {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: #000;
+    left: 0;
+    top: -8px;
+    height: 18px;
+    border-radius: 0;
+    border: 3px solid transparent;
+}
+
+.elementor-widget-coco-carouseltestimonial .swiper-scrollbar {
+    position: relative;
+    z-index: 50;
+    height: 3px;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    right: auto;
+    left: 0;
+    background-color: #000000;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+
+/* ===================================
+    9. Responsive CSS
+====================================== */
+
+@media screen and (max-width: 1200px) {
+
+    .small-menu .cocobasic-title {
+        margin-left: 0;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+
+    [data-jarallax-element] {
+        transform: none !important;
+    }
+
+    .single.single-portfolio .content-holder {
+        padding: 13% 5% 13% 5%;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    .portfolio-image {
+        display: none;
+    }
+
+    .portfolio-text-holder {
+        padding: 35px 10px;
+    }
+
+    .home-blog-list > li {
+        width: 100%;
+        margin-left: 0 !important;
+        margin-bottom: 60px !important;
+    }
+
+    .home-blog-list > li:last-child {
+        margin-bottom: 0 !important;
+    }
+
+    .skill-holder {
+        height: 50px;
+    }
+
+    .skill-fill {
+        height: 50px;
+        top: -25px;
+    }
+
+    .skill-text {
+        left: 10px;
+        letter-spacing: 1px;
+    }
+
+    .elementor-widget-coco-carouseltestimonial .swiper-slide-testimonial-text {
+        width: 100%;
+    }
+
+    [data-elementor-type="wp-page"] a.coco-button-underline {
+        font-size: 35px;
+    }
+
+    [data-elementor-type="wp-page"] a.coco-button-underline:after {
+        height: 10px;
+    }
+
+    .home-blog-list .home-blog-excerpt {        
+        margin-bottom: 35px;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+
+    .cocobasic-milestone-row .elementor-column {
+        width: 50% !important;
+    }
+
+}
+/*This file was exported by "Export WP Page to Static HTML" plugin which created by ReCorp (https://myrecorp.com) */
