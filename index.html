@@ -1891,28 +1891,28 @@
                                                                 </div>
                                                                 <p class="relative">
                                                                     <span class="wpcf7-form-control-wrap your-name">
-        <input type="text" name="data[name]" value="" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false"/>
+        <input type="text" name="data[name]" value="" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" required/>
       </span>
                                                                     <span class="input-default-text">Name</span>
                                                                 </p>
 
                                                                 <p class="relative">
                                                                     <span class="wpcf7-form-control-wrap your-email">
-        <input type="email" name="data[email]" value="" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" />
+        <input type="email" name="data[email]" value="" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" required/>
       </span>
                                                                     <span class="input-default-text">Email</span>
                                                                 </p>
 
                                                                 <p class="relative">
                                                                     <span class="wpcf7-form-control-wrap your-subject">
-        <input type="text" name="data[subject]" value="" class="wpcf7-form-control wpcf7-text" aria-invalid="false" />
+        <input type="text" name="data[subject]" value="" class="wpcf7-form-control wpcf7-text" aria-invalid="false" required/>
       </span>
                                                                     <span class="input-default-text">Subject</span>
                                                                 </p>
 
                                                                 <p class="relative">
                                                                     <span class="wpcf7-form-control-wrap your-message">
-        <textarea name="data[message]" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" aria-required="true"></textarea>
+        <textarea name="data[message]" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" aria-required="true" required></textarea>
       </span>
                                                                     <span class="input-default-text">Message</span>
                                                                 </p>
@@ -1936,13 +1936,16 @@
                                                                             //window.open('page2.html', '_blank');
                                                                             //console.log("we are in");
                                                                             //reset();
-                                                                            window.reset();
-
+                                                                            //window.reset();
+                                                                            let msg = document.getElementById('msg')
+                                                                            text2 = "Successful"
+                                                                            msg.innerText = text2;
+                                                                            msg.style.display = "block";
 
                                                                         });
                                                                     });
                                                                 </script>
-
+                                                                <p id="msg" style="color:black; display:none;">Hello World</p>
                                                                 <!-- <p style="display: none !important;">
       <label>&#916; <textarea name="_wpcf7_ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea>
       </label>
