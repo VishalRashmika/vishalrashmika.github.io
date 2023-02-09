@@ -1,3 +1,3 @@
 # About
-[My personal website.](https://vishalrashmika.github.io)
+[Visit!](https://vishalrashmika.github.io)
 
