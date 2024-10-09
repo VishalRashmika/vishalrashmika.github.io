@@ -19,6 +19,10 @@ Innovative solutions crafted with passion. Explore my diverse projects that driv
 ---
 
 # Education
+**October, 2024 – 2028 :**<br>
+University of Central Lancashire<br>
+<a href="https://www.uclan.ac.uk/undergraduate/courses/software-engineering-bsc" target="_blank">BSc (Hons) Software Engineering</a>
+
 **July, 2023 – July, 2024 :**<br>
 Universal College Lanka,<br>
 <a href="https://ucl.lk/programs/ucl-international-foundation-year/" target="_blank">UCL International Foundation Year (UIFY)</a>
