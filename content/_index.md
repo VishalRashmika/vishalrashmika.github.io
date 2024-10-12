@@ -87,7 +87,7 @@ Primary Education
 - [Disecting a Simple x86-64 bit Assembly Hello World Program](https://blog.vishalrashmika.com/posts/breaking-down-asm-helloworld/)
 - [Bounty Hunter - TryHackMe Writeup](https://blog.vishalrashmika.com/posts/bounty-hunter/)
 
-[`Visit my Blog >>`](https://blog.vishalrashmika.me)
+[`Visit my Blog >>`](https://blog.vishalrashmika.com)
 
 # Contact Me
 - <a href="mailto:vishal.rashmika.perera@gmail.com">Email : vishal.rashmika.perera@gmail.com</a>
