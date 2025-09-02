@@ -90,7 +90,7 @@ Primary Education
 [`Visit my Blog >>`](https://blog.vishalrashmika.com)
 
 # Contact Me
-- <a href="mailto:vishal.rashmika.perera@gmail.com">Email : vishal.rashmika.perera@gmail.com</a>
+- <a href="mailto:vishal@vishalrashmika.com">Email : vishal@vishalrashmika.com</a>
 - <a href="https://gist.githubusercontent.com/VishalRashmika/44d9469f7d65fc4c5245d13ebd0f9fea/raw/f35ee26cc859a115970701739d7d2fbdf86f97c0/public_key.asc" target="_blank">Public Key</a>
 - <a href="https://www.linkedin.com/in/vishalrashmika/" target="_blank">Linkedin</a>
 - <a href="https://www.instagram.com/j.m.v.r.p/" target="_blank">Instagram</a>
