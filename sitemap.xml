@@ -4,9 +4,27 @@
         <loc>/</loc>
     </url>
     <url>
+        <loc>/behance/</loc>
+    </url>
+    <url>
         <loc>/blossomtheme/</loc>
     </url>
     <url>
+        <loc>/github/</loc>
+    </url>
+    <url>
+        <loc>/instagram/</loc>
+    </url>
+    <url>
         <loc>/lifevialens/</loc>
+    </url>
+    <url>
+        <loc>/linkedin/</loc>
+    </url>
+    <url>
+        <loc>/medium/</loc>
+    </url>
+    <url>
+        <loc>/twitter/</loc>
     </url>
 </urlset>
