@@ -40,6 +40,9 @@ ESOFT,<br>
 St. James International School, Wennappuwa, Sri Lanka,<br>
 Primary Education
 
+# Achievements
+🌸 Blossom Blender Theme — 1,800+ downloads
+
 # Certifications
 - <a href="https://trainingportal.linuxfoundation.org/learn/certificates/getting-started-with-rust-lfel1002?id=c0926af9-5118-44de-9375-2044853067aa" target="_blank">LFEL1002: Getting Started with Rust - The Linux Foundation</a>
 - <a href="https://coursera.org/share/e38ff1e359cd20001a949f7e9baefde8" target="_blank">Advanced Learning Algorithms - DeepLearning.AI</a>
