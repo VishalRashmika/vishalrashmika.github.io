@@ -23,13 +23,11 @@ February, 2026 – Present
 # Projects
 Innovative solutions crafted with passion. Explore my diverse projects that drive change and inspire.
 
-| Name | Date | Description | Type | Demo |
-|------|------|-------------|------|------|
-| LangDetect.Net | 2026 | A lightweight, self-contained .NET package for text-based language detection supporting 12 languages. Utilizes three distinct algorithmic strategies to maximize accuracy. 280+ downloads on NuGet. | Personal | [NuGet](https://www.nuget.org/packages/LangDetect.Net) |
-| WyrdLang | 2026 | A custom programming language with fantasy-inspired keywords. Built with a custom-made interpreter in C++ and comes with WyrdPad, a lightweight IDE written in Java. | Personal | - |
-| SinSo API | 2025 | The largest open source Sinhala lyrics API providing access to 10,000+ song lyrics through a RESTful API. Includes a web portal for community submissions. | Personal | [API](https://sinso.vishalrashmika.com) / [Portal](https://sinso-portal.vishalrashmika.com) |
-| Blossom Theme | 2023 | A software color theme inspired by Japan's vibrant urban aesthetics. Co-founded the organization with 1,800+ downloads for the Blender variant. Major contributions to web development and multiple theme variants. | Personal | [Website](https://blossomtheme.github.io/) |
-| Life Via Lens | - | Photography and visual storytelling project. | Personal | - |
+* `[2026]` `LangDetect.Net` - A lightweight, self-contained .NET package for text-based language detection supporting 12 languages. Utilizes three distinct algorithmic strategies to maximize accuracy. 280+ downloads on NuGet.
+* `[2026]` `WyrdLang` - A custom programming language with fantasy-inspired keywords. Built with a custom-made interpreter in C++ and comes with WyrdPad, a lightweight IDE written in Java.
+* `[2025]` `SinSo API` - The largest open source Sinhala lyrics API providing access to 10,000+ song lyrics through a RESTful API. Includes a web portal for community submissions. https://sinso.vishalrashmika.com | https://sinso-portal.vishalrashmika.com
+* `[2023]` `Blossom Theme` - A software color theme inspired by Japan's vibrant urban aesthetics. Co-founded the organization with 1,800+ downloads for the Blender variant. Major contributions to web development and multiple theme variants. https://blossomtheme.github.io/
+* `Life Via Lens` - Photography and visual storytelling project.
 ---
 
 # Education
