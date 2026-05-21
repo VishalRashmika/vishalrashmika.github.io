@@ -4,18 +4,32 @@ sort_by = "weight"
 +++
 
 # About
-Hi, I'm Vishal Rashmika, a highly motivated individual based in Sri Lanka. At 18 years old, I am currently a diligent student pursuing education in software development. With a keen interest in technology, I am committed to honing my skills and staying ahead of the curve in this ever-evolving industry.
+Hi, I'm Vishal Rashmika, a highly motivated individual based in Sri Lanka. At 19 years old, I am currently a diligent student pursuing education in software development. With a keen interest in technology, I am committed to honing my skills and staying ahead of the curve in this ever-evolving industry.
 
 <!-- >[Download Resume &#x2193;](./resume.pdf) -->
 > <a href="./VishalRashmika-CV.pdf" target="_blank" style="color:black;">Download Resume&#x2193;</a>
 ---
 
+# Professional Experience
+**OlyraLabs, Co-Founder**<br>
+February, 2026 – Present
+- Serve as Tech Lead and Scrum Master for a 4-person startup team, leading Agile development practices including sprint planning, daily standups, and retrospectives
+- Work in systems design, building scalable system solutions for digital products, defining core technical architecture and technology stack decisions
+- Lead full-stack development with emphasis on frontend engineering, designing and integrating web applications to deliver comprehensive digital solutions for clients
+- Oversee project lifecycle management from requirements gathering to deployment, ensuring timely delivery of client solutions while maintaining code quality standards
+
+---
+
 # Projects
 Innovative solutions crafted with passion. Explore my diverse projects that drive change and inspire.
 
-- [Blossom Theme >>](/blossomtheme)
-- [Life Via Lens >>](/lifevialens)
-
+| Name | Date | Description | Type | Demo |
+|------|------|-------------|------|------|
+| LangDetect.Net | 2026 | A lightweight, self-contained .NET package for text-based language detection supporting 12 languages. Utilizes three distinct algorithmic strategies to maximize accuracy. 280+ downloads on NuGet. | Personal | [NuGet](https://www.nuget.org/packages/LangDetect.Net) |
+| WyrdLang | 2026 | A custom programming language with fantasy-inspired keywords. Built with a custom-made interpreter in C++ and comes with WyrdPad, a lightweight IDE written in Java. | Personal | - |
+| SinSo API | 2025 | The largest open source Sinhala lyrics API providing access to 10,000+ song lyrics through a RESTful API. Includes a web portal for community submissions. | Personal | [API](https://sinso.vishalrashmika.com) / [Portal](https://sinso-portal.vishalrashmika.com) |
+| Blossom Theme | 2023 | A software color theme inspired by Japan's vibrant urban aesthetics. Co-founded the organization with 1,800+ downloads for the Blender variant. Major contributions to web development and multiple theme variants. | Personal | [Website](https://blossomtheme.github.io/) |
+| Life Via Lens | - | Photography and visual storytelling project. | Personal | - |
 ---
 
 # Education
@@ -41,7 +55,8 @@ St. James International School, Wennappuwa, Sri Lanka,<br>
 Primary Education
 
 # Achievements
-🌸 Blossom Blender Theme — 1,800+ downloads
+🌸 Blossom Blender Theme — 1,800+ downloads<br>
+📦 LangDetect.Net — 280+ downloads on NuGet
 
 # Certifications
 - <a href="https://trainingportal.linuxfoundation.org/learn/certificates/getting-started-with-rust-lfel1002?id=c0926af9-5118-44de-9375-2044853067aa" target="_blank">LFEL1002: Getting Started with Rust - The Linux Foundation</a>
