@@ -23,9 +23,12 @@ February, 2026 – Present
 # Projects
 Innovative solutions crafted with passion. Explore my diverse projects that drive change and inspire.
 
-* `[2026]` `LangDetect.Net` - A lightweight, self-contained .NET package for text-based language detection supporting 12 languages. Utilizes three distinct algorithmic strategies to maximize accuracy. 280+ downloads on NuGet.
+* `[2026]` `LangDetect.Net` - A lightweight, self-contained .NET package for text-based language detection supporting 12 languages. Utilizes three distinct algorithmic strategies to maximize accuracy. 280+ downloads on NuGet. https://www.nuget.org/packages/LangDetect.Net
 * `[2026]` `WyrdLang` - A custom programming language with fantasy-inspired keywords. Built with a custom-made interpreter in C++ and comes with WyrdPad, a lightweight IDE written in Java.
+* `[2026]` `Nyxia` - Astrophotography planning app for better nights under the stars. A Flutter app that helps photographers and stargazers plan observation sessions with weather insights, celestial tracking, practical calculators, and event management in one place.
 * `[2025]` `SinSo API` - The largest open source Sinhala lyrics API providing access to 10,000+ song lyrics through a RESTful API. Includes a web portal for community submissions. https://sinso.vishalrashmika.com | https://sinso-portal.vishalrashmika.com
+* `Rejuvenation Clinic` - Medical clinic website for Rejuvenation Clinic. https://rejuvenationclinic.lk
+* `PopQuest` - Interactive web application. https://popquest.github.io/
 * `[2023]` `Blossom Theme` - A software color theme inspired by Japan's vibrant urban aesthetics. Co-founded the organization with 1,800+ downloads for the Blender variant. Major contributions to web development and multiple theme variants. https://blossomtheme.github.io/
 * `Life Via Lens` - Photography and visual storytelling project.
 ---
