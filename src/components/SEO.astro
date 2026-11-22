@@ -7,9 +7,22 @@ export interface Props {
   description?: string;
   image?: string;
   canonicalUrl?: string;
+  googleSiteVerification?: string;
+  bingSiteVerification?: string;
 }
 
-const { siteData, title: propTitle, description: propDescription, image: propImage, canonicalUrl: propCanonical } = Astro.props;
+const {
+  siteData,
+  title: propTitle,
+  description: propDescription,
+  image: propImage,
+  canonicalUrl: propCanonical,
+  googleSiteVerification: propGoogleVerification,
+  bingSiteVerification: propBingVerification
+} = Astro.props;
+
+const googleVerification = propGoogleVerification || import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION;
+const bingVerification = propBingVerification || import.meta.env.PUBLIC_BING_SITE_VERIFICATION;
 
 const baseUrl = (Astro.site ? Astro.site.toString() : 'https://vishalrashmika.com').replace(/\/$/, '');
 const title = propTitle || `${siteData.profile.name} | Software Engineer & Systems Developer Portfolio`;
@@ -232,6 +245,10 @@ const jsonLd = {
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+<!-- Search Engine Verification -->
+{googleVerification && <meta name="google-site-verification" content={googleVerification} />}
+{bingVerification && <meta name="msvalidate.01" content={bingVerification} />}
 
 <!-- Canonical & Language Alternates -->
 <link rel="canonical" href={canonicalUrl} />
