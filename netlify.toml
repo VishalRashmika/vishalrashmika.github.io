@@ -1,18 +1,51 @@
 [build]
-# This assumes that the Zola site is in a docs folder. If it isn't, you don't need
-# to have a `base` variable but you do need the `publish` and `command` variables.
-# base    = ""
-  publish = "public"
-  command = "zola build"
+  command = "npm run build"
+  publish = "dist"
 
 [build.environment]
-# Set the version name that you want to use and Netlify will automatically use it.
-  ZOLA_VERSION = "0.17.0"
+  NODE_VERSION = "20"
 
-# The magic for deploying previews of branches.
-# We need to override the base url with whatever url Netlify assigns to our
-# preview site.  We do this using the Netlify environment variable
-# `$DEPLOY_PRIME_URL`.
+# Caching headers for Astro immutable assets
+[[headers]]
+  for = "/_astro/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
 
-[context.deploy-preview]
-  command = "zola build --base-url $DEPLOY_PRIME_URL"
+# Recommended security headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Legacy vanity and social redirects
+[[redirects]]
+  from = "/github"
+  to = "https://github.com/VishalRashmika"
+  status = 301
+
+[[redirects]]
+  from = "/twitter"
+  to = "https://twitter.com/Vishal_Rashmika"
+  status = 301
+
+[[redirects]]
+  from = "/linkedin"
+  to = "https://www.linkedin.com/in/vishalrashmika/"
+  status = 301
+
+[[redirects]]
+  from = "/medium"
+  to = "https://medium.com/@VishalRashmika"
+  status = 301
+
+[[redirects]]
+  from = "/instagram"
+  to = "https://www.instagram.com/j.m.v.r.p/"
+  status = 301
+
+[[redirects]]
+  from = "/behance"
+  to = "https://behance.net/vishalrashmika"
+  status = 301

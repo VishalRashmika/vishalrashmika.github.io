@@ -1,0 +1,36 @@
+---
+import '../styles/global.css';
+import '../styles/MobilePortfolio.css';
+import { getAllSiteData } from '../lib/content';
+import { MobilePortfolio } from '../components/MobilePortfolio/MobilePortfolio';
+import SEO from '../components/SEO.astro';
+
+const siteData = getAllSiteData();
+---
+
+<!doctype html>
+<html lang="en" class="mobile-mode">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <link rel="icon" type="image/png" href="/icon.png" />
+
+    <!-- Full SEO, Schema.org, and LLM Support -->
+    <SEO
+      siteData={siteData}
+      title="Vishal Rashmika | Software Engineer & Systems Developer Portfolio"
+      description={siteData.profile.bio}
+      canonicalUrl="https://vishalrashmika.com/"
+    />
+
+    <!-- Google Fonts & Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Source+Sans+3:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet" />
+  </head>
+  <body class="mobile-mode">
+    <MobilePortfolio client:load data={siteData} />
+  </body>
+</html>

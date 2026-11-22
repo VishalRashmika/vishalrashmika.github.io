@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Source+Sans+3:ital,wght@0,300..700;1,300..700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Source Sans 3", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-serif: "Source Sans 3", ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  --howl-cream: #f7eed9;
+  --howl-porcelain: #fffaf0;
+  --howl-sand: #ead8b4;
+  --howl-butter: #fff1a6;
+  --howl-sky: #9eaec7;
+  --howl-sky-deep: #6aa9c1;
+  --howl-sage: #a7a898;
+  --howl-moss: #6a8f7e;
+  --howl-rose: #ffbcc3;
+  --howl-umber: #664f59;
+  --howl-ink: #4f4150;
+  --howl-shadow: rgba(102, 79, 89, 0.18);
+  --howl-shadow-strong: rgba(102, 79, 89, 0.28);
+  --howl-focus: #6aa9c1;
+  --retro-default-cursor: default;
+  --retro-pointer-cursor: pointer;
+  --retro-text-cursor: text;
+  --retro-crosshair-cursor: crosshair;
+  --theme-surface: var(--howl-porcelain);
+  --theme-surface-soft: var(--howl-cream);
+  --theme-surface-warm: var(--howl-sand);
+  --theme-panel: var(--theme-surface);
+  --theme-panel-soft: var(--theme-surface-soft);
+  --theme-panel-warm: var(--theme-surface-warm);
+  --theme-panel-muted: var(--howl-sand);
+  --theme-panel-elevated: var(--howl-porcelain);
+  --theme-window-surface: var(--theme-panel);
+  --theme-window-surface-soft: var(--theme-panel-soft);
+  --theme-window-surface-warm: var(--theme-panel-warm);
+  --theme-window-header-active: var(--howl-sky);
+  --theme-window-header-inactive: var(--theme-panel-warm);
+  --theme-window-footer: var(--theme-panel-warm);
+  --theme-window-text: var(--howl-ink);
+  --theme-window-text-soft: var(--howl-ink);
+  --theme-window-text-warm: var(--howl-ink);
+  --theme-window-text-on-dark: var(--howl-porcelain);
+  --theme-window-text-on-accent: var(--howl-porcelain);
+  --theme-window-header-text-active: var(--howl-ink);
+  --theme-window-header-text-inactive: var(--howl-ink);
+  --theme-window-footer-text: var(--howl-ink);
+  --theme-window-float: rgba(255, 250, 240, 0.48);
+  --theme-window-float-strong: rgba(255, 250, 240, 0.58);
+  --theme-dark-surface: var(--howl-umber);
+  --theme-dark-text: var(--theme-window-text-on-dark);
+  --theme-text: var(--theme-window-text);
+  --theme-border: rgba(102, 79, 89, 0.16);
+  --theme-border-strong: rgba(102, 79, 89, 0.24);
+  --theme-shadow: rgba(102, 79, 89, 0.18);
+  --theme-shadow-strong: rgba(102, 79, 89, 0.3);
+  --theme-focus: var(--howl-sky);
+}
+
+html {
+  background: var(--theme-surface-soft);
+  overflow-x: hidden;
+  height: auto;
+}
+
+body {
+  background: var(--theme-surface-soft);
+  color: var(--theme-text);
+  overflow-x: hidden;
+  overflow-y: auto;
+  min-height: 100vh;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* OS / Desktop Interactive Mode styles */
+html.os-mode,
+body.os-mode {
+  overflow: hidden !important;
+  height: 100vh !important;
+  max-height: 100vh !important;
+  user-select: none !important;
+  cursor: var(--retro-default-cursor) !important;
+}
+
+body.os-mode::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at top left, var(--theme-overlay), transparent 55%),
+    radial-gradient(circle at bottom right, var(--theme-overlay-strong), transparent 60%);
+  opacity: 0.42;
+  z-index: 0;
+}
+
+body.os-mode button,
+body.os-mode a,
+body.os-mode [role='button'],
+body.os-mode input[type='range'],
+body.os-mode input[type='checkbox'],
+body.os-mode summary {
+  cursor: var(--retro-pointer-cursor) !important;
+}
+
+body.os-mode input[type='text'],
+body.os-mode input[type='search'],
+body.os-mode input[type='email'],
+body.os-mode input[type='password'],
+body.os-mode textarea {
+  cursor: var(--retro-text-cursor) !important;
+}
+
+canvas,
+.crosshair-cursor {
+  cursor: var(--retro-crosshair-cursor) !important;
+}
+
+.retro-shadow-sm {
+  box-shadow: 0 10px 24px var(--theme-shadow), 0 1px 0 rgba(255,255,255,0.7) inset;
+}
+
+.retro-shadow {
+  box-shadow: 0 18px 36px var(--theme-shadow), 0 1px 0 rgba(255,255,255,0.72) inset;
+}
+
+.retro-shadow-lg {
+  box-shadow: 0 28px 54px var(--theme-shadow-strong), 0 1px 0 rgba(255,255,255,0.8) inset;
+}
+
+/* Classic OS Bevels */
+.border-outset {
+  border: 1px solid var(--theme-border);
+  border-radius: 11px;
+  background: var(--theme-surface);
+  box-shadow:
+    0 14px 28px var(--theme-shadow),
+    inset 0 1px 0 rgba(255,255,255,0.9);
+}
+
+.border-inset {
+  border: 1px solid var(--theme-border-strong);
+  border-radius: 1rem;
+  background: var(--theme-surface-soft);
+  box-shadow:
+    inset 0 2px 8px rgba(102, 79, 89, 0.08),
+    inset 0 1px 0 rgba(255,255,255,0.9);
+}
+
+.bg-os {
+  background: var(--theme-surface);
+  color: var(--theme-text);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.retro-border {
+  border: 2px solid black;
+}
+
+.desktop-pattern {
+  background: #f8efd7;
+}
+
+/* Grainy texture overlay */
+.grain::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: none;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.window-pinstripe {
+  background-image: none;
+}
+
+.animate-slow-spin {
+  animation: spin 20s linear infinite;
+}
+
+.animate-very-slow-spin {
+  animation: spin 60s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.cursor-default-os {
+  cursor: var(--retro-default-cursor) !important;
+}
+
+.animate-pulse-slow {
+  animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 14px;
+  height: 14px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: var(--theme-surface-soft);
+  border-radius: 999px;
+  border: 1px solid rgba(102, 79, 89, 0.08);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--theme-focus);
+  border: 3px solid rgba(255, 250, 240, 0.9);
+  border-radius: 999px;
+  box-shadow: inset 0 1px 2px rgba(255,255,255,0.55), 0 2px 6px rgba(102, 79, 89, 0.12);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: var(--howl-rose);
+}
+
+.custom-scrollbar::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* Firefox scrollbar styling */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: var(--theme-focus) var(--theme-surface-soft);
+}
+
+.custom-scrollbar-dark::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+.custom-scrollbar-dark::-webkit-scrollbar-track {
+  background: #000000;
+  border-radius: 999px;
+}
+
+.custom-scrollbar-dark::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 999px;
+}
+
+.custom-scrollbar-dark {
+  scrollbar-width: thin;
+  scrollbar-color: #ffffff #000000;
+}
+
+.cozy-shell {
+  position: relative;
+  color: var(--howl-ink);
+}
+
+.cozy-shell::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: inherit;
+  background:
+    linear-gradient(135deg, var(--theme-overlay), transparent 48%),
+    linear-gradient(315deg, var(--theme-overlay-strong), transparent 58%);
+  opacity: 0.24;
+}
+
+.cozy-window-glow {
+  box-shadow:
+    0 24px 52px rgba(102, 79, 89, 0.2),
+    0 1px 0 rgba(255, 255, 255, 0.75) inset;
+}
+
+.cozy-pill {
+  border-radius: 999px;
+}
+
+.cozy-title {
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}

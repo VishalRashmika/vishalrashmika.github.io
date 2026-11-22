@@ -1,0 +1,294 @@
+---
+import type { SiteData } from '../lib/content';
+
+export interface Props {
+  siteData: SiteData;
+  title?: string;
+  description?: string;
+  image?: string;
+  canonicalUrl?: string;
+}
+
+const { siteData, title: propTitle, description: propDescription, image: propImage, canonicalUrl: propCanonical } = Astro.props;
+
+const baseUrl = (Astro.site ? Astro.site.toString() : 'https://vishalrashmika.com').replace(/\/$/, '');
+const title = propTitle || `${siteData.profile.name} | Software Engineer & Systems Developer Portfolio`;
+const description =
+  propDescription ||
+  siteData.profile.bio ||
+  'Software engineer and cybersecurity researcher based in Sri Lanka. Scalable systems, reverse engineering, web applications, low-level programming, and developer tools.';
+const canonicalUrl = propCanonical || new URL(Astro.url.pathname, baseUrl).href;
+const socialImage = propImage ? (propImage.startsWith('http') ? propImage : `${baseUrl}${propImage}`) : `${baseUrl}/homepage-logo.png`;
+const avatarImage = `${baseUrl}/me.png`;
+const keywords = [
+  'Vishal Rashmika',
+  'Software Engineer',
+  'Systems Developer',
+  'Cybersecurity Researcher',
+  'Reverse Engineering',
+  'Infosec',
+  'KernelMe',
+  'KernelMeOS',
+  'OlyraLabs',
+  'WyrdLang',
+  'LangDetect.Net',
+  'Sinso API',
+  'Blossom Theme',
+  'Developer Portfolio',
+  'Sri Lanka Software Engineer',
+  'Assembly x86-64',
+  'C++',
+  'Rust',
+  'Python',
+  'TypeScript',
+  'React 19',
+  'Astro SSG',
+  'Tailwind CSS',
+  '.NET Core',
+  'Linux Internals',
+  'Penetration Testing',
+  'Oracle Cloud Infrastructure'
+].join(', ');
+
+// Comprehensive Schema.org graph for Google Knowledge Graph and AI/LLM indexing
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebSite',
+      '@id': `${baseUrl}/#website`,
+      'url': `${baseUrl}/`,
+      'name': 'Vishal Rashmika Portfolio',
+      'headline': siteData.profile.headline,
+      'description': description,
+      'publisher': {
+        '@id': `${baseUrl}/#person`
+      },
+      'author': {
+        '@id': `${baseUrl}/#person`
+      },
+      'inLanguage': 'en-US'
+    },
+    {
+      '@type': 'ProfilePage',
+      '@id': `${baseUrl}/#profilepage`,
+      'url': canonicalUrl,
+      'name': title,
+      'isPartOf': {
+        '@id': `${baseUrl}/#website`
+      },
+      'about': {
+        '@id': `${baseUrl}/#person`
+      },
+      'mainEntity': {
+        '@id': `${baseUrl}/#person`
+      },
+      'description': description,
+      'inLanguage': 'en-US'
+    },
+    {
+      '@type': 'Person',
+      '@id': `${baseUrl}/#person`,
+      'name': siteData.profile.name,
+      'alternateName': ['KernelMe', 'Vishal', 'j.m.v.r.p', 'Vishal Rashmika'],
+      'jobTitle': siteData.profile.role || 'Software Engineer',
+      'url': baseUrl,
+      'image': avatarImage,
+      'email': 'mailto:vishal@vishalrashmika.com',
+      'description': siteData.profile.bio,
+      'worksFor': {
+        '@type': 'Organization',
+        'name': 'OlyraLabs',
+        'jobTitle': 'Co-Founder & Tech Lead'
+      },
+      'sameAs': [
+        'https://github.com/VishalRashmika',
+        'https://www.linkedin.com/in/vishalrashmika/',
+        'https://twitter.com/Vishal_Rashmika',
+        'https://blog.vishalrashmika.com',
+        'https://medium.com/@VishalRashmika',
+        'https://behance.net/vishalrashmika',
+        'https://www.instagram.com/j.m.v.r.p/',
+        'https://www.buymeacoffee.com/vishalrashmika/'
+      ],
+      'address': {
+        '@type': 'PostalAddress',
+        'addressCountry': 'LK'
+      },
+      'nationality': {
+        '@type': 'Country',
+        'name': 'Sri Lanka'
+      },
+      'knowsLanguage': ['en', 'si'],
+      'alumniOf': siteData.education.map((edu) => ({
+        '@type': 'EducationalOrganization',
+        'name': edu.institution,
+        ...(edu.institutionUrl ? { 'url': edu.institutionUrl } : {})
+      })),
+      'hasCredential': siteData.certifications.map((cert) => ({
+        '@type': 'EducationalOccupationalCredential',
+        'name': cert.name,
+        'credentialCategory': 'Professional Certification',
+        'recognizedBy': {
+          '@type': 'Organization',
+          'name': cert.issuer
+        },
+        'url': cert.url,
+        'validIn': {
+          '@type': 'AdministrativeArea',
+          'name': 'Worldwide'
+        }
+      })),
+      'knowsAbout': [
+        'Software Engineering',
+        'Systems Programming',
+        'Cybersecurity',
+        'Reverse Engineering',
+        'x86-64 Assembly Disassembly',
+        'C',
+        'C++',
+        'Rust',
+        'Python',
+        'TypeScript',
+        'JavaScript',
+        'C#',
+        '.NET Framework',
+        'Linux System Administration & Internals',
+        'Penetration Testing & Forensics',
+        'Web Application Security',
+        'Astro Framework',
+        'React',
+        'Tailwind CSS',
+        'Oracle Cloud Infrastructure (OCI)'
+      ]
+    },
+    {
+      '@type': 'ItemList',
+      '@id': `${baseUrl}/#projects`,
+      'name': 'Featured Software Engineering Projects',
+      'description': 'Selected projects and software systems built by Vishal Rashmika',
+      'itemListElement': siteData.projects.map((proj, idx) => ({
+        '@type': 'ListItem',
+        'position': idx + 1,
+        'item': {
+          '@type': 'SoftwareApplication',
+          'name': proj.name,
+          'description': proj.description,
+          'applicationCategory': proj.category,
+          'operatingSystem': 'Cross-platform',
+          'url': proj.demo || proj.github || baseUrl,
+          ...(proj.github ? { 'codeRepository': proj.github } : {}),
+          ...(proj.tags && proj.tags.length > 0 ? { 'programmingLanguage': proj.tags.join(', ') } : {})
+        }
+      }))
+    },
+    {
+      '@type': 'ItemList',
+      '@id': `${baseUrl}/#blog`,
+      'name': 'Technical Articles & Publications',
+      'description': 'Engineering notes, reverse engineering tutorials, and systems writeups',
+      'itemListElement': siteData.blogPosts.map((post, idx) => ({
+        '@type': 'ListItem',
+        'position': idx + 1,
+        'item': {
+          '@type': 'BlogPosting',
+          'headline': post.title,
+          'url': post.href,
+          'author': {
+            '@id': `${baseUrl}/#person`
+          },
+          ...(post.date ? { 'datePublished': post.date } : {}),
+          ...(post.excerpt ? { 'description': post.excerpt } : {})
+        }
+      }))
+    },
+    {
+      '@type': 'ItemList',
+      '@id': `${baseUrl}/#downloads`,
+      'name': 'Developer Tools & Downloads',
+      'itemListElement': siteData.downloads.map((dl, idx) => ({
+        '@type': 'ListItem',
+        'position': idx + 1,
+        'item': {
+          '@type': 'CreativeWork',
+          'name': dl.name,
+          'description': dl.desc,
+          'url': dl.link
+        }
+      }))
+    }
+  ]
+};
+---
+
+<!-- Basic Meta & Title -->
+<title>{title}</title>
+<meta name="title" content={title} />
+<meta name="description" content={description} />
+<meta name="keywords" content={keywords} />
+<meta name="author" content={siteData.profile.name} />
+<meta name="creator" content={siteData.profile.name} />
+<meta name="publisher" content={siteData.profile.name} />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+<!-- Canonical & Language Alternates -->
+<link rel="canonical" href={canonicalUrl} />
+<link rel="alternate" hreflang="en" href={canonicalUrl} />
+<link rel="alternate" hreflang="x-default" href={canonicalUrl} />
+
+<!-- XML Sitemaps & Web App Manifest -->
+<link rel="sitemap" type="application/xml" href="/sitemap-index.xml" />
+<link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+<link rel="manifest" href="/site.webmanifest" />
+
+<!-- Favicon and App Icons -->
+<link rel="icon" type="image/png" sizes="32x32" href="/icon.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/icon.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/icon.png" />
+
+<!-- LLM / AI Discovery Endpoints (llmstxt.org Standard) -->
+<link rel="alternate" type="text/markdown" href="/llms.txt" title="LLM Context Summary" />
+<link rel="alternate" type="text/markdown" href="/llms-full.txt" title="Comprehensive LLM Technical Context" />
+<link rel="alternate" type="text/markdown" href="/.well-known/llms.txt" title="Well-Known LLM Context" />
+<meta name="ai-content-declaration" content={`${baseUrl}/llms.txt`} />
+<meta name="llms" content={`${baseUrl}/llms.txt`} />
+
+<!-- Open Graph / Facebook / LinkedIn -->
+<meta property="og:type" content="profile" />
+<meta property="og:site_name" content={`${siteData.profile.name} Portfolio`} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonicalUrl} />
+<meta property="og:image" content={socialImage} />
+<meta property="og:image:secure_url" content={socialImage} />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:alt" content={`${siteData.profile.name} - Software Engineer Portfolio`} />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:locale" content="en_US" />
+<meta property="profile:first_name" content="Vishal" />
+<meta property="profile:last_name" content="Rashmika" />
+<meta property="profile:username" content="VishalRashmika" />
+
+<!-- Twitter / X Cards -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@Vishal_Rashmika" />
+<meta name="twitter:creator" content="@Vishal_Rashmika" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={socialImage} />
+<meta name="twitter:image:alt" content={`${siteData.profile.name} Software Engineer Portfolio`} />
+
+<!-- Mobile & Device Styling -->
+<meta name="theme-color" content="#0a0a0c" />
+<meta name="color-scheme" content="dark light" />
+<meta name="application-name" content="Vishal Rashmika Portfolio" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content={siteData.profile.name} />
+<meta name="format-detection" content="telephone=no" />
+
+<!-- Structured Data (Schema.org JSON-LD Graph) -->
+<script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
