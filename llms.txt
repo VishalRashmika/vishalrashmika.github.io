@@ -1,0 +1,78 @@
+# Vishal Rashmika
+
+> Student | Programming | Infosec based in Sri Lanka. Software engineer, systems developer, and cybersecurity researcher specializing in systems programming, reverse engineering, web applications, and scalable architecture.
+
+## Overview
+Hi, I'm Vishal Rashmika, a highly motivated individual based in Sri Lanka, currently pursuing software development with a strong interest in technology and cybersecurity. Focused on building scalable systems, full-stack web applications, reverse engineering, and intentional interfaces.
+
+## Core Competencies
+- **Languages:** C, C++, x86-64 Assembly, Rust, Python, TypeScript, JavaScript, C# / .NET, SQL, HTML/CSS
+- **Systems & Security:** Reverse Engineering, Penetration Testing, Linux System Internals, Binary Disassembly, Debugging & Symbol Analysis, Network Protocols, OCI Security
+- **Web & Frameworks:** Astro (v5 SSG / Islands), React 19, Tailwind CSS v4, Node.js, Express, Vite, RESTful APIs
+- **Cloud & Infrastructure:** Oracle Cloud Infrastructure (OCI), Linux Administration, Git, Netlify, Agile / Scrum Leadership
+
+## Key Projects
+- [LangDetect.Net](https://www.nuget.org/packages/LangDetect.Net) [.NET, C#, NLP, Algorithms] - 280+ downloads ([Live Demo](https://www.nuget.org/packages/LangDetect.Net)): A lightweight, self-contained .NET package for text-based language detection supporting 12 languages. Uses three algorithmic strategies to improve accuracy and has 280+ NuGet downloads.
+- [WyrdLang](https://vishalrashmika.com) [Compilers, C++, Java, Systems]: A custom programming language with fantasy-inspired keywords. Built with a custom-made interpreter in C++ and paired with WyrdPad, a lightweight IDE written in Java.
+- [SinSo API](https://sinso-portal.vishalrashmika.com) [REST API, Backend, Node.js, Open Source] ([Live Demo](https://sinso-portal.vishalrashmika.com)): The largest open source Sinhala lyrics API, offering access to 10,000+ song lyrics through a RESTful API with a community submission portal.
+- [PopQuest](https://popquest.github.io/) [Web App, JavaScript, Frontend, Interactive] ([Live Demo](https://popquest.github.io/)): An interactive web application built as a polished, playful public experience.
+- [Blossom Theme](https://blossomtheme.github.io/) [UI/UX Design, Themes, Blender, Styling] - 2,300+ downloads ([Live Demo](https://blossomtheme.github.io/)): A software color theme inspired by Japan’s vibrant urban aesthetics. Co-founded the organization and contributed to multiple variants.
+- [Life Via Lens](https://vishalrashmika.com) [Photography, Media, Visual Storytelling, Arts]: A photography and visual storytelling project focused on framing everyday moments with a cinematic eye.
+- [Nyxia](https://vishalrashmika.com) [Mobile App, Flutter, Dart, Astrophotography]: An astrophotography planning app for better nights under the stars. Built in Flutter with weather insights, celestial tracking, calculators, and event management.
+- [Rejuvenation Clinic](https://rejuvenationclinic.lk) [Web, Healthcare, Client Solution, UI Design] ([Live Demo](https://rejuvenationclinic.lk)): Medical clinic website for Rejuvenation Clinic, built as a clean public-facing brand and service presence.
+
+## Professional Experience
+- **Co-Founder & Tech Lead** at **OlyraLabs** (FEB 2026 – PRESENT): Co-founded a four-person startup and serving as the Tech Lead, orchestrating development, technical architecture, and Agile lifecycle management for client projects. Skills: Agile, Scrum, Systems Design, Full-Stack.
+
+## Education
+- **BSc (Hons) Software Engineering** — University of Central Lancashire (October, 2024 – 2028 :) - BSc (Hons) Software Engineering
+- **UCL International Foundation Year (UIFY)** — Universal College Lanka (July, 2023 – July, 2024 :) - UCL International Foundation Year
+- **Secondary Education (GCSE ordinary level)** — St. John Paul II College, Wennappuwa, Sri Lanka (April, 2014 – July, 2023 :) - Secondary Education
+- **Level 3 diploma in technology (DITEC)** — ESOFT (December, 2019 – September, 2020 :) - Level 3 diploma in technology (DITEC)
+- **Primary Education** — St. James International School, Wennappuwa, Sri Lanka (January, 2011 – May, 2014 :) - Primary Education
+
+## Notable Certifications & Badges
+- [LFEL1002: Getting Started with Rust](https://trainingportal.linuxfoundation.org/learn/certificates/getting-started-with-rust-lfel1002?id=c0926af9-5118-44de-9375-2044853067aa) — Issued by The Linux Foundation (2024)
+- [Advanced Learning Algorithms](https://coursera.org/share/e38ff1e359cd20001a949f7e9baefde8) — Issued by DeepLearning.AI (2024)
+- [Linux For Developers](https://coursera.org/verify/XQVFDJLAUZPQ) — Issued by The Linux Foundation (2024)
+- [AI/ML Engineer - Stage 1](https://code.sliit.org/certificates/fuyex8cgdu) — Issued by SLIIT (2024)
+- [Open Source Software Development Methods](https://coursera.org/share/4a66565cf0325131533bb3d3f0d78437) — Issued by The Linux Foundation (2024)
+- [Supervised Machine Learning: Regression and Classification](https://coursera.org/verify/PA3Z2UNXPZ7W/) — Issued by DeepLearning.AI (2024)
+- [CS50P](https://cs50.harvard.edu/certificates/4bbc4f6a-7e94-47cb-9acb-bae4689f60fa) — Issued by CS50 (2023)
+- [CS50x](https://certificates.cs50.io/f2ca3ee3-1b32-4e3f-8f43-0154c6043ea6.pdf?size=letter) — Issued by CS50 (2023)
+- [Introduction to Cybersecurity Tools & Cyber Attacks](https://www.coursera.org/verify/5G6TXRN8PK6N) — Issued by IBM (2024)
+- [Penetration Testing, Incident Response and Forensics](https://coursera.org/share/8e92b515c8080bcb1a50f2f1907dd5c5) — Issued by IBM (2024)
+- **Oracle Cloud Infrastructure badge**: [Verify Credential](https://catalog-education.oracle.com/pls/certview/sharebadge?id=CD85047A266BFDD5355A385B4EDDA1055C0A2EBA284B808E831E4F66D4882AFC)
+- **Cybersecurity Compliance badge**: [Verify Credential](https://www.credly.com/badges/6d1b5eb5-5424-449d-849e-73d93e499b21/public_url)
+- **Penetration Testing badge**: [Verify Credential](https://www.credly.com/badges/42f87a4e-910e-45b8-9f4d-da3e934152ab/public_url)
+- **Intro to Cybersecurity badge**: [Verify Credential](https://www.credly.com/badges/697440ab-581e-4b61-9af0-e6f70b7a0485/public_url)
+- **LFEL 1002 badge**: [Verify Credential](https://www.credly.com/badges/586cb87e-504a-4ee0-a234-3d2f9ede582b/public_urlss)
+
+## Technical Articles & Blog Posts
+- [Day 1: WyrdLang](https://blog.vishalrashmika.com/blog/day1-wyrdlang/) (2024): First steps in building WyrdLang: interpreter architecture and syntax decisions.
+- [Subroutines](https://blog.vishalrashmika.com/blog/subroutines/) (2024): Deep dive into subroutine handling, call frames, and memory layout.
+- [Debugging and Symbol Files](https://blog.vishalrashmika.com/blog/debugging-and-symbol-files/) (2024): Understanding how debuggers interact with symbol tables and binary metadata.
+- [Paper - HackTheBox Writeup](https://blog.vishalrashmika.com/posts/paper/) (2023): Walkthrough of solving the Paper box on HackTheBox.
+- [Dissecting a Simple x86-64 bit Assembly Hello World Program](https://blog.vishalrashmika.com/posts/breaking-down-asm-helloworld/) (2023): Line-by-line disassembly and explanation of system calls in x86-64 assembly.
+- [Bounty Hunter - TryHackMe Writeup](https://blog.vishalrashmika.com/posts/bounty-hunter/) (2022): Detailed walkthrough and exploitation breakdown of the Bounty Hunter room.
+
+## Verified Online Profiles & Contact
+- Portfolio Website: https://vishalrashmika.com
+- Interactive OS Simulation: https://vishalrashmika.com/?mode=os
+- Technical Blog: https://blog.vishalrashmika.com
+- Curriculum Vitae: https://vishalrashmika.com/VishalRashmika-CV.pdf
+- PGP Armored Public Key: https://gist.githubusercontent.com/VishalRashmika/44d9469f7d65fc4c5245d13ebd0f9fea/raw/f35ee26cc859a115970701739d7d2fbdf86f97c0/public_key.asc
+- Email: [vishal@vishalrashmika.com](mailto:vishal@vishalrashmika.com)
+- Public Key: [Open the armored key or view the raw link.](https://gist.githubusercontent.com/VishalRashmika/44d9469f7d65fc4c5245d13ebd0f9fea/raw/f35ee26cc859a115970701739d7d2fbdf86f97c0/public_key.asc)
+- LinkedIn: [Professional updates and work history.](https://www.linkedin.com/in/vishalrashmika/)
+- GitHub: [Code, experiments, and project work.](https://github.com/VishalRashmika)
+- Instagram: [Personal updates and visual posts.](https://www.instagram.com/j.m.v.r.p/)
+- Twitter: [Short updates and occasional thoughts.](https://twitter.com/Vishal_Rashmika)
+- Behance: [Selected design work and visuals.](https://behance.net/vishalrashmika)
+- Medium: [Long-form writing and posts.](https://medium.com/@VishalRashmika)
+- Donate: [Support the portfolio and blog through Buy Me a Coffee.](https://www.buymeacoffee.com/vishalrashmika/)
+
+## Extended Context & Full Specifications
+- [Full Portfolio Deep Dive](https://vishalrashmika.com/llms-full.txt): Complete technical specification with all 21 certifications, in-depth project descriptions, architecture details, and AI FAQ.
+- [XML Sitemap Index](https://vishalrashmika.com/sitemap-index.xml): Full sitemap for search crawlers.
+- [Robots Policy](https://vishalrashmika.com/robots.txt): Crawler and agent permission directives.
