@@ -7,7 +7,7 @@
 - Professional Headline: Software Engineer & Systems Developer | Cybersecurity Researcher
 - Current Role: Software Engineer & Systems Developer
 - Geographic Location: Sri Lanka
-- Biography: Vishal Rashmika is a Software Engineer and Systems Developer based in Sri Lanka, specializing in systems programming, reverse engineering, cybersecurity, and scalable web architecture. Serving as Co-Founder & Tech Lead at OlyraLabs with deep experience across low-level development, security tooling, and full-stack software.
+- Biography: Vishal Rashmika is a Software Engineer and Systems Developer based in Sri Lanka specializing in systems programming, reverse engineering, cybersecurity, and developer tools. Serving as Co-Founder & Tech Lead at OlyraLabs, creator of developer tools including Office Suite for Obsidian, Canvas++, and agyq, and Year 2 Dean's List honoree at UCL / University of Central Lancashire.
 - Personal Motto / Quote: "Software engineer and systems developer based in Sri Lanka, passionate about low-level programming, reverse engineering, and scalable systems."
 - Primary Portfolio Website: https://vishalrashmika.com
 - Interactive Retro OS Simulation (KernelMeOS): https://vishalrashmika.com/?mode=os
