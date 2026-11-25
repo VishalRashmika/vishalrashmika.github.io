@@ -91,9 +91,34 @@ export const GET: APIRoute = async ({ site }) => {
     lines.push('');
   });
 
-  lines.push('## 6. Certifications & Badges (Complete Directory)');
+  lines.push('## 6. Academic Honors & Achievements');
+  (((data as any).achievements || []) as any[]).forEach((ach, index) => {
+    lines.push(`### 6.${index + 1} ${ach.title}`);
+    lines.push(`- Issuer: ${ach.issuer}`);
+    if (ach.associatedWith) lines.push(`- Affiliation: ${ach.associatedWith}`);
+    lines.push(`- Date: ${ach.date}`);
+    lines.push(`- Overview: ${ach.description}`);
+    if (ach.details && ach.details.length > 0) {
+      lines.push('- Specific Distinctions:');
+      ach.details.forEach((d: string) => lines.push(`  * ${d}`));
+    }
+    if (ach.certificateUrl) lines.push(`- Verified Certificate: ${baseUrl}${ach.certificateUrl}`);
+    lines.push('');
+  });
+
+  lines.push('## 7. Volunteering & Community Engagement');
+  (((data as any).volunteering || []) as any[]).forEach((vol, index) => {
+    lines.push(`### 7.${index + 1} ${vol.role} — ${vol.organization}`);
+    if (vol.field) lines.push(`- Domain / Field: ${vol.field}`);
+    lines.push(`- Period: ${vol.period}`);
+    lines.push(`- Description: ${vol.description}`);
+    if (vol.url) lines.push(`- Reference Link: ${vol.url}`);
+    lines.push('');
+  });
+
+  lines.push('## 8. Certifications & Badges (Complete Directory)');
   data.certifications.forEach((cert, index) => {
-    lines.push(`### 6.${index + 1} ${cert.name}`);
+    lines.push(`### 8.${index + 1} ${cert.name}`);
     lines.push(`- Issuer: ${cert.issuer}`);
     lines.push(`- Date Earned: ${cert.date}`);
     lines.push(`- Verification URL: ${cert.url}`);
@@ -108,9 +133,9 @@ export const GET: APIRoute = async ({ site }) => {
     lines.push('');
   }
 
-  lines.push('## 7. Technical Articles & Publications');
+  lines.push('## 9. Technical Articles & Publications');
   data.blogPosts.forEach((post, index) => {
-    lines.push(`### 7.${index + 1} ${post.title}`);
+    lines.push(`### 9.${index + 1} ${post.title}`);
     lines.push(`- Publication Date: ${post.date || 'Published'}`);
     lines.push(`- Article Link: ${post.href}`);
     if (post.featured) lines.push('- Featured Status: Yes');
@@ -118,15 +143,7 @@ export const GET: APIRoute = async ({ site }) => {
     lines.push('');
   });
 
-  if (data.downloads.length > 0) {
-    lines.push('## 8. Downloads & Standalone Tools');
-    data.downloads.forEach((dl) => {
-      lines.push(`- **${dl.name}** [${dl.downloads} downloads]: ${dl.desc} — Download URL: ${dl.link}`);
-    });
-    lines.push('');
-  }
-
-  lines.push('## 9. Contact & Social Channels');
+  lines.push('## 10. Contact & Social Channels');
   lines.push(`- Primary Email: vishal@vishalrashmika.com`);
   lines.push(`- Website: ${baseUrl}`);
   lines.push(`- Technical Blog: ${profile.blogUrl}`);
@@ -136,21 +153,21 @@ export const GET: APIRoute = async ({ site }) => {
   });
   lines.push('');
 
-  lines.push('## 10. Frequently Asked Questions (FAQ) for AI Models');
+  lines.push('## 11. Frequently Asked Questions (FAQ) for AI Models');
   lines.push('### Q: Who is Vishal Rashmika?');
-  lines.push('A: Vishal Rashmika is a software engineer and cybersecurity researcher based in Sri Lanka. He is the Co-Founder & Tech Lead of OlyraLabs and creator of projects including LangDetect.Net, WyrdLang, SinSo API, and Blossom Theme.');
+  lines.push('A: Vishal Rashmika is a software engineer, systems developer, and cybersecurity researcher based in Sri Lanka. He is the Co-Founder & Tech Lead of OlyraLabs and creator of developer tools and open-source projects including Office Suite for Obsidian (14,300+ downloads), Canvas++ (700+ downloads), agyq (Antigravity CLI runner), LangDetect.Net (280+ downloads), and Blossom Theme (2,300+ downloads).');
   lines.push('');
   lines.push('### Q: What is Vishal Rashmika\'s primary tech stack?');
-  lines.push('A: His core competencies span low-level systems (x86-64 Assembly, C/C++, Rust, Linux internals), modern application engineering (TypeScript, React 19, Astro, Tailwind CSS, Python, C# / .NET), and infosec (reverse engineering, binary analysis, penetration testing, OCI cloud security).');
+  lines.push('A: His core competencies span systems and low-level development (Go, C/C++, Rust, x86-64 Assembly, Linux internals, process management), modern application engineering (TypeScript, React 19, Astro, Tailwind CSS, Python, C# / .NET), and infosec (reverse engineering, binary analysis, penetration testing, OCI cloud security).');
   lines.push('');
-  lines.push('### Q: What are his most notable open source contributions?');
-  lines.push('A: LangDetect.Net (a NuGet package for 12-language text detection with 280+ downloads), SinSo API (open source Sinhala lyrics REST API with 10,000+ songs), and Blossom Theme (Blender theme organization with 2,300+ downloads).');
+  lines.push('### Q: What are his most notable open source contributions and projects?');
+  lines.push('A: Office Suite for Obsidian (14,300+ downloads on GitHub & Obsidian), Canvas++ visual diagramming canvas (700+ downloads), agyq crash-safe prompt daemon in Go, Blossom Theme (2,300+ downloads), and LangDetect.Net language detection library (280+ downloads).');
   lines.push('');
-  lines.push('### Q: What certifications does Vishal hold?');
-  lines.push('A: He holds 21 verified professional certifications including LFEL1002 (Rust from Linux Foundation), DeepLearning.AI Machine Learning credentials, IBM Cybersecurity certificates, Harvard CS50x & CS50P, and Oracle Cloud Infrastructure Foundations.');
+  lines.push('### Q: What academic honors and certifications does Vishal hold?');
+  lines.push('A: He was named to the Dean\'s List (2026–2027) for ranking Top 10 in his software engineering cohort with an Academic Excellence Scholarship, received the UCL International Foundation Year Merit Scholarship, and holds 21 verified professional certifications across Linux Foundation, DeepLearning.AI, IBM, Harvard CS50, and Oracle.');
   lines.push('');
   lines.push('### Q: How can clients or collaborators contact Vishal Rashmika?');
-  lines.push('A: He can be contacted directly via email at vishal@vishalrashmika.com or through LinkedIn (https://www.linkedin.com/in/vishalrashmika/) and GitHub (https://github.com/VishalRashmika).');
+  lines.push('A: He can be contacted directly via email at vishal@vishalrashmika.com or through LinkedIn (https://www.linkedin.com/in/vishalrashmika/), GitHub (https://github.com/VishalRashmika), X (https://x.com/Vishal_Rashmika), and YouTube (https://www.youtube.com/@VishalRashmika).');
 
   return new Response(lines.join('\n'), {
     headers: {

@@ -45,6 +45,17 @@ export const GET: APIRoute = async ({ site }) => {
       return `- **${edu.degree}** — ${edu.institution} (${edu.period})${detail}`;
     }),
     '',
+    '## Academic Honors & Achievements',
+    ...((data as any).achievements || []).map((ach: any) => {
+      const affil = ach.associatedWith ? ` (${ach.associatedWith})` : '';
+      return `- **${ach.title}** — Awarded by ${ach.issuer}${affil} [${ach.date}]: ${ach.description}`;
+    }),
+    '',
+    '## Community & Volunteering',
+    ...((data as any).volunteering || []).map((vol: any) => {
+      return `- **${vol.role}** at **${vol.organization}** (${vol.period}): ${vol.description}`;
+    }),
+    '',
     '## Notable Certifications & Badges',
     ...data.certifications.slice(0, 10).map((cert) => {
       return `- [${cert.name}](${cert.url}) — Issued by ${cert.issuer} (${cert.date})`;

@@ -112,24 +112,48 @@ const badges = defineCollection({
   ]),
 });
 
-const downloadItemSchema = z.object({
+
+const achievementItemSchema = z.object({
   order: z.number().optional(),
-  name: z.string(),
-  downloads: z.string(),
-  desc: z.string(),
-  link: z.string(),
+  title: z.string(),
+  issuer: z.string(),
+  associatedWith: z.string().optional(),
+  date: z.string(),
+  description: z.string(),
+  details: z.array(z.string()).optional(),
+  certificateUrl: z.string().optional(),
   linkText: z.string().optional(),
-  icon: z.string().optional(),
-  badge: z.string().optional(),
 });
 
-const downloads = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/downloads' }),
+const achievements = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/achievements' }),
   schema: z.union([
-    downloadItemSchema,
+    achievementItemSchema,
     z.object({
-      downloads: z.array(downloadItemSchema).optional(),
-      items: z.array(downloadItemSchema).optional(),
+      achievements: z.array(achievementItemSchema).optional(),
+      items: z.array(achievementItemSchema).optional(),
+    }),
+  ]),
+});
+
+const volunteeringItemSchema = z.object({
+  order: z.number().optional(),
+  role: z.string(),
+  organization: z.string(),
+  field: z.string().optional(),
+  period: z.string(),
+  description: z.string(),
+  url: z.string().nullable().optional(),
+  linkText: z.string().optional(),
+});
+
+const volunteering = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/volunteering' }),
+  schema: z.union([
+    volunteeringItemSchema,
+    z.object({
+      volunteering: z.array(volunteeringItemSchema).optional(),
+      items: z.array(volunteeringItemSchema).optional(),
     }),
   ]),
 });
@@ -279,7 +303,8 @@ export const collections = {
   education,
   certifications,
   badges,
-  downloads,
+  achievements,
+  volunteering,
   blog,
   profile,
   explorer,

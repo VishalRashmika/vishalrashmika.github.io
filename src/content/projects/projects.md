@@ -1,6 +1,57 @@
 ---
 projects:
   - order: 1
+    name: Office Suite
+    category: Personal Projects
+    type: Personal
+    categorySubtitle: Independent builds and creative work.
+    date: '[2026]'
+    description: All-in-one productivity plugin for Obsidian enabling native WYSIWYG viewing and editing of Word (.docx), Excel (.xlsx), PowerPoint (.pptx), CSV/TSV spreadsheets, and PDF annotations directly inside notes with zero external dependencies.
+    demo: https://github.com/VishalRashmika/office-suite
+    github: https://github.com/VishalRashmika/office-suite
+    tags:
+      - TypeScript
+      - Obsidian
+      - Productivity
+      - WYSIWYG
+      - Open Source
+    downloads: 14,300+
+    linkLabel: GitHub Repo >>
+  - order: 2
+    name: Canvas++
+    category: Personal Projects
+    type: Personal
+    categorySubtitle: Independent builds and creative work.
+    date: '[2026]'
+    description: Extensible, high-performance visual diagramming canvas for Obsidian. Features instant shape auto-detection, natural whiteboard drawing, structured tables, collapsible groups, and full UML 2.x software architecture modeling with JSON Canvas compatibility.
+    demo: https://github.com/VishalRashmika/canvas-plus-plus
+    github: https://github.com/VishalRashmika/canvas-plus-plus
+    tags:
+      - TypeScript
+      - Obsidian
+      - JSON Canvas
+      - UML
+      - Whiteboard
+    downloads: 700+
+    linkLabel: GitHub Repo >>
+  - order: 3
+    name: agyq
+    category: Personal Projects
+    type: Personal
+    categorySubtitle: Independent builds and creative work.
+    date: '[2026]'
+    description: Sequential, crash-safe prompt queue runner and headless daemon for the Antigravity CLI (agy), engineered with Git checkpoint recovery, quota rate-limit auto-pausing, deferred failure retries, and zero external dependencies.
+    demo: https://github.com/VishalRashmika/agyq
+    github: https://github.com/VishalRashmika/agyq
+    tags:
+      - Go
+      - CLI
+      - Systems
+      - Autonomous Agents
+      - Automation
+    downloads: —
+    linkLabel: GitHub Repo >>
+  - order: 4
     name: LangDetect.Net
     category: Personal Projects
     type: Personal
@@ -8,6 +59,7 @@ projects:
     date: '[2026]'
     description: A lightweight, self-contained .NET package for text-based language detection supporting 12 languages. Uses three algorithmic strategies to improve accuracy and has 280+ NuGet downloads.
     demo: https://www.nuget.org/packages/LangDetect.Net
+    github: https://github.com/VishalRashmika/LangDetect.Net
     tags:
       - .NET
       - C#
@@ -15,7 +67,7 @@ projects:
       - Algorithms
     downloads: 280+
     linkLabel: NuGet Package >>
-  - order: 2
+  - order: 5
     name: WyrdLang
     category: Personal Projects
     type: Personal
@@ -29,7 +81,7 @@ projects:
       - Java
       - Systems
     downloads: —
-  - order: 3
+  - order: 6
     name: SinSo API
     category: Personal Projects
     type: Personal
@@ -44,22 +96,7 @@ projects:
       - Open Source
     downloads: —
     linkLabel: SinSo Portal >>
-  - order: 4
-    name: PopQuest
-    category: Personal Projects
-    type: Personal
-    categorySubtitle: Independent builds and creative work.
-    date: '-'
-    description: An interactive web application built as a polished, playful public experience.
-    demo: https://popquest.github.io/
-    tags:
-      - Web App
-      - JavaScript
-      - Frontend
-      - Interactive
-    downloads: —
-    linkLabel: PopQuest >>
-  - order: 5
+  - order: 7
     name: Blossom Theme
     category: Personal Projects
     type: Personal
@@ -74,7 +111,22 @@ projects:
       - Styling
     downloads: 2,300+
     linkLabel: Blossom Theme >>
-  - order: 6
+  - order: 8
+    name: PopQuest
+    category: Personal Projects
+    type: Personal
+    categorySubtitle: Independent builds and creative work.
+    date: '-'
+    description: An interactive web application built as a polished, playful public experience.
+    demo: https://popquest.github.io/
+    tags:
+      - Web App
+      - JavaScript
+      - Frontend
+      - Interactive
+    downloads: —
+    linkLabel: PopQuest >>
+  - order: 9
     name: Life Via Lens
     category: Personal Projects
     type: Personal
@@ -88,7 +140,7 @@ projects:
       - Visual Storytelling
       - Arts
     downloads: —
-  - order: 7
+  - order: 10
     name: Nyxia
     category: University Projects
     type: University
@@ -102,7 +154,7 @@ projects:
       - Dart
       - Astrophotography
     downloads: —
-  - order: 8
+  - order: 11
     name: Rejuvenation Clinic
     category: Client Projects
     type: Client
@@ -121,4 +173,4 @@ projects:
 
 # Projects
 
-Innovative solutions crafted with passion. Selected projects across personal builds, university research, and client solutions.
+Innovative solutions crafted with passion. Selected projects across personal builds, systems utilities, developer tooling, university research, and client solutions.

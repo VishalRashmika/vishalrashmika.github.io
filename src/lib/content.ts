@@ -83,6 +83,29 @@ export interface DownloadItem {
   badge?: string;
 }
 
+export interface AchievementItem {
+  order: number;
+  title: string;
+  issuer: string;
+  associatedWith?: string;
+  date: string;
+  description: string;
+  details?: string[];
+  certificateUrl?: string;
+  linkText?: string;
+}
+
+export interface VolunteeringItem {
+  order: number;
+  role: string;
+  organization: string;
+  field?: string;
+  period: string;
+  description: string;
+  url?: string | null;
+  linkText?: string;
+}
+
 export interface BlogPostItem {
   order: number;
   title: string;
@@ -182,7 +205,8 @@ const experienceModules = import.meta.glob<{ frontmatter: any }>('/src/content/e
 const educationModules = import.meta.glob<{ frontmatter: any }>('/src/content/education/*.md', { eager: true });
 const certModules = import.meta.glob<{ frontmatter: any }>('/src/content/certifications/*.md', { eager: true });
 const badgeModules = import.meta.glob<{ frontmatter: any }>('/src/content/badges/*.md', { eager: true });
-const downloadModules = import.meta.glob<{ frontmatter: any }>('/src/content/downloads/*.md', { eager: true });
+const achievementModules = import.meta.glob<{ frontmatter: any }>('/src/content/achievements/*.md', { eager: true });
+const volunteeringModules = import.meta.glob<{ frontmatter: any }>('/src/content/volunteering/*.md', { eager: true });
 const blogModules = import.meta.glob<{ frontmatter: any }>('/src/content/blog/*.md', { eager: true });
 const explorerModules = import.meta.glob<{ frontmatter: any }>('/src/content/explorer/*.md', { eager: true });
 const mixtapeModules = import.meta.glob<{ frontmatter: any }>('/src/content/mixtapes/*.md', { eager: true });
@@ -323,7 +347,16 @@ export function getBadges(): BadgeItem[] {
 }
 
 export function getDownloads(): DownloadItem[] {
-  const items = extractItems<DownloadItem>(downloadModules, ['downloads', 'items']);
+  return [];
+}
+
+export function getAchievements(): AchievementItem[] {
+  const items = extractItems<AchievementItem>(achievementModules, ['achievements', 'items']);
+  return items.sort((a, b) => (a.order || 0) - (b.order || 0));
+}
+
+export function getVolunteering(): VolunteeringItem[] {
+  const items = extractItems<VolunteeringItem>(volunteeringModules, ['volunteering', 'items']);
   return items.sort((a, b) => (a.order || 0) - (b.order || 0));
 }
 
@@ -357,6 +390,8 @@ export function getAllSiteData() {
     certifications: getCertifications(),
     badges: getBadges(),
     downloads: getDownloads(),
+    achievements: getAchievements(),
+    volunteering: getVolunteering(),
     blogPosts: getBlogPosts(),
     mixtapes: getMixtapes(),
     explorerFiles: getExplorerFiles(),

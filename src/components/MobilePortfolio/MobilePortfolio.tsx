@@ -16,6 +16,42 @@ const formatDate = (date?: string | null): string => {
 const DEFAULT_PROJECTS = [
   {
     order: 1,
+    name: 'Office Suite',
+    type: 'Personal',
+    category: 'Personal Projects',
+    tags: ['TypeScript', 'Obsidian', 'Productivity', 'WYSIWYG', 'Open Source'],
+    date: '2026',
+    description: 'All-in-one productivity plugin for Obsidian enabling native WYSIWYG viewing and editing of Word (.docx), Excel (.xlsx), PowerPoint (.pptx), CSV/TSV spreadsheets, and PDF annotations directly inside notes with zero external dependencies.',
+    downloads: '14,300+',
+    demo: 'https://github.com/VishalRashmika/office-suite',
+    linkLabel: 'GitHub Repo >>'
+  },
+  {
+    order: 2,
+    name: 'Canvas++',
+    type: 'Personal',
+    category: 'Personal Projects',
+    tags: ['TypeScript', 'Obsidian', 'JSON Canvas', 'UML', 'Whiteboard'],
+    date: '2026',
+    description: 'Extensible, high-performance visual diagramming canvas for Obsidian. Features instant shape auto-detection, natural whiteboard drawing, structured tables, collapsible groups, and full UML 2.x software architecture modeling with JSON Canvas compatibility.',
+    downloads: '700+',
+    demo: 'https://github.com/VishalRashmika/canvas-plus-plus',
+    linkLabel: 'GitHub Repo >>'
+  },
+  {
+    order: 3,
+    name: 'agyq',
+    type: 'Personal',
+    category: 'Personal Projects',
+    tags: ['Go', 'CLI', 'Systems', 'Autonomous Agents', 'Automation'],
+    date: '2026',
+    description: 'Sequential, crash-safe prompt queue runner and headless daemon for the Antigravity CLI (agy), engineered with Git checkpoint recovery, quota rate-limit auto-pausing, deferred failure retries, and zero external dependencies.',
+    downloads: '—',
+    demo: 'https://github.com/VishalRashmika/agyq',
+    linkLabel: 'GitHub Repo >>'
+  },
+  {
+    order: 4,
     name: 'LangDetect.Net',
     type: 'Personal',
     category: 'Personal Projects',
@@ -27,7 +63,7 @@ const DEFAULT_PROJECTS = [
     linkLabel: 'NuGet Package >>'
   },
   {
-    order: 2,
+    order: 5,
     name: 'WyrdLang',
     type: 'Personal',
     category: 'Personal Projects',
@@ -38,7 +74,7 @@ const DEFAULT_PROJECTS = [
     demo: null
   },
   {
-    order: 3,
+    order: 6,
     name: 'SinSo API',
     type: 'Personal',
     category: 'Personal Projects',
@@ -50,19 +86,7 @@ const DEFAULT_PROJECTS = [
     linkLabel: 'SinSo Portal >>'
   },
   {
-    order: 4,
-    name: 'PopQuest',
-    type: 'Personal',
-    category: 'Personal Projects',
-    tags: ['Web App', 'JavaScript', 'Frontend', 'Interactive'],
-    date: '—',
-    description: 'An interactive web application built as a polished, playful public experience.',
-    downloads: '—',
-    demo: 'https://popquest.github.io/',
-    linkLabel: 'PopQuest >>'
-  },
-  {
-    order: 5,
+    order: 7,
     name: 'Blossom Theme',
     type: 'Personal',
     category: 'Personal Projects',
@@ -74,7 +98,19 @@ const DEFAULT_PROJECTS = [
     linkLabel: 'Blossom Theme >>'
   },
   {
-    order: 6,
+    order: 8,
+    name: 'PopQuest',
+    type: 'Personal',
+    category: 'Personal Projects',
+    tags: ['Web App', 'JavaScript', 'Frontend', 'Interactive'],
+    date: '—',
+    description: 'An interactive web application built as a polished, playful public experience.',
+    downloads: '—',
+    demo: 'https://popquest.github.io/',
+    linkLabel: 'PopQuest >>'
+  },
+  {
+    order: 9,
     name: 'Life Via Lens',
     type: 'Personal',
     category: 'Personal Projects',
@@ -85,7 +121,7 @@ const DEFAULT_PROJECTS = [
     demo: null
   },
   {
-    order: 7,
+    order: 10,
     name: 'Nyxia',
     type: 'University',
     category: 'University Projects',
@@ -96,7 +132,7 @@ const DEFAULT_PROJECTS = [
     demo: null
   },
   {
-    order: 8,
+    order: 11,
     name: 'Rejuvenation Clinic',
     type: 'Client',
     category: 'Client Projects',
@@ -156,6 +192,52 @@ const DEFAULT_EDUCATION = [
     degree: 'Primary Education',
     url: null,
     detail: 'Primary Education'
+  }
+];
+
+const DEFAULT_ACHIEVEMENTS = [
+  {
+    order: 1,
+    title: "Dean's List 2026–2027 & 10% Academic Excellence Scholarship",
+    issuer: 'Universal College Lanka (UCL)',
+    associatedWith: 'University of Central Lancashire',
+    date: 'Oct 2026',
+    description: 'Recognised for outstanding academic performance during Year 2 of the BSc (Hons) Software Engineering degree programme, awarded by the University of Central Lancashire and delivered at Universal College Lanka (UCL). Named to Dean\'s List (Top 10 in class) and awarded a 10% tuition scholarship.',
+    certificateUrl: '/DeansList.jpg',
+    linkText: 'View Certificate >>'
+  },
+  {
+    order: 2,
+    title: 'UCL International Foundation Year Merit Scholarship',
+    issuer: 'Universal College Lanka (UCL)',
+    associatedWith: 'University of Central Lancashire',
+    date: 'Jan 2025',
+    description: 'Awarded a 10% merit scholarship on tuition fees in recognition of excellent academic achievement during the UCL International Foundation Year examinations in April 2024 to support progression into BSc (Hons) Software Engineering.',
+    certificateUrl: '/MeritScholarship.jpg',
+    linkText: 'View Certificate >>'
+  }
+];
+
+const DEFAULT_VOLUNTEERING = [
+  {
+    order: 1,
+    role: 'Associate Member',
+    organization: 'The Radio Society of Sri Lanka',
+    field: 'Science and Technology',
+    period: 'Oct 2026 – Present',
+    description: 'Associate Member of the Radio Society of Sri Lanka (RSSL), dedicated to promoting amateur radio, radio communications, and technical knowledge across RF technologies, HF communications, Morse code (CW), operating techniques, antenna systems, and wireless communications.',
+    url: 'https://rssl.lk',
+    linkText: 'RSSL Website >>'
+  },
+  {
+    order: 2,
+    role: 'Digital Transcription Volunteer',
+    organization: 'Smithsonian Institution',
+    field: 'Arts and Culture',
+    period: 'Feb 2023 – Present',
+    description: 'Contributing to digital transcription, historical archives preservation, and scientific records indexing to expand global public access across the Smithsonian Institution Archives.',
+    url: 'https://transcription.si.edu',
+    linkText: 'Smithsonian Transcription >>'
   }
 ];
 
@@ -496,6 +578,8 @@ export const MobilePortfolio: React.FC<MobilePortfolioProps> = ({
   const projects = data?.projects;
   const education = data?.education;
   const downloads = data?.downloads;
+  const achievements = (data as any)?.achievements;
+  const volunteering = (data as any)?.volunteering;
   const certifications = data?.certifications;
   const badges = data?.badges;
   const blogPosts = data?.blogPosts;
@@ -510,6 +594,10 @@ export const MobilePortfolio: React.FC<MobilePortfolioProps> = ({
     education && education.length > 0 ? education : DEFAULT_EDUCATION;
   const activeDownloads =
     downloads && downloads.length > 0 ? downloads : DEFAULT_DOWNLOADS;
+  const activeAchievements =
+    achievements && achievements.length > 0 ? achievements : DEFAULT_ACHIEVEMENTS;
+  const activeVolunteering =
+    volunteering && volunteering.length > 0 ? volunteering : DEFAULT_VOLUNTEERING;
   const activeBadges =
     badges && badges.length > 0 ? badges : DEFAULT_BADGES;
   const activeCertifications =
@@ -675,6 +763,9 @@ export const MobilePortfolio: React.FC<MobilePortfolioProps> = ({
             </div>
             <div className="toc-item">
               <a className="subtext" href="#badges">Badges</a>
+            </div>
+            <div className="toc-item">
+              <a className="subtext" href="#volunteering">Volunteering</a>
             </div>
             <div className="toc-item">
               <a className="subtext" href="#blog">Blog</a>
@@ -900,53 +991,49 @@ export const MobilePortfolio: React.FC<MobilePortfolioProps> = ({
           </div>
           <hr />
 
-          <h2 id="achievements">Achievements &amp; Downloads</h2>
+          <h2 id="achievements">Academic Honors &amp; Achievements</h2>
           <p>
-            Notable open-source milestones, extensions, and software releases with active community adoption.
+            Distinguished academic honors, dean's list recognitions, and merit scholarships awarded for outstanding excellence in software engineering and foundation studies.
           </p>
           <div className="portfolio-table-wrapper">
             <table className="portfolio-table">
               <thead>
                 <tr>
-                  <th scope="col" style={{ width: '30%' }}>Achievement / Release</th>
-                  <th scope="col" style={{ width: '28%' }}>Type / Description</th>
-                  <th scope="col" style={{ width: '18%' }}>Downloads</th>
-                  <th scope="col" style={{ width: '24%' }}>Platform / Link</th>
+                  <th scope="col" style={{ width: '38%' }}>Honor / Achievement</th>
+                  <th scope="col" style={{ width: '28%' }}>Issuer &amp; Affiliation</th>
+                  <th scope="col" style={{ width: '14%' }}>Date</th>
+                  <th scope="col" style={{ width: '20%' }}>Certificate</th>
                 </tr>
               </thead>
               <tbody>
-                {activeDownloads.map((d, dIdx) => (
-                  <tr key={dIdx}>
+                {activeAchievements.map((ach, achIdx) => (
+                  <tr key={achIdx}>
                     <td className="col-name">
-                      <span style={{ marginRight: '6px' }}>
-                        {d.icon || (d.name.includes('Blossom') ? '🌸' : '📦')}
-                      </span>
-                      {d.link ? (
-                        <a
-                          href={d.link}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="table-item-link"
-                        >
-                          {d.name}
-                        </a>
-                      ) : (
-                        <span>{d.name}</span>
+                      <span>{ach.title}</span>
+                      {ach.description && (
+                        <div style={{ fontSize: '12px', marginTop: '4px', opacity: 0.85, fontWeight: 'normal', lineHeight: 1.4 }}>
+                          {ach.description}
+                        </div>
                       )}
                     </td>
-                    <td className="col-desc">{d.desc}</td>
-                    <td className="col-downloads">
-                      {d.downloads}
+                    <td className="col-issuer">
+                      <div>{ach.issuer}</div>
+                      {ach.associatedWith && (
+                        <div style={{ fontSize: '12px', opacity: 0.75 }}>
+                          {ach.associatedWith}
+                        </div>
+                      )}
                     </td>
+                    <td className="col-date">{ach.date}</td>
                     <td className="col-link">
-                      {d.link ? (
+                      {ach.certificateUrl ? (
                         <a
-                          href={d.link}
+                          href={ach.certificateUrl}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="table-link"
                         >
-                          {d.linkText || 'View Release >>'}
+                          {ach.linkText || 'View Certificate >>'}
                         </a>
                       ) : (
                         <span className="table-empty">—</span>
@@ -1040,6 +1127,58 @@ export const MobilePortfolio: React.FC<MobilePortfolioProps> = ({
                 </a>
               ))}
             </div>
+          </div>
+          <hr />
+
+          <h2 id="volunteering">Volunteering &amp; Community</h2>
+          <p>
+            Contributions to technical societies, amateur radio exploration, and public historical archives transcription.
+          </p>
+          <div className="portfolio-table-wrapper">
+            <table className="portfolio-table">
+              <thead>
+                <tr>
+                  <th scope="col" style={{ width: '22%' }}>Role / Position</th>
+                  <th scope="col" style={{ width: '28%' }}>Organization &amp; Field</th>
+                  <th scope="col" style={{ width: '16%' }}>Period</th>
+                  <th scope="col" style={{ width: '34%' }}>Involvement &amp; Impact</th>
+                </tr>
+              </thead>
+              <tbody>
+                {activeVolunteering.map((v, vIdx) => (
+                  <tr key={vIdx}>
+                    <td className="col-name">{v.role}</td>
+                    <td className="col-desc">
+                      <div>
+                        {v.url ? (
+                          <a href={v.url} target="_blank" rel="noopener noreferrer" className="table-item-link">
+                            {v.organization}
+                          </a>
+                        ) : (
+                          <span>{v.organization}</span>
+                        )}
+                      </div>
+                      {v.field && (
+                        <div style={{ fontSize: '12px', opacity: 0.75 }}>
+                          {v.field}
+                        </div>
+                      )}
+                    </td>
+                    <td className="col-date">{v.period}</td>
+                    <td className="col-desc">
+                      <div>{v.description}</div>
+                      {v.url && (
+                        <div style={{ marginTop: '4px' }}>
+                          <a href={v.url} target="_blank" rel="noopener noreferrer" className="table-link" style={{ fontSize: '12px' }}>
+                            {v.linkText || 'Learn More >>'}
+                          </a>
+                        </div>
+                      )}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
           <hr />
 

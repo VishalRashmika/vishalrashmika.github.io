@@ -49,6 +49,9 @@ const keywords = [
   'Infosec',
   'KernelMeOS',
   'OlyraLabs',
+  'Office Suite Obsidian',
+  'Canvas++ Obsidian',
+  'agyq',
   'WyrdLang',
   'LangDetect.Net',
   'Sinso API',
@@ -56,6 +59,7 @@ const keywords = [
   'Assembly x86-64',
   'C++',
   'Rust',
+  'Go',
   'Python',
   'TypeScript',
   'React 19',
@@ -64,7 +68,9 @@ const keywords = [
   '.NET Core',
   'Linux Internals',
   'Penetration Testing',
-  'Oracle Cloud Infrastructure'
+  'Oracle Cloud Infrastructure',
+  'The Radio Society of Sri Lanka',
+  'Dean\'s List Software Engineering'
 ].join(', ');
 
 // Comprehensive Schema.org graph for Google Knowledge Graph, Site Names, and AI/LLM indexing
@@ -200,6 +206,18 @@ const jsonLd = {
           'name': 'Worldwide'
         }
       })),
+      'award': [
+        "Dean's List 2026–2027",
+        "10% Academic Excellence Scholarship",
+        "UCL International Foundation Year Merit Scholarship"
+      ],
+      'memberOf': [
+        {
+          '@type': 'Organization',
+          'name': 'The Radio Society of Sri Lanka',
+          'url': 'https://rssl.lk'
+        }
+      ],
       'knowsAbout': [
         'Software Engineering',
         'Systems Programming',
@@ -209,11 +227,14 @@ const jsonLd = {
         'C',
         'C++',
         'Rust',
+        'Go',
         'Python',
         'TypeScript',
         'JavaScript',
         'C#',
         '.NET Framework',
+        'Obsidian Plugin Development',
+        'CLI Architecture',
         'Linux System Administration & Internals',
         'Penetration Testing & Forensics',
         'Web Application Security',
@@ -262,16 +283,36 @@ const jsonLd = {
     },
     {
       '@type': 'ItemList',
-      '@id': `${baseUrl}/#downloads`,
-      'name': 'Developer Tools & Downloads',
-      'itemListElement': siteData.downloads.map((dl, idx) => ({
+      '@id': `${baseUrl}/#achievements`,
+      'name': 'Academic Honors & Excellence Scholarships',
+      'description': 'Academic honors, dean\'s list rankings, and merit scholarships awarded to Vishal Rashmika',
+      'itemListElement': (((siteData as any).achievements || []) as any[]).map((ach, idx) => ({
         '@type': 'ListItem',
         'position': idx + 1,
         'item': {
           '@type': 'CreativeWork',
-          'name': dl.name,
-          'description': dl.desc,
-          'url': dl.link
+          'name': ach.title,
+          'description': ach.description,
+          'publisher': {
+            '@type': 'Organization',
+            'name': ach.issuer
+          }
+        }
+      }))
+    },
+    {
+      '@type': 'ItemList',
+      '@id': `${baseUrl}/#volunteering`,
+      'name': 'Volunteering & Community Contributions',
+      'description': 'Community involvement, amateur radio research, and public archive preservation by Vishal Rashmika',
+      'itemListElement': (((siteData as any).volunteering || []) as any[]).map((vol, idx) => ({
+        '@type': 'ListItem',
+        'position': idx + 1,
+        'item': {
+          '@type': 'CreativeWork',
+          'name': `${vol.role} — ${vol.organization}`,
+          'description': vol.description,
+          ...(vol.url ? { 'url': vol.url } : {})
         }
       }))
     }
