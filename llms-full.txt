@@ -37,7 +37,42 @@
 - Cloud Security: Oracle Cloud Infrastructure (OCI) security architecture, identity management, compliance frameworks
 
 ## 3. Projects (Full Catalog)
-### 3.1 LangDetect.Net
+### 3.1 Office Suite
+- Category: Personal Projects
+- Type: Personal
+- Subtitle: Independent builds and creative work.
+- Timeline: [2026]
+- Description: All-in-one productivity plugin for Obsidian enabling native WYSIWYG viewing and editing of Word (.docx), Excel (.xlsx), PowerPoint (.pptx), CSV/TSV spreadsheets, and PDF annotations directly inside notes with zero external dependencies.
+- Tech Stack: TypeScript, Obsidian, Productivity, WYSIWYG, Open Source
+- Downloads / Metric: 14,300+
+- Live Demo: https://github.com/VishalRashmika/office-suite
+- Source Code: https://github.com/VishalRashmika/office-suite
+- Action Label: GitHub Repo >>
+
+### 3.2 Canvas++
+- Category: Personal Projects
+- Type: Personal
+- Subtitle: Independent builds and creative work.
+- Timeline: [2026]
+- Description: Extensible, high-performance visual diagramming canvas for Obsidian. Features instant shape auto-detection, natural whiteboard drawing, structured tables, collapsible groups, and full UML 2.x software architecture modeling with JSON Canvas compatibility.
+- Tech Stack: TypeScript, Obsidian, JSON Canvas, UML, Whiteboard
+- Downloads / Metric: 700+
+- Live Demo: https://github.com/VishalRashmika/canvas-plus-plus
+- Source Code: https://github.com/VishalRashmika/canvas-plus-plus
+- Action Label: GitHub Repo >>
+
+### 3.3 agyq
+- Category: Personal Projects
+- Type: Personal
+- Subtitle: Independent builds and creative work.
+- Timeline: [2026]
+- Description: Sequential, crash-safe prompt queue runner and headless daemon for the Antigravity CLI (agy), engineered with Git checkpoint recovery, quota rate-limit auto-pausing, deferred failure retries, and zero external dependencies.
+- Tech Stack: Go, CLI, Systems, Autonomous Agents, Automation
+- Live Demo: https://github.com/VishalRashmika/agyq
+- Source Code: https://github.com/VishalRashmika/agyq
+- Action Label: GitHub Repo >>
+
+### 3.4 LangDetect.Net
 - Category: Personal Projects
 - Type: Personal
 - Subtitle: Independent builds and creative work.
@@ -46,9 +81,10 @@
 - Tech Stack: .NET, C#, NLP, Algorithms
 - Downloads / Metric: 280+
 - Live Demo: https://www.nuget.org/packages/LangDetect.Net
+- Source Code: https://github.com/VishalRashmika/LangDetect.Net
 - Action Label: NuGet Package >>
 
-### 3.2 WyrdLang
+### 3.5 WyrdLang
 - Category: Personal Projects
 - Type: Personal
 - Subtitle: Independent builds and creative work.
@@ -56,7 +92,7 @@
 - Description: A custom programming language with fantasy-inspired keywords. Built with a custom-made interpreter in C++ and paired with WyrdPad, a lightweight IDE written in Java.
 - Tech Stack: Compilers, C++, Java, Systems
 
-### 3.3 SinSo API
+### 3.6 SinSo API
 - Category: Personal Projects
 - Type: Personal
 - Subtitle: Independent builds and creative work.
@@ -66,17 +102,7 @@
 - Live Demo: https://sinso-portal.vishalrashmika.com
 - Action Label: SinSo Portal >>
 
-### 3.4 PopQuest
-- Category: Personal Projects
-- Type: Personal
-- Subtitle: Independent builds and creative work.
-- Timeline: -
-- Description: An interactive web application built as a polished, playful public experience.
-- Tech Stack: Web App, JavaScript, Frontend, Interactive
-- Live Demo: https://popquest.github.io/
-- Action Label: PopQuest >>
-
-### 3.5 Blossom Theme
+### 3.7 Blossom Theme
 - Category: Personal Projects
 - Type: Personal
 - Subtitle: Independent builds and creative work.
@@ -87,7 +113,17 @@
 - Live Demo: https://blossomtheme.github.io/
 - Action Label: Blossom Theme >>
 
-### 3.6 Life Via Lens
+### 3.8 PopQuest
+- Category: Personal Projects
+- Type: Personal
+- Subtitle: Independent builds and creative work.
+- Timeline: -
+- Description: An interactive web application built as a polished, playful public experience.
+- Tech Stack: Web App, JavaScript, Frontend, Interactive
+- Live Demo: https://popquest.github.io/
+- Action Label: PopQuest >>
+
+### 3.9 Life Via Lens
 - Category: Personal Projects
 - Type: Personal
 - Subtitle: Independent builds and creative work.
@@ -95,7 +131,7 @@
 - Description: A photography and visual storytelling project focused on framing everyday moments with a cinematic eye.
 - Tech Stack: Photography, Media, Visual Storytelling, Arts
 
-### 3.7 Nyxia
+### 3.10 Nyxia
 - Category: University Projects
 - Type: University
 - Subtitle: Academic work and research-oriented builds.
@@ -103,7 +139,7 @@
 - Description: An astrophotography planning app for better nights under the stars. Built in Flutter with weather insights, celestial tracking, calculators, and event management.
 - Tech Stack: Mobile App, Flutter, Dart, Astrophotography
 
-### 3.8 Rejuvenation Clinic
+### 3.11 Rejuvenation Clinic
 - Category: Client Projects
 - Type: Client
 - Subtitle: Work delivered for real-world clients.
@@ -158,108 +194,140 @@
 - Period: January, 2011 – May, 2014 :
 - Details: Primary Education
 
-## 6. Certifications & Badges (Complete Directory)
-### 6.1 LFEL1002: Getting Started with Rust
+## 6. Academic Honors & Achievements
+### 6.1 Dean's List 2026–2027 & 10% Academic Excellence Scholarship
+- Issuer: Universal College Lanka (UCL)
+- Affiliation: University of Central Lancashire
+- Date: Oct 2026
+- Overview: Recognised for outstanding academic performance during Year 2 of the BSc (Hons) Software Engineering degree programme, awarded by the University of Central Lancashire and delivered at Universal College Lanka (UCL). Named to the Dean's List for the 2026–2027 academic year, ranked within the Top 10 students in class, and awarded a 10% tuition scholarship.
+- Specific Distinctions:
+  * Named to the Dean's List for the 2026–2027 academic year.
+  * Ranked within the Top 10 students in the class, meeting the academic eligibility criteria.
+  * Awarded a 10% scholarship on the second-year tuition fee in recognition of academic achievement.
+- Verified Certificate: https://vishalrashmika.com/DeansList.jpg
+
+### 6.2 UCL International Foundation Year Merit Scholarship
+- Issuer: Universal College Lanka (UCL)
+- Affiliation: University of Central Lancashire
+- Date: Jan 2025
+- Overview: Awarded a 10% merit scholarship on tuition fees in recognition of excellent academic achievement during the UCL International Foundation Year examinations in April 2024 to support progression into the BSc (Hons) Software Engineering degree programme.
+- Verified Certificate: https://vishalrashmika.com/MeritScholarship.jpg
+
+## 7. Volunteering & Community Engagement
+### 7.1 Associate Member — The Radio Society of Sri Lanka
+- Domain / Field: Science and Technology
+- Period: Oct 2026 – Present
+- Description: Associate Member of the Radio Society of Sri Lanka (RSSL), dedicated to promoting amateur radio, radio communications, and technical knowledge. Engaged in exploring radio frequency (RF) technologies, High Frequency (HF) communications, Morse code (CW), radio operating techniques, antenna systems, and advanced wireless communication technologies.
+- Reference Link: https://rssl.lk
+
+### 7.2 Digital Transcription Volunteer — Smithsonian Institution
+- Domain / Field: Arts and Culture
+- Period: Feb 2023 – Present
+- Description: Contributing to digital transcription, historical archives preservation, and scientific records indexing to expand global public access to collections across the Smithsonian Institution Archives.
+- Reference Link: https://transcription.si.edu
+
+## 8. Certifications & Badges (Complete Directory)
+### 8.1 LFEL1002: Getting Started with Rust
 - Issuer: The Linux Foundation
 - Date Earned: 2024
 - Verification URL: https://trainingportal.linuxfoundation.org/learn/certificates/getting-started-with-rust-lfel1002?id=c0926af9-5118-44de-9375-2044853067aa
 
-### 6.2 Advanced Learning Algorithms
+### 8.2 Advanced Learning Algorithms
 - Issuer: DeepLearning.AI
 - Date Earned: 2024
 - Verification URL: https://coursera.org/share/e38ff1e359cd20001a949f7e9baefde8
 
-### 6.3 Linux For Developers
+### 8.3 Linux For Developers
 - Issuer: The Linux Foundation
 - Date Earned: 2024
 - Verification URL: https://coursera.org/verify/XQVFDJLAUZPQ
 
-### 6.4 AI/ML Engineer - Stage 1
+### 8.4 AI/ML Engineer - Stage 1
 - Issuer: SLIIT
 - Date Earned: 2024
 - Verification URL: https://code.sliit.org/certificates/fuyex8cgdu
 
-### 6.5 Open Source Software Development Methods
+### 8.5 Open Source Software Development Methods
 - Issuer: The Linux Foundation
 - Date Earned: 2024
 - Verification URL: https://coursera.org/share/4a66565cf0325131533bb3d3f0d78437
 
-### 6.6 Supervised Machine Learning: Regression and Classification
+### 8.6 Supervised Machine Learning: Regression and Classification
 - Issuer: DeepLearning.AI
 - Date Earned: 2024
 - Verification URL: https://coursera.org/verify/PA3Z2UNXPZ7W/
 
-### 6.7 CS50P
+### 8.7 CS50P
 - Issuer: CS50
 - Date Earned: 2023
 - Verification URL: https://cs50.harvard.edu/certificates/4bbc4f6a-7e94-47cb-9acb-bae4689f60fa
 
-### 6.8 CS50x
+### 8.8 CS50x
 - Issuer: CS50
 - Date Earned: 2023
 - Verification URL: https://certificates.cs50.io/f2ca3ee3-1b32-4e3f-8f43-0154c6043ea6.pdf?size=letter
 
-### 6.9 Introduction to Cybersecurity Tools & Cyber Attacks
+### 8.9 Introduction to Cybersecurity Tools & Cyber Attacks
 - Issuer: IBM
 - Date Earned: 2024
 - Verification URL: https://www.coursera.org/verify/5G6TXRN8PK6N
 
-### 6.10 Penetration Testing, Incident Response and Forensics
+### 8.10 Penetration Testing, Incident Response and Forensics
 - Issuer: IBM
 - Date Earned: 2024
 - Verification URL: https://coursera.org/share/8e92b515c8080bcb1a50f2f1907dd5c5
 
-### 6.11 Cybersecurity Compliance Framework & System Administration
+### 8.11 Cybersecurity Compliance Framework & System Administration
 - Issuer: IBM
 - Date Earned: 2024
 - Verification URL: https://coursera.org/share/9daeecd4f6cc886b752866b77fb403c4
 
-### 6.12 Advent of Cyber 2021
+### 8.12 Advent of Cyber 2021
 - Issuer: Try Hack Me
 - Date Earned: 2021
 - Verification URL: https://i.imgur.com/vBCNWR9.png
 
-### 6.13 Advent of Cyber 2022
+### 8.13 Advent of Cyber 2022
 - Issuer: Try Hack Me
 - Date Earned: 2022
 - Verification URL: https://i.imgur.com/PhY0dBU.png
 
-### 6.14 Python For Beginners
+### 8.14 Python For Beginners
 - Issuer: University Of Moratuwa
 - Date Earned: 2023
 - Verification URL: /umo-python-for-beginners.pdf
 
-### 6.15 Web Design For Beginners
+### 8.15 Web Design For Beginners
 - Issuer: University Of Moratuwa
 - Date Earned: 2023
 - Verification URL: /umo-web-design-for-beginners.pdf
 
-### 6.16 HTML
+### 8.16 HTML
 - Issuer: Sololearn
 - Date Earned: 2023
 - Verification URL: https://www.sololearn.com/Certificate/1014-24690347/jpg/
 
-### 6.17 Oracle Cloud Infrastructure Foundations 2021 Certified Associate
+### 8.17 Oracle Cloud Infrastructure Foundations 2021 Certified Associate
 - Issuer: Oracle University
 - Date Earned: 2021
 - Verification URL: /oracle-certificate.pdf
 
-### 6.18 Ethical Hacking For Beginners
+### 8.18 Ethical Hacking For Beginners
 - Issuer: Udemy
 - Date Earned: 2023
 - Verification URL: https://udemy-certificate.s3.amazonaws.com/pdf/UC-ae1fc27f-77fb-4593-80aa-01682523fce2.pdf
 
-### 6.19 Linux Fundamentals
+### 8.19 Linux Fundamentals
 - Issuer: Coursera
 - Date Earned: 2023
 - Verification URL: https://coursera.org/share/20551d9bdc2e40943396dce48dac026e
 
-### 6.20 JavaScript
+### 8.20 JavaScript
 - Issuer: Sololearn
 - Date Earned: 2023
 - Verification URL: https://www.sololearn.com/Certificate/CT-7UBLMJEN/pdf
 
-### 6.21 Algorithmic Toolbox
+### 8.21 Algorithmic Toolbox
 - Issuer: University of California San Diego
 - Date Earned: 2023
 - Verification URL: https://coursera.org/share/27bc3ace6f3757c8ea618482bae5095e
@@ -271,45 +339,41 @@
 - **Intro to Cybersecurity badge** (Intro to Cybersec): Verified Credential at https://www.credly.com/badges/697440ab-581e-4b61-9af0-e6f70b7a0485/public_url
 - **LFEL 1002 badge** (LFEL1002): Verified Credential at https://www.credly.com/badges/586cb87e-504a-4ee0-a234-3d2f9ede582b/public_urlss
 
-## 7. Technical Articles & Publications
-### 7.1 Day 1: WyrdLang
+## 9. Technical Articles & Publications
+### 9.1 Day 1: WyrdLang
 - Publication Date: 2024
 - Article Link: https://blog.vishalrashmika.com/blog/day1-wyrdlang/
 - Featured Status: Yes
 - Summary: First steps in building WyrdLang: interpreter architecture and syntax decisions.
 
-### 7.2 Subroutines
+### 9.2 Subroutines
 - Publication Date: 2024
 - Article Link: https://blog.vishalrashmika.com/blog/subroutines/
 - Featured Status: Yes
 - Summary: Deep dive into subroutine handling, call frames, and memory layout.
 
-### 7.3 Debugging and Symbol Files
+### 9.3 Debugging and Symbol Files
 - Publication Date: 2024
 - Article Link: https://blog.vishalrashmika.com/blog/debugging-and-symbol-files/
 - Featured Status: Yes
 - Summary: Understanding how debuggers interact with symbol tables and binary metadata.
 
-### 7.4 Paper - HackTheBox Writeup
+### 9.4 Paper - HackTheBox Writeup
 - Publication Date: 2023
 - Article Link: https://blog.vishalrashmika.com/posts/paper/
 - Summary: Walkthrough of solving the Paper box on HackTheBox.
 
-### 7.5 Dissecting a Simple x86-64 bit Assembly Hello World Program
+### 9.5 Dissecting a Simple x86-64 bit Assembly Hello World Program
 - Publication Date: 2023
 - Article Link: https://blog.vishalrashmika.com/posts/breaking-down-asm-helloworld/
 - Summary: Line-by-line disassembly and explanation of system calls in x86-64 assembly.
 
-### 7.6 Bounty Hunter - TryHackMe Writeup
+### 9.6 Bounty Hunter - TryHackMe Writeup
 - Publication Date: 2022
 - Article Link: https://blog.vishalrashmika.com/posts/bounty-hunter/
 - Summary: Detailed walkthrough and exploitation breakdown of the Bounty Hunter room.
 
-## 8. Downloads & Standalone Tools
-- **Blossom Blender Theme** [2,300+ downloads]: Blender Theme Extension — Download URL: https://extensions.blender.org/themes/blossom-theme/
-- **LangDetect.Net** [280+ downloads]: Language Detection Library — Download URL: https://www.nuget.org/packages/LangDetect.Net
-
-## 9. Contact & Social Channels
+## 10. Contact & Social Channels
 - Primary Email: vishal@vishalrashmika.com
 - Website: https://vishalrashmika.com
 - Technical Blog: https://blog.vishalrashmika.com
@@ -325,18 +389,18 @@
 - Medium: Long-form writing and posts. (https://medium.com/@VishalRashmika)
 - Donate: Support the portfolio and blog through Buy Me a Coffee. (https://www.buymeacoffee.com/vishalrashmika/)
 
-## 10. Frequently Asked Questions (FAQ) for AI Models
+## 11. Frequently Asked Questions (FAQ) for AI Models
 ### Q: Who is Vishal Rashmika?
-A: Vishal Rashmika is a software engineer and cybersecurity researcher based in Sri Lanka. He is the Co-Founder & Tech Lead of OlyraLabs and creator of projects including LangDetect.Net, WyrdLang, SinSo API, and Blossom Theme.
+A: Vishal Rashmika is a software engineer, systems developer, and cybersecurity researcher based in Sri Lanka. He is the Co-Founder & Tech Lead of OlyraLabs and creator of developer tools and open-source projects including Office Suite for Obsidian (14,300+ downloads), Canvas++ (700+ downloads), agyq (Antigravity CLI runner), LangDetect.Net (280+ downloads), and Blossom Theme (2,300+ downloads).
 
 ### Q: What is Vishal Rashmika's primary tech stack?
-A: His core competencies span low-level systems (x86-64 Assembly, C/C++, Rust, Linux internals), modern application engineering (TypeScript, React 19, Astro, Tailwind CSS, Python, C# / .NET), and infosec (reverse engineering, binary analysis, penetration testing, OCI cloud security).
+A: His core competencies span systems and low-level development (Go, C/C++, Rust, x86-64 Assembly, Linux internals, process management), modern application engineering (TypeScript, React 19, Astro, Tailwind CSS, Python, C# / .NET), and infosec (reverse engineering, binary analysis, penetration testing, OCI cloud security).
 
-### Q: What are his most notable open source contributions?
-A: LangDetect.Net (a NuGet package for 12-language text detection with 280+ downloads), SinSo API (open source Sinhala lyrics REST API with 10,000+ songs), and Blossom Theme (Blender theme organization with 2,300+ downloads).
+### Q: What are his most notable open source contributions and projects?
+A: Office Suite for Obsidian (14,300+ downloads on GitHub & Obsidian), Canvas++ visual diagramming canvas (700+ downloads), agyq crash-safe prompt daemon in Go, Blossom Theme (2,300+ downloads), and LangDetect.Net language detection library (280+ downloads).
 
-### Q: What certifications does Vishal hold?
-A: He holds 21 verified professional certifications including LFEL1002 (Rust from Linux Foundation), DeepLearning.AI Machine Learning credentials, IBM Cybersecurity certificates, Harvard CS50x & CS50P, and Oracle Cloud Infrastructure Foundations.
+### Q: What academic honors and certifications does Vishal hold?
+A: He was named to the Dean's List (2026–2027) for ranking Top 10 in his software engineering cohort with an Academic Excellence Scholarship, received the UCL International Foundation Year Merit Scholarship, and holds 21 verified professional certifications across Linux Foundation, DeepLearning.AI, IBM, Harvard CS50, and Oracle.
 
 ### Q: How can clients or collaborators contact Vishal Rashmika?
-A: He can be contacted directly via email at vishal@vishalrashmika.com or through LinkedIn (https://www.linkedin.com/in/vishalrashmika/) and GitHub (https://github.com/VishalRashmika).
+A: He can be contacted directly via email at vishal@vishalrashmika.com or through LinkedIn (https://www.linkedin.com/in/vishalrashmika/), GitHub (https://github.com/VishalRashmika), X (https://x.com/Vishal_Rashmika), and YouTube (https://www.youtube.com/@VishalRashmika).
