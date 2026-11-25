@@ -541,9 +541,6 @@ export const MobilePortfolio: React.FC<MobilePortfolioProps> = ({
     document.documentElement.classList.add('mobile-mode');
     document.body.classList.add('mobile-mode');
 
-    const originalTitle = document.title;
-    document.title = 'Vishal Rashmika - Personal Portfolio';
-
     // IntersectionObserver scroll handler to highlight the active section in Table of Contents
     const scrollHandler: IntersectionObserverCallback = (entries) => {
       const intersectingEntries = entries.filter((e) => e.isIntersecting && e.target.id);

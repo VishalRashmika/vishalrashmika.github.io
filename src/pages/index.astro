@@ -12,14 +12,14 @@ const siteData = getAllSiteData();
 <html lang="en" class="mobile-mode">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="/icon.png" />
 
     <!-- Full SEO, Schema.org, and LLM Support -->
     <SEO
       siteData={siteData}
       title="Vishal Rashmika — Software Engineer & Systems Developer"
-      description={siteData.profile.bio}
+      description="Vishal Rashmika is a Software Engineer based in Sri Lanka specializing in systems programming, cybersecurity, and web development."
       canonicalUrl="https://vishalrashmika.com/"
     />
 
@@ -31,6 +31,6 @@ const siteData = getAllSiteData();
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Source+Sans+3:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet" />
   </head>
   <body class="mobile-mode">
-    <MobilePortfolio client:load data={siteData} />
+    <MobilePortfolio client:idle data={siteData} />
   </body>
 </html>

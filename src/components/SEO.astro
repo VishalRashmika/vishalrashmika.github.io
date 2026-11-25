@@ -28,8 +28,7 @@ const baseUrl = (Astro.site ? Astro.site.toString() : 'https://vishalrashmika.co
 const title = propTitle || `${siteData.profile.name} — Software Engineer & Systems Developer`;
 const description =
   propDescription ||
-  siteData.profile.bio ||
-  'Vishal Rashmika is a Software Engineer and Systems Developer based in Sri Lanka specializing in systems programming, reverse engineering, cybersecurity, and scalable web architecture.';
+  'Vishal Rashmika is a Software Engineer based in Sri Lanka specializing in systems programming, cybersecurity, and web development.';
 const canonicalUrl = propCanonical || new URL(Astro.url.pathname, baseUrl).href;
 const socialImage = propImage ? (propImage.startsWith('http') ? propImage : `${baseUrl}${propImage}`) : `${baseUrl}/homepage-logo.png`;
 const avatarImage = `${baseUrl}/me.png`;
@@ -231,14 +230,12 @@ const jsonLd = {
         '@type': 'ListItem',
         'position': idx + 1,
         'item': {
-          '@type': 'SoftwareApplication',
+          '@type': 'CreativeWork',
           'name': proj.name,
           'description': proj.description,
-          'applicationCategory': proj.category,
-          'operatingSystem': 'Cross-platform',
           'url': proj.demo || proj.github || baseUrl,
           ...(proj.github ? { 'codeRepository': proj.github } : {}),
-          ...(proj.tags && proj.tags.length > 0 ? { 'programmingLanguage': proj.tags.join(', ') } : {})
+          ...(proj.tags && proj.tags.length > 0 ? { 'keywords': proj.tags.join(', ') } : {})
         }
       }))
     },
@@ -251,13 +248,12 @@ const jsonLd = {
         '@type': 'ListItem',
         'position': idx + 1,
         'item': {
-          '@type': 'BlogPosting',
-          'headline': post.title,
+          '@type': 'CreativeWork',
+          'name': post.title,
           'url': post.href,
           'author': {
             '@id': `${baseUrl}/#person`
           },
-          ...(post.date ? { 'datePublished': post.date } : {}),
           ...(post.excerpt ? { 'description': post.excerpt } : {})
         }
       }))
