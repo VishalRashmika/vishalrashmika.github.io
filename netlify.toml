@@ -26,8 +26,18 @@
   status = 301
 
 [[redirects]]
+  from = "/x"
+  to = "https://x.com/Vishal_Rashmika"
+  status = 301
+
+[[redirects]]
   from = "/twitter"
-  to = "https://twitter.com/Vishal_Rashmika"
+  to = "https://x.com/Vishal_Rashmika"
+  status = 301
+
+[[redirects]]
+  from = "/youtube"
+  to = "https://www.youtube.com/@VishalRashmika"
   status = 301
 
 [[redirects]]

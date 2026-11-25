@@ -449,10 +449,16 @@ const DEFAULT_CONTACTS: ProfileContact[] = [
     actionLabel: 'Open profile'
   },
   {
-    label: 'Twitter',
-    detail: 'Short updates and occasional thoughts.',
-    href: 'https://twitter.com/Vishal_Rashmika',
+    label: 'X (Twitter)',
+    detail: 'Short updates, tech insights, and thoughts.',
+    href: 'https://x.com/Vishal_Rashmika',
     actionLabel: 'Open profile'
+  },
+  {
+    label: 'YouTube',
+    detail: 'Tech demonstrations, tutorials, and project showcases.',
+    href: 'https://www.youtube.com/@VishalRashmika',
+    actionLabel: 'Watch on YouTube'
   },
   {
     label: 'Behance',
