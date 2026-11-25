@@ -12,8 +12,8 @@ Vishal Rashmika is a Software Engineer and Systems Developer based in Sri Lanka,
 - **Cloud & Infrastructure:** Oracle Cloud Infrastructure (OCI), Linux Administration, Git, Netlify, Agile / Scrum Leadership
 
 ## Key Projects
-- [Office Suite](https://github.com/VishalRashmika/office-suite) [TypeScript, Obsidian, Productivity, WYSIWYG, Open Source] - 14,300+ downloads ([Live Demo](https://github.com/VishalRashmika/office-suite) | [Source Code](https://github.com/VishalRashmika/office-suite)): All-in-one productivity plugin for Obsidian enabling native WYSIWYG viewing and editing of Word (.docx), Excel (.xlsx), PowerPoint (.pptx), CSV/TSV spreadsheets, and PDF annotations directly inside notes with zero external dependencies.
-- [Canvas++](https://github.com/VishalRashmika/canvas-plus-plus) [TypeScript, Obsidian, JSON Canvas, UML, Whiteboard] - 700+ downloads ([Live Demo](https://github.com/VishalRashmika/canvas-plus-plus) | [Source Code](https://github.com/VishalRashmika/canvas-plus-plus)): Extensible, high-performance visual diagramming canvas for Obsidian. Features instant shape auto-detection, natural whiteboard drawing, structured tables, collapsible groups, and full UML 2.x software architecture modeling with JSON Canvas compatibility.
+- [Office Suite](https://github.com/VishalRashmika/office-suite) [TypeScript, Obsidian, Productivity, WYSIWYG, Open Source] - 5,500+ downloads ([Live Demo](https://github.com/VishalRashmika/office-suite) | [Source Code](https://github.com/VishalRashmika/office-suite)): All-in-one productivity plugin for Obsidian enabling native WYSIWYG viewing and editing of Word (.docx), Excel (.xlsx), PowerPoint (.pptx), CSV/TSV spreadsheets, and PDF annotations directly inside notes with zero external dependencies.
+- [Canvas++](https://github.com/VishalRashmika/canvas-plus-plus) [TypeScript, Obsidian, JSON Canvas, UML, Whiteboard] - 240+ downloads ([Live Demo](https://github.com/VishalRashmika/canvas-plus-plus) | [Source Code](https://github.com/VishalRashmika/canvas-plus-plus)): Extensible, high-performance visual diagramming canvas for Obsidian. Features instant shape auto-detection, natural whiteboard drawing, structured tables, collapsible groups, and full UML 2.x software architecture modeling with JSON Canvas compatibility.
 - [agyq](https://github.com/VishalRashmika/agyq) [Go, CLI, Systems, Autonomous Agents, Automation] ([Live Demo](https://github.com/VishalRashmika/agyq) | [Source Code](https://github.com/VishalRashmika/agyq)): Sequential, crash-safe prompt queue runner and headless daemon for the Antigravity CLI (agy), engineered with Git checkpoint recovery, quota rate-limit auto-pausing, deferred failure retries, and zero external dependencies.
 - [LangDetect.Net](https://www.nuget.org/packages/LangDetect.Net) [.NET, C#, NLP, Algorithms] - 280+ downloads ([Live Demo](https://www.nuget.org/packages/LangDetect.Net) | [Source Code](https://github.com/VishalRashmika/LangDetect.Net)): A lightweight, self-contained .NET package for text-based language detection supporting 12 languages. Uses three algorithmic strategies to improve accuracy and has 280+ NuGet downloads.
 - [WyrdLang](https://vishalrashmika.com) [Compilers, C++, Java, Systems]: A custom programming language with fantasy-inspired keywords. Built with a custom-made interpreter in C++ and paired with WyrdPad, a lightweight IDE written in Java.
@@ -43,21 +43,23 @@ Vishal Rashmika is a Software Engineer and Systems Developer based in Sri Lanka,
 - **Digital Transcription Volunteer** at **Smithsonian Institution** (Feb 2023 – Present): Contributing to digital transcription, historical archives preservation, and scientific records indexing to expand global public access to collections across the Smithsonian Institution Archives.
 
 ## Notable Certifications & Badges
-- [LFEL1002: Getting Started with Rust](https://trainingportal.linuxfoundation.org/learn/certificates/getting-started-with-rust-lfel1002?id=c0926af9-5118-44de-9375-2044853067aa) — Issued by The Linux Foundation (2024)
+- [NASA International Space Apps Challenge 2026](/NASASpaceApps-2026.jpg) — Issued by NASA Space Apps Challenge (2026)
+- [DevDash'26 Inaugural Hackathon - Certificate of Participation](/devdash2026.jpg) — Issued by DevDash (2026)
 - [Advanced Learning Algorithms](https://coursera.org/share/e38ff1e359cd20001a949f7e9baefde8) — Issued by DeepLearning.AI (2024)
+- [LFEL1002: Getting Started with Rust](https://trainingportal.linuxfoundation.org/learn/certificates/getting-started-with-rust-lfel1002?id=c0926af9-5118-44de-9375-2044853067aa) — Issued by The Linux Foundation (2024)
 - [Linux For Developers](https://coursera.org/verify/XQVFDJLAUZPQ) — Issued by The Linux Foundation (2024)
 - [AI/ML Engineer - Stage 1](https://code.sliit.org/certificates/fuyex8cgdu) — Issued by SLIIT (2024)
 - [Open Source Software Development Methods](https://coursera.org/share/4a66565cf0325131533bb3d3f0d78437) — Issued by The Linux Foundation (2024)
 - [Supervised Machine Learning: Regression and Classification](https://coursera.org/verify/PA3Z2UNXPZ7W/) — Issued by DeepLearning.AI (2024)
 - [CS50P](https://cs50.harvard.edu/certificates/4bbc4f6a-7e94-47cb-9acb-bae4689f60fa) — Issued by CS50 (2023)
 - [CS50x](https://certificates.cs50.io/f2ca3ee3-1b32-4e3f-8f43-0154c6043ea6.pdf?size=letter) — Issued by CS50 (2023)
-- [Introduction to Cybersecurity Tools & Cyber Attacks](https://www.coursera.org/verify/5G6TXRN8PK6N) — Issued by IBM (2024)
-- [Penetration Testing, Incident Response and Forensics](https://coursera.org/share/8e92b515c8080bcb1a50f2f1907dd5c5) — Issued by IBM (2024)
 - **Oracle Cloud Infrastructure badge**: [Verify Credential](https://catalog-education.oracle.com/pls/certview/sharebadge?id=CD85047A266BFDD5355A385B4EDDA1055C0A2EBA284B808E831E4F66D4882AFC)
 - **Cybersecurity Compliance badge**: [Verify Credential](https://www.credly.com/badges/6d1b5eb5-5424-449d-849e-73d93e499b21/public_url)
 - **Penetration Testing badge**: [Verify Credential](https://www.credly.com/badges/42f87a4e-910e-45b8-9f4d-da3e934152ab/public_url)
 - **Intro to Cybersecurity badge**: [Verify Credential](https://www.credly.com/badges/697440ab-581e-4b61-9af0-e6f70b7a0485/public_url)
 - **LFEL 1002 badge**: [Verify Credential](https://www.credly.com/badges/586cb87e-504a-4ee0-a234-3d2f9ede582b/public_urlss)
+- **AWS Educate Introduction to Generative AI - Training Badge**: [Verify Credential](https://www.credly.com/badges/468c4362-365f-43ce-8e56-503e3b123cb7/public_url)
+- **AI Skills Fest 2026**: [Verify Credential](https://www.credly.com/badges/f642319f-c5ae-4008-85f1-d921395e5f05/public_url)
 
 ## Technical Articles & Blog Posts
 - [Day 1: WyrdLang](https://blog.vishalrashmika.com/blog/day1-wyrdlang/) (2024): First steps in building WyrdLang: interpreter architecture and syntax decisions.
@@ -72,9 +74,12 @@ Vishal Rashmika is a Software Engineer and Systems Developer based in Sri Lanka,
 - Interactive OS Simulation: https://vishalrashmika.com/?mode=os
 - Technical Blog: https://blog.vishalrashmika.com
 - Curriculum Vitae: https://vishalrashmika.com/VishalRashmika-CV.pdf
-- PGP Armored Public Key: https://gist.githubusercontent.com/VishalRashmika/44d9469f7d65fc4c5245d13ebd0f9fea/raw/f35ee26cc859a115970701739d7d2fbdf86f97c0/public_key.asc
-- Email: [vishal@vishalrashmika.com](mailto:vishal@vishalrashmika.com)
-- Public Key: [Open the armored key or view the raw link.](https://gist.githubusercontent.com/VishalRashmika/44d9469f7d65fc4c5245d13ebd0f9fea/raw/f35ee26cc859a115970701739d7d2fbdf86f97c0/public_key.asc)
+- PGP Armored Public Key: /public_key.asc
+- Email (Primary): [vishal@vishalrashmika.com](mailto:vishal@vishalrashmika.com)
+- Email (Personal): [vishal.rashmika.perera@gmail.com](mailto:vishal.rashmika.perera@gmail.com)
+- Email (Direct): [me@vishalrashmika.com](mailto:me@vishalrashmika.com)
+- Email (Inquiries): [hi@vishalrashmika.com](mailto:hi@vishalrashmika.com)
+- Public Key: [Open the armored PGP key or download the asc file.](/public_key.asc)
 - LinkedIn: [Professional updates and work history.](https://www.linkedin.com/in/vishalrashmika/)
 - GitHub: [Code, experiments, and project work.](https://github.com/VishalRashmika)
 - Instagram: [Personal updates and visual posts.](https://www.instagram.com/j.m.v.r.p/)
