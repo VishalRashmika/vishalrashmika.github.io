@@ -3,7 +3,7 @@ name: "Vishal Rashmika"
 headline: "Software Engineer & Systems Developer | Cybersecurity Researcher"
 role: "Software Engineer & Systems Developer"
 location: "Sri Lanka"
-bio: "Vishal Rashmika is a Software Engineer and Systems Developer based in Sri Lanka, specializing in systems programming, reverse engineering, cybersecurity, and scalable web architecture. Serving as Co-Founder & Tech Lead at OlyraLabs with deep experience across low-level development, security tooling, and full-stack software."
+bio: "Vishal Rashmika is a Software Engineer and Systems Developer based in Sri Lanka specializing in systems programming, reverse engineering, cybersecurity, and developer tools. Serving as Co-Founder & Tech Lead at OlyraLabs, creator of developer tools including Office Suite for Obsidian, Canvas++, and agyq, and Year 2 Dean's List honoree at UCL / University of Central Lancashire."
 quote: "Software engineer and systems developer based in Sri Lanka, passionate about low-level programming, reverse engineering, and scalable systems."
 resumePdf: "/VishalRashmika-CV.pdf"
 resumeName: "VishalRashmika-CV.pdf"
@@ -72,4 +72,6 @@ contacts:
 
 # About Vishal Rashmika
 
-Vishal Rashmika is a Software Engineer and Systems Developer based in Sri Lanka with a strong foundation in low-level systems programming, cybersecurity, and full-stack software development. Serving as Co-Founder & Tech Lead at OlyraLabs, he specializes in building scalable system solutions, reverse engineering x86-64 binaries, and engineering modern web applications with Astro, React, and Tailwind CSS.
+Vishal Rashmika is a Software Engineer and Systems Developer based in Sri Lanka specializing in systems programming, reverse engineering, cybersecurity research, and high-performance developer tooling. Serving as Co-Founder & Tech Lead at OlyraLabs, he builds systems solutions and developer software used across the world—including Office Suite for Obsidian (5,500+ downloads), Canvas++ (240+ downloads), agyq (Antigravity CLI prompt daemon), and LangDetect.Net.
+
+Currently completing a BSc (Hons) in Software Engineering from the University of Central Lancashire at Universal College Lanka (UCL), he was named to the Year 2 Dean's List (Top 10 in class) and awarded an Academic Excellence Scholarship. An active Associate Member of The Radio Society of Sri Lanka (RSSL) and Smithsonian Institution volunteer, he is dedicated to low-level systems, reverse engineering x86-64 binaries, and building modern, reliable web applications.
