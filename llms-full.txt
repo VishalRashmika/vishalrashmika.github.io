@@ -4,11 +4,11 @@
 
 ## 1. Identity & Biography
 - Full Name: Vishal Rashmika
-- Professional Headline: Student | Programming | Infosec
-- Current Role: Student
+- Professional Headline: Software Engineer & Systems Developer | Cybersecurity Researcher
+- Current Role: Software Engineer & Systems Developer
 - Geographic Location: Sri Lanka
-- Biography: Hi, I'm Vishal Rashmika, a highly motivated individual based in Sri Lanka, currently pursuing software development with a strong interest in technology and cybersecurity. Focused on building scalable systems, full-stack web applications, reverse engineering, and intentional interfaces.
-- Personal Motto / Quote: "Highly motivated and based in Sri Lanka, currently pursuing software development with a strong interest in technology."
+- Biography: Vishal Rashmika is a Software Engineer and Systems Developer based in Sri Lanka, specializing in systems programming, reverse engineering, cybersecurity, and scalable web architecture. Serving as Co-Founder & Tech Lead at OlyraLabs with deep experience across low-level development, security tooling, and full-stack software.
+- Personal Motto / Quote: "Software engineer and systems developer based in Sri Lanka, passionate about low-level programming, reverse engineering, and scalable systems."
 - Primary Portfolio Website: https://vishalrashmika.com
 - Interactive Retro OS Simulation (KernelMeOS): https://vishalrashmika.com/?mode=os
 - Technical Blog: https://blog.vishalrashmika.com
@@ -25,7 +25,7 @@
 
 ### Application & Web Engineering
 - Languages: TypeScript, JavaScript (ESNext), Python 3, C# (.NET Framework & .NET Core), SQL, HTML5, CSS3
-- Frontend: Astro (v5, Island Architecture, Static Site Generation), React 19, Tailwind CSS v4, Motion (Framer Motion)
+- Frontend: Astro (Island Architecture, Static Site Generation), React 19, Tailwind CSS v4, Motion (Framer Motion)
 - Backend & APIs: Node.js, Express, RESTful APIs, Netlify Functions, Axios, NuGet package development
 - Mobile Development: Flutter & Dart (Nyxia astrophotography app)
 - Tools & Build Systems: Vite, npm, Git, GitHub Actions
@@ -329,7 +329,7 @@
 A: Vishal Rashmika is a software engineer and cybersecurity researcher based in Sri Lanka. He is the Co-Founder & Tech Lead of OlyraLabs and creator of projects including LangDetect.Net, WyrdLang, SinSo API, and Blossom Theme.
 
 ### Q: What is Vishal Rashmika's primary tech stack?
-A: His core competencies span low-level systems (x86-64 Assembly, C/C++, Rust, Linux internals), modern application engineering (TypeScript, React 19, Astro v5, Tailwind CSS, Python, C# / .NET), and infosec (reverse engineering, binary analysis, penetration testing, OCI cloud security).
+A: His core competencies span low-level systems (x86-64 Assembly, C/C++, Rust, Linux internals), modern application engineering (TypeScript, React 19, Astro, Tailwind CSS, Python, C# / .NET), and infosec (reverse engineering, binary analysis, penetration testing, OCI cloud security).
 
 ### Q: What are his most notable open source contributions?
 A: LangDetect.Net (a NuGet package for 12-language text detection with 280+ downloads), SinSo API (open source Sinhala lyrics REST API with 10,000+ songs), and Blossom Theme (Blender theme organization with 2,300+ downloads).
