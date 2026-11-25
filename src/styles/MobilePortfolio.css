@@ -874,6 +874,13 @@ body.mobile-mode summary {
   width: 100%;
 }
 
+.portfolio-badge-grid-row2 {
+  margin-top: 1rem;
+  grid-template-columns: repeat(2, minmax(110px, 1fr));
+  width: 40%;
+  max-width: 100%;
+}
+
 .portfolio-badge-cell {
   background-color: var(--mp-secondary-color);
   border-right: 1px solid var(--mp-table-border, #333333);
@@ -1041,6 +1048,10 @@ body.mobile-mode summary {
     font-size: 12px;
   }
   .portfolio-badge-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .portfolio-badge-grid-row2 {
+    width: 100%;
     grid-template-columns: repeat(2, 1fr);
   }
   .portfolio-badge-cell:last-child:nth-child(odd) {

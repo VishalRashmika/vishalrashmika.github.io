@@ -70,6 +70,7 @@ export interface BadgeItem {
   title: string;
   url: string;
   img: string;
+  row?: number;
 }
 
 export interface DownloadItem {

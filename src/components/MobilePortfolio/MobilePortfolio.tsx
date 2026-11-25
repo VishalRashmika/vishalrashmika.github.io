@@ -22,7 +22,7 @@ const DEFAULT_PROJECTS = [
     tags: ['TypeScript', 'Obsidian', 'Productivity', 'WYSIWYG', 'Open Source'],
     date: '2026',
     description: 'All-in-one productivity plugin for Obsidian enabling native WYSIWYG viewing and editing of Word (.docx), Excel (.xlsx), PowerPoint (.pptx), CSV/TSV spreadsheets, and PDF annotations directly inside notes with zero external dependencies.',
-    downloads: '14,300+',
+    downloads: '5,500+',
     demo: 'https://github.com/VishalRashmika/office-suite',
     linkLabel: 'GitHub Repo >>'
   },
@@ -34,7 +34,7 @@ const DEFAULT_PROJECTS = [
     tags: ['TypeScript', 'Obsidian', 'JSON Canvas', 'UML', 'Whiteboard'],
     date: '2026',
     description: 'Extensible, high-performance visual diagramming canvas for Obsidian. Features instant shape auto-detection, natural whiteboard drawing, structured tables, collapsible groups, and full UML 2.x software architecture modeling with JSON Canvas compatibility.',
-    downloads: '700+',
+    downloads: '240+',
     demo: 'https://github.com/VishalRashmika/canvas-plus-plus',
     linkLabel: 'GitHub Repo >>'
   },
@@ -296,11 +296,40 @@ const DEFAULT_BADGES = [
     name: 'LFEL1002',
     title: 'LFEL 1002 badge',
     url: 'https://www.credly.com/badges/586cb87e-504a-4ee0-a234-3d2f9ede582b/public_urlss',
-    img: '/lfel-1002.png'
+    img: '/lfel-1002.png',
+    row: 1
+  },
+  {
+    order: 6,
+    name: 'AWS GenAI',
+    title: 'AWS Educate Introduction to Generative AI - Training Badge',
+    url: 'https://www.credly.com/badges/468c4362-365f-43ce-8e56-503e3b123cb7/public_url',
+    img: '/aws-educate-introduction-to-generative-ai.png',
+    row: 2
+  },
+  {
+    order: 7,
+    name: 'AI Skills Fest',
+    title: 'AI Skills Fest 2026',
+    url: 'https://www.credly.com/badges/f642319f-c5ae-4008-85f1-d921395e5f05/public_url',
+    img: '/ai-skills-fest-2026.png',
+    row: 2
   }
 ];
 
 const DEFAULT_CERTIFICATIONS = [
+  {
+    name: 'NASA International Space Apps Challenge 2026',
+    issuer: 'NASA Space Apps Challenge',
+    date: '2026',
+    url: '/NASASpaceApps-2026.jpg'
+  },
+  {
+    name: "DevDash'26 Inaugural Hackathon - Certificate of Participation",
+    issuer: 'DevDash',
+    date: '2026',
+    url: '/devdash2026.jpg'
+  },
   {
     name: 'LFEL1002: Getting Started with Rust',
     issuer: 'The Linux Foundation',
@@ -501,15 +530,33 @@ const DEFAULT_BLOG_POSTS: BlogPostItem[] = [
 
 const DEFAULT_CONTACTS: ProfileContact[] = [
   {
-    label: 'Email',
+    label: 'Email (Primary)',
     detail: 'vishal@vishalrashmika.com',
     href: 'mailto:vishal@vishalrashmika.com',
     actionLabel: 'Send mail'
   },
   {
+    label: 'Email (Personal)',
+    detail: 'vishal.rashmika.perera@gmail.com',
+    href: 'mailto:vishal.rashmika.perera@gmail.com',
+    actionLabel: 'Send mail'
+  },
+  {
+    label: 'Email (Direct)',
+    detail: 'me@vishalrashmika.com',
+    href: 'mailto:me@vishalrashmika.com',
+    actionLabel: 'Send mail'
+  },
+  {
+    label: 'Email (Inquiries)',
+    detail: 'hi@vishalrashmika.com',
+    href: 'mailto:hi@vishalrashmika.com',
+    actionLabel: 'Send mail'
+  },
+  {
     label: 'Public Key',
-    detail: 'Open the armored key or view the raw link.',
-    href: 'https://gist.githubusercontent.com/VishalRashmika/44d9469f7d65fc4c5245d13ebd0f9fea/raw/f35ee26cc859a115970701739d7d2fbdf86f97c0/public_key.asc',
+    detail: 'Open the armored PGP key or download the asc file.',
+    href: '/public_key.asc',
     actionLabel: 'View key'
   },
   {
@@ -1106,27 +1153,56 @@ export const MobilePortfolio: React.FC<MobilePortfolioProps> = ({
           </p>
           <div className="portfolio-badge-grid-wrapper">
             <div className="portfolio-badge-grid">
-              {activeBadges.map((b, bIdx) => (
-                <a
-                  key={bIdx}
-                  href={b.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="portfolio-badge-cell"
-                  title={b.title || b.name}
-                >
-                  <div className="portfolio-badge-img-wrapper">
-                    <img src={b.img} alt={b.title || b.name} className="portfolio-badge-img" />
-                  </div>
-                  <div className="portfolio-badge-info">
-                    <span className="portfolio-badge-name">{b.name}</span>
-                    <span className="table-link" style={{ fontSize: '12px', marginTop: '4px' }}>
-                      Verify &gt;&gt;
-                    </span>
-                  </div>
-                </a>
-              ))}
+              {activeBadges
+                .filter((b) => (b as any).row === 1 || !((b as any).row) && (b.order || 0) <= 5)
+                .map((b, bIdx) => (
+                  <a
+                    key={bIdx}
+                    href={b.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="portfolio-badge-cell"
+                    title={b.title || b.name}
+                  >
+                    <div className="portfolio-badge-img-wrapper">
+                      <img src={b.img} alt={b.title || b.name} className="portfolio-badge-img" />
+                    </div>
+                    <div className="portfolio-badge-info">
+                      <span className="portfolio-badge-name">{b.name}</span>
+                      <span className="table-link" style={{ fontSize: '12px', marginTop: '4px' }}>
+                        Verify &gt;&gt;
+                      </span>
+                    </div>
+                  </a>
+                ))}
             </div>
+
+            {activeBadges.some((b) => (b as any).row === 2 || (b.order || 0) > 5) && (
+              <div className="portfolio-badge-grid portfolio-badge-grid-row2">
+                {activeBadges
+                  .filter((b) => (b as any).row === 2 || (b.order || 0) > 5)
+                  .map((b, bIdx) => (
+                    <a
+                      key={bIdx}
+                      href={b.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="portfolio-badge-cell"
+                      title={b.title || b.name}
+                    >
+                      <div className="portfolio-badge-img-wrapper">
+                        <img src={b.img} alt={b.title || b.name} className="portfolio-badge-img" />
+                      </div>
+                      <div className="portfolio-badge-info">
+                        <span className="portfolio-badge-name">{b.name}</span>
+                        <span className="table-link" style={{ fontSize: '12px', marginTop: '4px' }}>
+                          Verify &gt;&gt;
+                        </span>
+                      </div>
+                    </a>
+                  ))}
+              </div>
+            )}
           </div>
           <hr />
 

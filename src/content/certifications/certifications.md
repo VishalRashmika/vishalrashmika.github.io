@@ -1,6 +1,16 @@
 ---
 certifications:
   - order: 1
+    name: 'NASA International Space Apps Challenge 2026'
+    issuer: NASA Space Apps Challenge
+    date: '2026'
+    url: /NASASpaceApps-2026.jpg
+  - order: 2
+    name: "DevDash'26 Inaugural Hackathon - Certificate of Participation"
+    issuer: DevDash
+    date: '2026'
+    url: /devdash2026.jpg
+  - order: 3
     name: 'LFEL1002: Getting Started with Rust'
     issuer: The Linux Foundation
     date: '2024'

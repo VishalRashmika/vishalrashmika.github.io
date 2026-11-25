@@ -15,7 +15,7 @@ projects:
       - Productivity
       - WYSIWYG
       - Open Source
-    downloads: 14,300+
+    downloads: 5,500+
     linkLabel: GitHub Repo >>
   - order: 2
     name: Canvas++
@@ -32,7 +32,7 @@ projects:
       - JSON Canvas
       - UML
       - Whiteboard
-    downloads: 700+
+    downloads: 240+
     linkLabel: GitHub Repo >>
   - order: 3
     name: agyq

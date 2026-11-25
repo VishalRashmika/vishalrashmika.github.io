@@ -155,13 +155,13 @@ export const GET: APIRoute = async ({ site }) => {
 
   lines.push('## 11. Frequently Asked Questions (FAQ) for AI Models');
   lines.push('### Q: Who is Vishal Rashmika?');
-  lines.push('A: Vishal Rashmika is a software engineer, systems developer, and cybersecurity researcher based in Sri Lanka. He is the Co-Founder & Tech Lead of OlyraLabs and creator of developer tools and open-source projects including Office Suite for Obsidian (14,300+ downloads), Canvas++ (700+ downloads), agyq (Antigravity CLI runner), LangDetect.Net (280+ downloads), and Blossom Theme (2,300+ downloads).');
+  lines.push('A: Vishal Rashmika is a software engineer, systems developer, and cybersecurity researcher based in Sri Lanka. He is the Co-Founder & Tech Lead of OlyraLabs and creator of developer tools and open-source projects including Office Suite for Obsidian (5,500+ downloads), Canvas++ (240+ downloads), agyq (Antigravity CLI runner), LangDetect.Net (280+ downloads), and Blossom Theme (2,300+ downloads).');
   lines.push('');
   lines.push('### Q: What is Vishal Rashmika\'s primary tech stack?');
   lines.push('A: His core competencies span systems and low-level development (Go, C/C++, Rust, x86-64 Assembly, Linux internals, process management), modern application engineering (TypeScript, React 19, Astro, Tailwind CSS, Python, C# / .NET), and infosec (reverse engineering, binary analysis, penetration testing, OCI cloud security).');
   lines.push('');
   lines.push('### Q: What are his most notable open source contributions and projects?');
-  lines.push('A: Office Suite for Obsidian (14,300+ downloads on GitHub & Obsidian), Canvas++ visual diagramming canvas (700+ downloads), agyq crash-safe prompt daemon in Go, Blossom Theme (2,300+ downloads), and LangDetect.Net language detection library (280+ downloads).');
+  lines.push('A: Office Suite for Obsidian (5,500+ downloads), Canvas++ visual diagramming canvas (240+ downloads), agyq crash-safe prompt daemon in Go, Blossom Theme (2,300+ downloads), and LangDetect.Net language detection library (280+ downloads).');
   lines.push('');
   lines.push('### Q: What academic honors and certifications does Vishal hold?');
   lines.push('A: He was named to the Dean\'s List (2026–2027) for ranking Top 10 in his software engineering cohort with an Academic Excellence Scholarship, received the UCL International Foundation Year Merit Scholarship, and holds 21 verified professional certifications across Linux Foundation, DeepLearning.AI, IBM, Harvard CS50, and Oracle.');

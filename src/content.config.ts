@@ -99,6 +99,7 @@ const badgeItemSchema = z.object({
   title: z.string(),
   url: z.string(),
   img: z.string(),
+  row: z.number().optional(),
 });
 
 const badges = defineCollection({
