@@ -622,7 +622,7 @@ export const MobilePortfolio: React.FC<MobilePortfolioProps> = ({
       <header className="pos-absolute" style={{ backgroundColor: 'transparent' }}>
         <a href="#about" aria-label="Vishal Rashmika Portfolio Home">
           <div className="logo">
-            <img src="/homepage-logo.png" alt="logo" />
+            <img src="/homepage-logo.png" alt="Vishal Rashmika - Software Engineer Logo" />
           </div>
         </a>
       </header>
@@ -632,16 +632,16 @@ export const MobilePortfolio: React.FC<MobilePortfolioProps> = ({
           <h1 className="heading-text" style={{ fontSize: '50px', borderLeft: 'none', paddingLeft: 0 }}>
             {profile?.name || 'Vishal Rashmika'}
           </h1>
-          <h3 className="title-text" style={{ borderLeft: 'none', paddingLeft: 0 }}>
-            {profile?.headline || 'Student | Programming | Infosec'}
-          </h3>
+          <p className="title-text" style={{ borderLeft: 'none', paddingLeft: 0, margin: '8px 0 0 0', fontSize: '20px' }}>
+            {profile?.headline || 'Software Engineer & Systems Developer | Cybersecurity Researcher'}
+          </p>
         </section>
 
         <img
           className="hero-image"
           style={{ width: '35%', height: '100%' }}
           src="/me.png"
-          alt={profile?.name || 'Vishal Rashmika'}
+          alt={`${profile?.name || 'Vishal Rashmika'} - Software Engineer and Systems Developer`}
         />
 
         <div className="explore-more text" onClick={handleExploreMore}>
@@ -688,9 +688,9 @@ export const MobilePortfolio: React.FC<MobilePortfolioProps> = ({
         <div className="content text">
           <div id="features" className="heading-text"></div>
 
-          <h1 id="about">About</h1>
+          <h2 id="about">About Vishal Rashmika</h2>
           <p>
-            {profile?.bio || `Hi, I'm Vishal Rashmika, a highly motivated individual based in Sri Lanka, currently pursuing software development with a strong interest in technology and cybersecurity. Focused on building scalable systems, full-stack web applications, reverse engineering, and intentional interfaces.`}
+            {profile?.bio || `Vishal Rashmika is a Software Engineer and Systems Developer based in Sri Lanka, specializing in systems programming, reverse engineering, cybersecurity, and scalable web architecture.`}
           </p>
           <blockquote>
             <p>
@@ -701,16 +701,16 @@ export const MobilePortfolio: React.FC<MobilePortfolioProps> = ({
           </blockquote>
           <hr />
 
-          <h1 id="experience">Experience</h1>
+          <h2 id="experience">Experience &amp; Leadership</h2>
           <p>
-            Professional background, leadership, and engineering roles delivering real-world products and scalable systems.
+            Professional background, engineering leadership, and systems architecture roles delivering real-world products and scalable software solutions.
           </p>
           <div className="experience-list">
             {activeExperiences.map((exp, idx) => (
               <article key={idx} className="experience-card">
                 <div className="experience-card-header">
                   <div className="experience-title-company">
-                    <h2 className="experience-title">{exp.title || exp.role}</h2>
+                    <h3 className="experience-title">{exp.title || exp.role}</h3>
                     <div className="experience-company">{exp.company}</div>
                   </div>
                   <div className="experience-period">{exp.period}</div>
@@ -740,7 +740,7 @@ export const MobilePortfolio: React.FC<MobilePortfolioProps> = ({
           </div>
           <hr />
 
-          <h1 id="projects">Projects</h1>
+          <h2 id="projects">Featured Software Projects</h2>
           <p>
             Innovative solutions crafted with passion. Explore selected projects across personal builds, university research, and client solutions.
           </p>
@@ -819,7 +819,7 @@ export const MobilePortfolio: React.FC<MobilePortfolioProps> = ({
           </div>
           <hr />
 
-          <h1 id="education">Education</h1>
+          <h2 id="education">Education &amp; Qualifications</h2>
           <p>
             Academic background, formal qualifications, and professional technology training.
           </p>
@@ -897,7 +897,7 @@ export const MobilePortfolio: React.FC<MobilePortfolioProps> = ({
           </div>
           <hr />
 
-          <h1 id="achievements">Achievements &amp; Downloads</h1>
+          <h2 id="achievements">Achievements &amp; Downloads</h2>
           <p>
             Notable open-source milestones, extensions, and software releases with active community adoption.
           </p>
@@ -956,7 +956,7 @@ export const MobilePortfolio: React.FC<MobilePortfolioProps> = ({
           </div>
           <hr />
 
-          <h1 id="certifications">Certifications</h1>
+          <h2 id="certifications">Certifications &amp; Credentials</h2>
           <p>
             Verified technical credentials and professional certifications earned across software engineering, systems, cybersecurity, and machine learning.
           </p>
@@ -1010,7 +1010,7 @@ export const MobilePortfolio: React.FC<MobilePortfolioProps> = ({
           </div>
           <hr />
 
-          <h1 id="badges">Badges</h1>
+          <h2 id="badges">Verified Technical Badges</h2>
           <p>
             Digital verifiable credentials earned across cybersecurity, cloud infrastructure, and systems administration.
           </p>
@@ -1040,7 +1040,7 @@ export const MobilePortfolio: React.FC<MobilePortfolioProps> = ({
           </div>
           <hr />
 
-          <h1 id="blog">Blog</h1>
+          <h2 id="blog">Technical Blog &amp; Writeups</h2>
           <p>
             Technical articles, reverse engineering notes, low-level architecture breakdowns, and security writeups.
           </p>
@@ -1096,7 +1096,7 @@ export const MobilePortfolio: React.FC<MobilePortfolioProps> = ({
           </p>
           <hr />
 
-          <h1 id="contact-me">Contact Me</h1>
+          <h2 id="contact-me">Contact Vishal Rashmika</h2>
           <p>
             Get in touch for collaborations, inquiries, or security disclosures across verified communication channels.
           </p>
@@ -1144,7 +1144,7 @@ export const MobilePortfolio: React.FC<MobilePortfolioProps> = ({
           </div>
           <hr />
 
-          <h1 id="donate">Donate</h1>
+          <h2 id="donate">Support &amp; Open Source Sponsorship</h2>
           <p>
             Support ongoing engineering research, open-source utilities, and technical writeups.
           </p>

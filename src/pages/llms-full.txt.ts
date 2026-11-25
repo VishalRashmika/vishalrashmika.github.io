@@ -34,7 +34,7 @@ export const GET: APIRoute = async ({ site }) => {
     '',
     '### Application & Web Engineering',
     '- Languages: TypeScript, JavaScript (ESNext), Python 3, C# (.NET Framework & .NET Core), SQL, HTML5, CSS3',
-    '- Frontend: Astro (v5, Island Architecture, Static Site Generation), React 19, Tailwind CSS v4, Motion (Framer Motion)',
+    '- Frontend: Astro (Island Architecture, Static Site Generation), React 19, Tailwind CSS v4, Motion (Framer Motion)',
     '- Backend & APIs: Node.js, Express, RESTful APIs, Netlify Functions, Axios, NuGet package development',
     '- Mobile Development: Flutter & Dart (Nyxia astrophotography app)',
     '- Tools & Build Systems: Vite, npm, Git, GitHub Actions',
@@ -141,7 +141,7 @@ export const GET: APIRoute = async ({ site }) => {
   lines.push('A: Vishal Rashmika is a software engineer and cybersecurity researcher based in Sri Lanka. He is the Co-Founder & Tech Lead of OlyraLabs and creator of projects including LangDetect.Net, WyrdLang, SinSo API, and Blossom Theme.');
   lines.push('');
   lines.push('### Q: What is Vishal Rashmika\'s primary tech stack?');
-  lines.push('A: His core competencies span low-level systems (x86-64 Assembly, C/C++, Rust, Linux internals), modern application engineering (TypeScript, React 19, Astro v5, Tailwind CSS, Python, C# / .NET), and infosec (reverse engineering, binary analysis, penetration testing, OCI cloud security).');
+  lines.push('A: His core competencies span low-level systems (x86-64 Assembly, C/C++, Rust, Linux internals), modern application engineering (TypeScript, React 19, Astro, Tailwind CSS, Python, C# / .NET), and infosec (reverse engineering, binary analysis, penetration testing, OCI cloud security).');
   lines.push('');
   lines.push('### Q: What are his most notable open source contributions?');
   lines.push('A: LangDetect.Net (a NuGet package for 12-language text detection with 280+ downloads), SinSo API (open source Sinhala lyrics REST API with 10,000+ songs), and Blossom Theme (Blender theme organization with 2,300+ downloads).');

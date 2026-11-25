@@ -25,30 +25,35 @@ const googleVerification = propGoogleVerification || import.meta.env.PUBLIC_GOOG
 const bingVerification = propBingVerification || import.meta.env.PUBLIC_BING_SITE_VERIFICATION;
 
 const baseUrl = (Astro.site ? Astro.site.toString() : 'https://vishalrashmika.com').replace(/\/$/, '');
-const title = propTitle || `${siteData.profile.name} | Software Engineer & Systems Developer Portfolio`;
+const title = propTitle || `${siteData.profile.name} — Software Engineer & Systems Developer`;
 const description =
   propDescription ||
   siteData.profile.bio ||
-  'Software engineer and cybersecurity researcher based in Sri Lanka. Scalable systems, reverse engineering, web applications, low-level programming, and developer tools.';
+  'Vishal Rashmika is a Software Engineer and Systems Developer based in Sri Lanka specializing in systems programming, reverse engineering, cybersecurity, and scalable web architecture.';
 const canonicalUrl = propCanonical || new URL(Astro.url.pathname, baseUrl).href;
 const socialImage = propImage ? (propImage.startsWith('http') ? propImage : `${baseUrl}${propImage}`) : `${baseUrl}/homepage-logo.png`;
 const avatarImage = `${baseUrl}/me.png`;
 const keywords = [
   'Vishal Rashmika',
+  'Vishal Rashmika Developer',
+  'Vishal Rashmika Software Engineer',
+  'Vishal Rashmika Sri Lanka',
+  'Vishal Rashmika Portfolio',
+  'KernelMe',
+  'J.M. Vishal Rashmika Perera',
+  'Vishal Rashmika Perera',
+  'Systems Developer Sri Lanka',
   'Software Engineer',
   'Systems Developer',
   'Cybersecurity Researcher',
   'Reverse Engineering',
   'Infosec',
-  'KernelMe',
   'KernelMeOS',
   'OlyraLabs',
   'WyrdLang',
   'LangDetect.Net',
   'Sinso API',
   'Blossom Theme',
-  'Developer Portfolio',
-  'Sri Lanka Software Engineer',
   'Assembly x86-64',
   'C++',
   'Rust',
@@ -63,7 +68,7 @@ const keywords = [
   'Oracle Cloud Infrastructure'
 ].join(', ');
 
-// Comprehensive Schema.org graph for Google Knowledge Graph and AI/LLM indexing
+// Comprehensive Schema.org graph for Google Knowledge Graph, Site Names, and AI/LLM indexing
 const jsonLd = {
   '@context': 'https://schema.org',
   '@graph': [
@@ -71,8 +76,9 @@ const jsonLd = {
       '@type': 'WebSite',
       '@id': `${baseUrl}/#website`,
       'url': `${baseUrl}/`,
-      'name': 'Vishal Rashmika Portfolio',
-      'headline': siteData.profile.headline,
+      'name': 'Vishal Rashmika',
+      'alternateName': ['vishalrashmika.com', 'Vishal Rashmika Portfolio', 'Vishal Rashmika Official'],
+      'headline': `${siteData.profile.name} — Software Engineer & Systems Developer`,
       'description': description,
       'publisher': {
         '@id': `${baseUrl}/#person`
@@ -83,12 +89,33 @@ const jsonLd = {
       'inLanguage': 'en-US'
     },
     {
+      '@type': 'BreadcrumbList',
+      '@id': `${baseUrl}/#breadcrumb`,
+      'itemListElement': [
+        {
+          '@type': 'ListItem',
+          'position': 1,
+          'name': 'Home',
+          'item': `${baseUrl}/`
+        },
+        {
+          '@type': 'ListItem',
+          'position': 2,
+          'name': siteData.profile.name,
+          'item': `${baseUrl}/`
+        }
+      ]
+    },
+    {
       '@type': 'ProfilePage',
       '@id': `${baseUrl}/#profilepage`,
       'url': canonicalUrl,
       'name': title,
       'isPartOf': {
         '@id': `${baseUrl}/#website`
+      },
+      'breadcrumb': {
+        '@id': `${baseUrl}/#breadcrumb`
       },
       'about': {
         '@id': `${baseUrl}/#person`
@@ -103,12 +130,32 @@ const jsonLd = {
       '@type': 'Person',
       '@id': `${baseUrl}/#person`,
       'name': siteData.profile.name,
-      'alternateName': ['KernelMe', 'Vishal', 'j.m.v.r.p', 'Vishal Rashmika'],
-      'jobTitle': siteData.profile.role || 'Software Engineer',
+      'givenName': 'Vishal',
+      'familyName': 'Rashmika',
+      'additionalName': 'Perera',
+      'alternateName': [
+        'J.M. Vishal Rashmika Perera',
+        'Vishal Rashmika Perera',
+        'KernelMe',
+        'vishalrashmika',
+        'Vishal'
+      ],
+      'jobTitle': 'Software Engineer & Systems Developer',
+      'hasOccupation': {
+        '@type': 'Occupation',
+        'name': 'Software Engineer & Systems Developer',
+        'occupationalCategory': '15-1252.00',
+        'skills': 'Systems Programming, Reverse Engineering, Cybersecurity, Full-Stack Web Development, C++, Rust, Python, TypeScript, React, Astro'
+      },
       'url': baseUrl,
-      'image': avatarImage,
+      'mainEntityOfPage': baseUrl,
+      'image': {
+        '@type': 'ImageObject',
+        'url': avatarImage,
+        'caption': siteData.profile.name
+      },
       'email': 'mailto:vishal@vishalrashmika.com',
-      'description': siteData.profile.bio,
+      'description': description,
       'worksFor': {
         '@type': 'Organization',
         'name': 'OlyraLabs',
@@ -179,7 +226,7 @@ const jsonLd = {
       '@type': 'ItemList',
       '@id': `${baseUrl}/#projects`,
       'name': 'Featured Software Engineering Projects',
-      'description': 'Selected projects and software systems built by Vishal Rashmika',
+      'description': 'Selected software systems and tools developed by Vishal Rashmika',
       'itemListElement': siteData.projects.map((proj, idx) => ({
         '@type': 'ListItem',
         'position': idx + 1,
@@ -199,7 +246,7 @@ const jsonLd = {
       '@type': 'ItemList',
       '@id': `${baseUrl}/#blog`,
       'name': 'Technical Articles & Publications',
-      'description': 'Engineering notes, reverse engineering tutorials, and systems writeups',
+      'description': 'Engineering notes, reverse engineering tutorials, and systems writeups by Vishal Rashmika',
       'itemListElement': siteData.blogPosts.map((post, idx) => ({
         '@type': 'ListItem',
         'position': idx + 1,
@@ -274,14 +321,14 @@ const jsonLd = {
 
 <!-- Open Graph / Facebook / LinkedIn -->
 <meta property="og:type" content="profile" />
-<meta property="og:site_name" content={`${siteData.profile.name} Portfolio`} />
+<meta property="og:site_name" content="Vishal Rashmika" />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 <meta property="og:url" content={canonicalUrl} />
 <meta property="og:image" content={socialImage} />
 <meta property="og:image:secure_url" content={socialImage} />
 <meta property="og:image:type" content="image/png" />
-<meta property="og:image:alt" content={`${siteData.profile.name} - Software Engineer Portfolio`} />
+<meta property="og:image:alt" content="Vishal Rashmika — Software Engineer & Systems Developer" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta property="og:locale" content="en_US" />
@@ -296,15 +343,15 @@ const jsonLd = {
 <meta name="twitter:title" content={title} />
 <meta name="twitter:description" content={description} />
 <meta name="twitter:image" content={socialImage} />
-<meta name="twitter:image:alt" content={`${siteData.profile.name} Software Engineer Portfolio`} />
+<meta name="twitter:image:alt" content="Vishal Rashmika — Software Engineer & Systems Developer" />
 
 <!-- Mobile & Device Styling -->
 <meta name="theme-color" content="#0a0a0c" />
 <meta name="color-scheme" content="dark light" />
-<meta name="application-name" content="Vishal Rashmika Portfolio" />
+<meta name="application-name" content="Vishal Rashmika" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-<meta name="apple-mobile-web-app-title" content={siteData.profile.name} />
+<meta name="apple-mobile-web-app-title" content="Vishal Rashmika" />
 <meta name="format-detection" content="telephone=no" />
 
 <!-- Structured Data (Schema.org JSON-LD Graph) -->

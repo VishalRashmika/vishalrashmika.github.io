@@ -116,6 +116,7 @@ body.mobile-mode summary {
 }
 
 .mobile-portfolio-container h1,
+.mobile-portfolio-container h2,
 .mobile-portfolio-container .title-text {
   font-family: var(--mp-header-font-family);
   font-size: 25px;
@@ -127,7 +128,7 @@ body.mobile-mode summary {
   margin-bottom: 1rem;
 }
 
-.mobile-portfolio-container h2,
+.mobile-portfolio-container h3,
 .mobile-portfolio-container .subtitle-text {
   font-family: var(--mp-header-font-family);
   font-size: 20px;

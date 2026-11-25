@@ -17,7 +17,7 @@ export const GET: APIRoute = async ({ site }) => {
     '## Core Competencies',
     '- **Languages:** C, C++, x86-64 Assembly, Rust, Python, TypeScript, JavaScript, C# / .NET, SQL, HTML/CSS',
     '- **Systems & Security:** Reverse Engineering, Penetration Testing, Linux System Internals, Binary Disassembly, Debugging & Symbol Analysis, Network Protocols, OCI Security',
-    '- **Web & Frameworks:** Astro (v5 SSG / Islands), React 19, Tailwind CSS v4, Node.js, Express, Vite, RESTful APIs',
+    '- **Web & Frameworks:** Astro (SSG / Islands), React 19, Tailwind CSS v4, Node.js, Express, Vite, RESTful APIs',
     '- **Cloud & Infrastructure:** Oracle Cloud Infrastructure (OCI), Linux Administration, Git, Netlify, Agile / Scrum Leadership',
     '',
     '## Key Projects',

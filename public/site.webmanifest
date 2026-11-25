@@ -1,7 +1,7 @@
 {
-  "name": "Vishal Rashmika | Software Engineer & Systems Developer Portfolio",
-  "short_name": "Vishal Portfolio",
-  "description": "Software engineer and cybersecurity researcher portfolio of Vishal Rashmika showcasing systems engineering, reverse engineering writeups, and developer tools.",
+  "name": "Vishal Rashmika — Software Engineer & Systems Developer",
+  "short_name": "Vishal Rashmika",
+  "description": "Official portfolio of Vishal Rashmika, Software Engineer and Systems Developer based in Sri Lanka specializing in systems programming, reverse engineering, and scalable web applications.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",

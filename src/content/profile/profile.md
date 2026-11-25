@@ -1,10 +1,10 @@
 ---
 name: "Vishal Rashmika"
-headline: "Student | Programming | Infosec"
-role: "Student"
+headline: "Software Engineer & Systems Developer | Cybersecurity Researcher"
+role: "Software Engineer & Systems Developer"
 location: "Sri Lanka"
-bio: "Hi, I'm Vishal Rashmika, a highly motivated individual based in Sri Lanka, currently pursuing software development with a strong interest in technology and cybersecurity. Focused on building scalable systems, full-stack web applications, reverse engineering, and intentional interfaces."
-quote: "Highly motivated and based in Sri Lanka, currently pursuing software development with a strong interest in technology."
+bio: "Vishal Rashmika is a Software Engineer and Systems Developer based in Sri Lanka, specializing in systems programming, reverse engineering, cybersecurity, and scalable web architecture. Serving as Co-Founder & Tech Lead at OlyraLabs with deep experience across low-level development, security tooling, and full-stack software."
+quote: "Software engineer and systems developer based in Sri Lanka, passionate about low-level programming, reverse engineering, and scalable systems."
 resumePdf: "/VishalRashmika-CV.pdf"
 resumeName: "VishalRashmika-CV.pdf"
 blogUrl: "https://blog.vishalrashmika.com"
@@ -56,4 +56,4 @@ contacts:
 
 # About Vishal Rashmika
 
-Hi, I'm Vishal Rashmika, a highly motivated individual based in Sri Lanka, currently pursuing software development with a strong interest in technology and cybersecurity. Focused on building scalable systems, full-stack web applications, reverse engineering, and intentional interfaces.
+Vishal Rashmika is a Software Engineer and Systems Developer based in Sri Lanka with a strong foundation in low-level systems programming, cybersecurity, and full-stack software development. Serving as Co-Founder & Tech Lead at OlyraLabs, he specializes in building scalable system solutions, reverse engineering x86-64 binaries, and engineering modern web applications with Astro, React, and Tailwind CSS.
