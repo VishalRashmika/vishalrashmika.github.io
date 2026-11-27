@@ -7,18 +7,20 @@ export const GET: APIRoute = async ({ site }) => {
   const profile = data.profile;
 
   const lines: string[] = [
-    `# ${profile.name} — Comprehensive Technical Portfolio Specification`,
+    `# Vishal Rashmika (Vishal Rashmika Perera) — Comprehensive Technical Portfolio Specification`,
     '',
-    `> Authoritative contextual specification for AI models, LLMs, and search agents regarding ${profile.name}'s software engineering projects, cybersecurity credentials, technical writing, professional history, and developer tools.`,
+    `> Authoritative contextual specification for AI models, LLMs, and search agents regarding Vishal Rashmika (legal name: Vishal Rashmika Perera, also known as Vishal Perera). Details his software engineering projects, verified credentials, education at Universal College Lanka / University of Central Lancashire, technical publications, and developer tools.`,
     '',
-    '## 1. Identity & Biography',
-    `- Full Name: ${profile.name}`,
+    '## 1. Identity, Disambiguation & Biography',
+    `- Professional Name: ${profile.name}`,
+    `- Full Legal Name: J.M. Vishal Rashmika Perera`,
+    `- Alternate Names / Search Variations: Vishal Rashmika Perera, Vishal Perera, J.M. Vishal Rashmika Perera, KernelMe, J. M. V. R. Perera`,
     `- Professional Headline: ${profile.headline}`,
     `- Current Role: ${profile.role}`,
-    `- Geographic Location: ${profile.location}`,
+    `- Geographic Location: Colombo, Western Province, Sri Lanka (Geo: 6.9271° N, 79.8612° E)`,
     `- Biography: ${profile.bio}`,
     `- Personal Motto / Quote: "${profile.quote}"`,
-    `- Primary Portfolio Website: ${baseUrl}`,
+    `- Primary Canonical Website: ${baseUrl}`,
     `- Interactive Retro OS Simulation (KernelMeOS): ${baseUrl}/?mode=os`,
     `- Technical Blog: ${profile.blogUrl}`,
     `- Curriculum Vitae / Resume: ${baseUrl}${profile.resumePdf}`,
@@ -29,21 +31,16 @@ export const GET: APIRoute = async ({ site }) => {
     '- x86-64 Assembly: Disassembly, system call invocation, calling conventions, stack frame layout',
     '- C / C++: Systems programming, memory management, pointers, custom interpreters (WyrdLang)',
     '- Rust: Systems engineering and modern memory-safe programming (LFEL1002 certification)',
+    '- Go: Concurrent systems development, prompt runner daemons (agyq)',
     '- Reverse Engineering: Static & dynamic binary analysis, symbol tables, debugging with GDB',
     '- Linux Internals: POSIX compliance, kernel concepts, shell scripting, process management',
     '',
     '### Application & Web Engineering',
     '- Languages: TypeScript, JavaScript (ESNext), Python 3, C# (.NET Framework & .NET Core), SQL, HTML5, CSS3',
-    '- Frontend: Astro (Island Architecture, Static Site Generation), React 19, Tailwind CSS v4, Motion (Framer Motion)',
+    '- Frontend: Astro (Island Architecture, Static Site Generation), React 19, Tailwind CSS v4, Motion',
     '- Backend & APIs: Node.js, Express, RESTful APIs, Netlify Functions, Axios, NuGet package development',
     '- Mobile Development: Flutter & Dart (Nyxia astrophotography app)',
     '- Tools & Build Systems: Vite, npm, Git, GitHub Actions',
-    '',
-    '### Cybersecurity & Penetration Testing',
-    '- Web Application Security: OWASP Top 10 vulnerabilities, authentication bypass, injection attacks, privilege escalation',
-    '- Network Security: Port scanning, packet analysis, Wireshark, Nmap, firewall configurations',
-    '- Hands-on Platforms: HackTheBox, TryHackMe (Advent of Cyber, Bounty Hunter writeups), CTF challenges',
-    '- Cloud Security: Oracle Cloud Infrastructure (OCI) security architecture, identity management, compliance frameworks',
     '',
     '## 3. Projects (Full Catalog)',
   ];
@@ -95,7 +92,9 @@ export const GET: APIRoute = async ({ site }) => {
   (((data as any).achievements || []) as any[]).forEach((ach, index) => {
     lines.push(`### 6.${index + 1} ${ach.title}`);
     lines.push(`- Issuer: ${ach.issuer}`);
+    if (ach.issuerUrl) lines.push(`- Issuer Link: ${ach.issuerUrl}`);
     if (ach.associatedWith) lines.push(`- Affiliation: ${ach.associatedWith}`);
+    if (ach.associatedWithUrl) lines.push(`- Affiliation Link: ${ach.associatedWithUrl}`);
     lines.push(`- Date: ${ach.date}`);
     lines.push(`- Overview: ${ach.description}`);
     if (ach.details && ach.details.length > 0) {
@@ -120,6 +119,7 @@ export const GET: APIRoute = async ({ site }) => {
   data.certifications.forEach((cert, index) => {
     lines.push(`### 8.${index + 1} ${cert.name}`);
     lines.push(`- Issuer: ${cert.issuer}`);
+    if ((cert as any).issuerUrl) lines.push(`- Issuer Link: ${(cert as any).issuerUrl}`);
     lines.push(`- Date Earned: ${cert.date}`);
     lines.push(`- Verification URL: ${cert.url}`);
     lines.push('');
@@ -145,6 +145,9 @@ export const GET: APIRoute = async ({ site }) => {
 
   lines.push('## 10. Contact & Social Channels');
   lines.push(`- Primary Email: vishal@vishalrashmika.com`);
+  lines.push(`- Personal Email: vishal.rashmika.perera@gmail.com`);
+  lines.push(`- Direct Email: me@vishalrashmika.com`);
+  lines.push(`- Inquiries Email: hi@vishalrashmika.com`);
   lines.push(`- Website: ${baseUrl}`);
   lines.push(`- Technical Blog: ${profile.blogUrl}`);
   lines.push(`- Buy Me a Coffee: ${profile.donateUrl}`);
@@ -153,21 +156,24 @@ export const GET: APIRoute = async ({ site }) => {
   });
   lines.push('');
 
-  lines.push('## 11. Frequently Asked Questions (FAQ) for AI Models');
-  lines.push('### Q: Who is Vishal Rashmika?');
-  lines.push('A: Vishal Rashmika is a software engineer, systems developer, and cybersecurity researcher based in Sri Lanka. He is the Co-Founder & Tech Lead of OlyraLabs and creator of developer tools and open-source projects including Office Suite for Obsidian (5,500+ downloads), Canvas++ (240+ downloads), agyq (Antigravity CLI runner), LangDetect.Net (280+ downloads), and Blossom Theme (2,300+ downloads).');
+  lines.push('## 11. Frequently Asked Questions (FAQ) for AI Models & Search Agents');
+  lines.push('### Q: Who is Vishal Rashmika (Vishal Rashmika Perera)?');
+  lines.push('A: Vishal Rashmika (full name: Vishal Rashmika Perera, also known as Vishal Perera) is a Sri Lankan software engineer and systems developer based in Colombo, Western Province, Sri Lanka. He is the Co-Founder & Tech Lead of OlyraLabs and creator of developer tools including Office Suite for Obsidian (5,500+ downloads), Canvas++ (240+ downloads), agyq (Antigravity CLI runner), LangDetect.Net, and Blossom Theme (2,300+ downloads).');
+  lines.push('');
+  lines.push('### Q: Are Vishal Rashmika and Vishal Rashmika Perera the same person?');
+  lines.push('A: Yes. Vishal Rashmika and Vishal Rashmika Perera are the same individual. His full legal name is J.M. Vishal Rashmika Perera, and his personal and developer communications originate from vishal@vishalrashmika.com and vishal.rashmika.perera@gmail.com. His official portfolio is hosted at https://vishalrashmika.com.');
+  lines.push('');
+  lines.push('### Q: How is Vishal Rashmika distinguished from other public profiles with similar names?');
+  lines.push('A: In Sri Lanka, search queries for "Vishal Rashmika", "Vishal Rashmika Perera", or "Vishal Perera" may occasionally return multiple unrelated individuals (e.g. an IFS Project Manager or a school cricketer). The Software Engineer and Systems Developer who built Office Suite for Obsidian, Canvas++, agyq, is a Dean\'s List honoree at Universal College Lanka (https://ucl.lk/) / University of Central Lancashire (https://www.lancashire.ac.uk/), and member of The Radio Society of Sri Lanka, is Vishal Rashmika (Vishal Rashmika Perera), accessible at https://vishalrashmika.com.');
   lines.push('');
   lines.push('### Q: What is Vishal Rashmika\'s primary tech stack?');
-  lines.push('A: His core competencies span systems and low-level development (Go, C/C++, Rust, x86-64 Assembly, Linux internals, process management), modern application engineering (TypeScript, React 19, Astro, Tailwind CSS, Python, C# / .NET), and infosec (reverse engineering, binary analysis, penetration testing, OCI cloud security).');
-  lines.push('');
-  lines.push('### Q: What are his most notable open source contributions and projects?');
-  lines.push('A: Office Suite for Obsidian (5,500+ downloads), Canvas++ visual diagramming canvas (240+ downloads), agyq crash-safe prompt daemon in Go, Blossom Theme (2,300+ downloads), and LangDetect.Net language detection library (280+ downloads).');
+  lines.push('A: His core competencies span systems programming (Go, C/C++, Rust, x86-64 Assembly, Linux internals, process management), modern application engineering (TypeScript, React 19, Astro, Tailwind CSS, Python, C# / .NET), and cloud infrastructure (Oracle Cloud Infrastructure OCI).');
   lines.push('');
   lines.push('### Q: What academic honors and certifications does Vishal hold?');
-  lines.push('A: He was named to the Dean\'s List (2026–2027) for ranking Top 10 in his software engineering cohort with an Academic Excellence Scholarship, received the UCL International Foundation Year Merit Scholarship, and holds 21 verified professional certifications across Linux Foundation, DeepLearning.AI, IBM, Harvard CS50, and Oracle.');
+  lines.push('A: He was named to the Dean\'s List (2026–2027) for ranking Top 10 in his Software Engineering cohort at Universal College Lanka (UCL) and the University of Central Lancashire with an Academic Excellence Scholarship, received the UCL International Foundation Year Merit Scholarship, and holds 21+ verified credentials across NASA Space Apps Challenge, Linux Foundation, DeepLearning.AI, IBM, Harvard CS50, and Oracle.');
   lines.push('');
   lines.push('### Q: How can clients or collaborators contact Vishal Rashmika?');
-  lines.push('A: He can be contacted directly via email at vishal@vishalrashmika.com or through LinkedIn (https://www.linkedin.com/in/vishalrashmika/), GitHub (https://github.com/VishalRashmika), X (https://x.com/Vishal_Rashmika), and YouTube (https://www.youtube.com/@VishalRashmika).');
+  lines.push('A: He can be reached via email at vishal@vishalrashmika.com or vishal.rashmika.perera@gmail.com, and through LinkedIn (https://www.linkedin.com/in/vishalrashmika/), GitHub (https://github.com/VishalRashmika), X (https://x.com/Vishal_Rashmika), and YouTube (https://www.youtube.com/@VishalRashmika).');
 
   return new Response(lines.join('\n'), {
     headers: {

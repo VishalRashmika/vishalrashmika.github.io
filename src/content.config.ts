@@ -78,6 +78,7 @@ const certificationItemSchema = z.object({
   order: z.number().optional(),
   name: z.string(),
   issuer: z.string(),
+  issuerUrl: z.string().optional(),
   date: z.string(),
   url: z.string(),
 });
@@ -118,7 +119,9 @@ const achievementItemSchema = z.object({
   order: z.number().optional(),
   title: z.string(),
   issuer: z.string(),
+  issuerUrl: z.string().optional(),
   associatedWith: z.string().optional(),
+  associatedWithUrl: z.string().optional(),
   date: z.string(),
   description: z.string(),
   details: z.array(z.string()).optional(),
@@ -185,6 +188,8 @@ const profile = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/profile' }),
   schema: z.object({
     name: z.string(),
+    legalName: z.string().optional(),
+    alternateNames: z.array(z.string()).optional(),
     headline: z.string(),
     role: z.string(),
     location: z.string(),

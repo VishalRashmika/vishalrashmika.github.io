@@ -25,30 +25,35 @@ const googleVerification = propGoogleVerification || import.meta.env.PUBLIC_GOOG
 const bingVerification = propBingVerification || import.meta.env.PUBLIC_BING_SITE_VERIFICATION;
 
 const baseUrl = (Astro.site ? Astro.site.toString() : 'https://vishalrashmika.com').replace(/\/$/, '');
-const title = propTitle || `${siteData.profile.name} — Software Engineer & Systems Developer`;
+const title = propTitle || `${siteData.profile.name} (Vishal Rashmika Perera) — Software Engineer & Systems Developer`;
 const description =
   propDescription ||
-  'Vishal Rashmika is a Software Engineer based in Sri Lanka specializing in systems programming, cybersecurity, and web development.';
+  'Official website of Vishal Rashmika (Vishal Rashmika Perera), a Sri Lanka-based Software Engineer and Systems Developer specializing in systems and web engineering.';
 const canonicalUrl = propCanonical || new URL(Astro.url.pathname, baseUrl).href;
 const socialImage = propImage ? (propImage.startsWith('http') ? propImage : `${baseUrl}${propImage}`) : `${baseUrl}/homepage-logo.png`;
 const avatarImage = `${baseUrl}/me.png`;
+
 const keywords = [
   'Vishal Rashmika',
+  'Vishal Rashmika Perera',
+  'Vishal Perera',
+  'J.M. Vishal Rashmika Perera',
+  'Vishal Rashmika Sri Lanka',
+  'Vishal Perera Sri Lanka',
   'Vishal Rashmika Developer',
   'Vishal Rashmika Software Engineer',
-  'Vishal Rashmika Sri Lanka',
+  'Vishal Perera Software Engineer',
+  'Vishal Rashmika Colombo',
+  'Universal College Lanka UCL',
+  'University of Central Lancashire',
   'Vishal Rashmika Portfolio',
   'Vishal Rashmika GitHub',
   'Vishal Rashmika LinkedIn',
   'Vishal Rashmika OlyraLabs',
   'KernelMe',
-  'J.M. Vishal Rashmika Perera',
-  'Vishal Rashmika Perera',
   'Systems Developer Sri Lanka',
   'Software Engineer Sri Lanka',
-  'Cybersecurity Researcher',
   'Reverse Engineering x86-64',
-  'Infosec Researcher',
   'KernelMeOS',
   'OlyraLabs',
   'Office Suite Obsidian',
@@ -65,7 +70,6 @@ const keywords = [
   'AWS Educate Generative AI',
   'AI Skills Fest 2026',
   'Dean\'s List Software Engineering',
-  'University of Central Lancashire UCL',
   'Assembly x86-64',
   'C++',
   'Rust',
@@ -77,11 +81,10 @@ const keywords = [
   'Tailwind CSS',
   '.NET Core',
   'Linux Internals',
-  'Penetration Testing',
   'Oracle Cloud Infrastructure'
 ].join(', ');
 
-// Comprehensive Schema.org graph for Google Knowledge Graph, Site Names, and AI/LLM indexing
+// Comprehensive Schema.org graph for Google Knowledge Graph, Site Names, Geo-Entity, and AI/LLM indexing
 const jsonLd = {
   '@context': 'https://schema.org',
   '@graph': [
@@ -90,8 +93,14 @@ const jsonLd = {
       '@id': `${baseUrl}/#website`,
       'url': `${baseUrl}/`,
       'name': 'Vishal Rashmika',
-      'alternateName': ['vishalrashmika.com', 'Vishal Rashmika Portfolio', 'Vishal Rashmika Official'],
-      'headline': `${siteData.profile.name} — Software Engineer & Systems Developer`,
+      'alternateName': [
+        'Vishal Rashmika Perera',
+        'Vishal Perera',
+        'vishalrashmika.com',
+        'Vishal Rashmika Portfolio',
+        'Vishal Rashmika Official'
+      ],
+      'headline': `${siteData.profile.name} (Vishal Rashmika Perera) — Software Engineer & Systems Developer`,
       'description': description,
       'publisher': {
         '@id': `${baseUrl}/#person`
@@ -143,29 +152,31 @@ const jsonLd = {
       '@type': 'Person',
       '@id': `${baseUrl}/#person`,
       'name': siteData.profile.name,
+      'legalName': 'J.M. Vishal Rashmika Perera',
       'givenName': 'Vishal',
-      'familyName': 'Rashmika',
-      'additionalName': 'Perera',
+      'additionalName': 'Rashmika',
+      'familyName': 'Perera',
       'alternateName': [
-        'J.M. Vishal Rashmika Perera',
         'Vishal Rashmika Perera',
-        'KernelMe',
-        'vishalrashmika',
-        'Vishal'
+        'Vishal Perera',
+        'J.M. Vishal Rashmika Perera',
+        'J. M. V. R. Perera',
+        'Vishal Rashmika',
+        'KernelMe'
       ],
       'jobTitle': 'Software Engineer & Systems Developer',
       'hasOccupation': {
         '@type': 'Occupation',
         'name': 'Software Engineer & Systems Developer',
         'occupationalCategory': '15-1252.00',
-        'skills': 'Systems Programming, Reverse Engineering, Cybersecurity, Full-Stack Web Development, C++, Rust, Python, TypeScript, React, Astro'
+        'skills': 'Systems Programming, Reverse Engineering, Developer Tools, Full-Stack Web Development, C++, Rust, Go, Python, TypeScript, React, Astro'
       },
       'url': baseUrl,
       'mainEntityOfPage': baseUrl,
       'image': {
         '@type': 'ImageObject',
         'url': avatarImage,
-        'caption': siteData.profile.name
+        'caption': `${siteData.profile.name} (Vishal Rashmika Perera)`
       },
       'email': 'mailto:vishal@vishalrashmika.com',
       'description': description,
@@ -188,25 +199,55 @@ const jsonLd = {
       ],
       'address': {
         '@type': 'PostalAddress',
+        'addressLocality': 'Colombo',
+        'addressRegion': 'Western Province',
         'addressCountry': 'LK'
+      },
+      'homeLocation': {
+        '@type': 'Place',
+        'name': 'Colombo, Western Province, Sri Lanka',
+        'geo': {
+          '@type': 'GeoCoordinates',
+          'latitude': 6.9271,
+          'longitude': 79.8612
+        }
+      },
+      'workLocation': {
+        '@type': 'Place',
+        'name': 'Colombo, Western Province, Sri Lanka'
       },
       'nationality': {
         '@type': 'Country',
         'name': 'Sri Lanka'
       },
       'knowsLanguage': ['en', 'si'],
-      'alumniOf': siteData.education.map((edu) => ({
-        '@type': 'EducationalOrganization',
-        'name': edu.institution,
-        ...(edu.institutionUrl ? { 'url': edu.institutionUrl } : {})
-      })),
+      'alumniOf': [
+        {
+          '@type': 'EducationalOrganization',
+          'name': 'University of Central Lancashire',
+          'url': 'https://www.lancashire.ac.uk/'
+        },
+        {
+          '@type': 'EducationalOrganization',
+          'name': 'Universal College Lanka',
+          'url': 'https://ucl.lk/'
+        },
+        ...siteData.education
+          .filter((edu) => !edu.institution.includes('Lancashire') && !edu.institution.includes('Universal College'))
+          .map((edu) => ({
+            '@type': 'EducationalOrganization',
+            'name': edu.institution,
+            ...(edu.institutionUrl ? { 'url': edu.institutionUrl } : {})
+          }))
+      ],
       'hasCredential': siteData.certifications.map((cert) => ({
         '@type': 'EducationalOccupationalCredential',
         'name': cert.name,
         'credentialCategory': 'Professional Certification',
         'recognizedBy': {
           '@type': 'Organization',
-          'name': cert.issuer
+          'name': cert.issuer,
+          ...((cert as any).issuerUrl ? { 'url': (cert as any).issuerUrl } : {})
         },
         'url': cert.url,
         'validIn': {
@@ -215,7 +256,7 @@ const jsonLd = {
         }
       })),
       'award': [
-        "Dean's List 2026–2027",
+        "Dean's List 2026–2027 (Universal College Lanka / University of Central Lancashire)",
         "10% Academic Excellence Scholarship",
         "UCL International Foundation Year Merit Scholarship",
         "NASA International Space Apps Challenge 2026 Participant",
@@ -236,7 +277,6 @@ const jsonLd = {
       'knowsAbout': [
         'Software Engineering',
         'Systems Programming',
-        'Cybersecurity',
         'Reverse Engineering',
         'x86-64 Assembly Disassembly',
         'C',
@@ -251,7 +291,6 @@ const jsonLd = {
         'Obsidian Plugin Development',
         'CLI Architecture',
         'Linux System Administration & Internals',
-        'Penetration Testing & Forensics',
         'Web Application Security',
         'Astro Framework',
         'React',
@@ -268,7 +307,7 @@ const jsonLd = {
       '@type': 'ItemList',
       '@id': `${baseUrl}/#projects`,
       'name': 'Featured Software Engineering Projects',
-      'description': 'Selected software systems and tools developed by Vishal Rashmika',
+      'description': 'Selected software systems and tools developed by Vishal Rashmika (Vishal Rashmika Perera)',
       'itemListElement': siteData.projects.map((proj, idx) => ({
         '@type': 'ListItem',
         'position': idx + 1,
@@ -305,7 +344,7 @@ const jsonLd = {
       '@type': 'ItemList',
       '@id': `${baseUrl}/#achievements`,
       'name': 'Academic Honors & Excellence Scholarships',
-      'description': 'Academic honors, dean\'s list rankings, and merit scholarships awarded to Vishal Rashmika',
+      'description': 'Academic honors, dean\'s list rankings, and merit scholarships awarded to Vishal Rashmika (Universal College Lanka / University of Central Lancashire)',
       'itemListElement': (((siteData as any).achievements || []) as any[]).map((ach, idx) => ({
         '@type': 'ListItem',
         'position': idx + 1,
@@ -315,7 +354,8 @@ const jsonLd = {
           'description': ach.description,
           'publisher': {
             '@type': 'Organization',
-            'name': ach.issuer
+            'name': ach.issuer,
+            ...(ach.issuerUrl ? { 'url': ach.issuerUrl } : {})
           }
         }
       }))
@@ -345,9 +385,9 @@ const jsonLd = {
 <meta name="title" content={title} />
 <meta name="description" content={description} />
 <meta name="keywords" content={keywords} />
-<meta name="author" content={siteData.profile.name} />
-<meta name="creator" content={siteData.profile.name} />
-<meta name="publisher" content={siteData.profile.name} />
+<meta name="author" content="Vishal Rashmika (Vishal Rashmika Perera)" />
+<meta name="creator" content="Vishal Rashmika" />
+<meta name="publisher" content="Vishal Rashmika" />
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
@@ -355,6 +395,12 @@ const jsonLd = {
 <!-- Search Engine Verification -->
 {googleVerification && <meta name="google-site-verification" content={googleVerification} />}
 {bingVerification && <meta name="msvalidate.01" content={bingVerification} />}
+
+<!-- Geographic & Local Signals (Full Sri Lanka & Western Province Geo-Targeting) -->
+<meta name="geo.region" content="LK-1" />
+<meta name="geo.placename" content="Colombo, Western Province, Sri Lanka" />
+<meta name="geo.position" content="6.9271;79.8612" />
+<meta name="ICBM" content="6.9271, 79.8612" />
 
 <!-- Canonical & Language Alternates -->
 <link rel="canonical" href={canonicalUrl} />
@@ -387,13 +433,16 @@ const jsonLd = {
 <meta property="og:image" content={socialImage} />
 <meta property="og:image:secure_url" content={socialImage} />
 <meta property="og:image:type" content="image/png" />
-<meta property="og:image:alt" content="Vishal Rashmika — Software Engineer & Systems Developer" />
+<meta property="og:image:alt" content="Vishal Rashmika (Vishal Rashmika Perera) — Software Engineer & Systems Developer" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta property="og:locale" content="en_US" />
 <meta property="profile:first_name" content="Vishal" />
-<meta property="profile:last_name" content="Rashmika" />
+<meta property="profile:last_name" content="Perera" />
 <meta property="profile:username" content="VishalRashmika" />
+<meta property="og:locality" content="Colombo" />
+<meta property="og:region" content="Western Province" />
+<meta property="og:country-name" content="Sri Lanka" />
 
 <!-- Twitter / X Cards -->
 <meta name="twitter:card" content="summary_large_image" />
@@ -402,7 +451,7 @@ const jsonLd = {
 <meta name="twitter:title" content={title} />
 <meta name="twitter:description" content={description} />
 <meta name="twitter:image" content={socialImage} />
-<meta name="twitter:image:alt" content="Vishal Rashmika — Software Engineer & Systems Developer" />
+<meta name="twitter:image:alt" content="Vishal Rashmika (Vishal Rashmika Perera) — Software Engineer & Systems Developer" />
 
 <!-- Mobile & Device Styling -->
 <meta name="theme-color" content="#0a0a0c" />

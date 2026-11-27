@@ -7,22 +7,25 @@ export const GET: APIRoute = async ({ site }) => {
   const llmUrl = `${baseUrl}/llms.txt`;
   const llmFullUrl = `${baseUrl}/llms-full.txt`;
 
-  const robots = `# Robots.txt for Vishal Rashmika Portfolio
+  const robots = `# Robots.txt for Vishal Rashmika (Vishal Rashmika Perera) Portfolio
 # Website: ${baseUrl}
 # Full crawling and indexing permitted for all search engines and AI / LLM agents
 
 User-agent: *
 Allow: /
+Disallow: /*?mode=*
 
 # Search Engine Crawlers
 User-agent: Googlebot
 Allow: /
+Disallow: /*?mode=*
 
 User-agent: Googlebot-Image
 Allow: /
 
 User-agent: Bingbot
 Allow: /
+Disallow: /*?mode=*
 
 User-agent: Slurp
 Allow: /
@@ -34,12 +37,6 @@ User-agent: Baiduspider
 Allow: /
 
 User-agent: YandexBot
-Allow: /
-
-User-agent: Sogou
-Allow: /
-
-User-agent: Exabot
 Allow: /
 
 # Leading AI & LLM Search Crawlers / Model Training Agents
@@ -95,9 +92,6 @@ User-agent: FacebookBot
 Allow: /
 
 User-agent: Amazonbot
-Allow: /
-
-User-agent: Scrapy
 Allow: /
 
 # XML Sitemaps

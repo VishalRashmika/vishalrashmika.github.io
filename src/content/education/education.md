@@ -3,14 +3,14 @@ education:
   - order: 1
     period: 'October, 2024 – 2028 :'
     institution: University of Central Lancashire
-    institutionUrl: https://www.uclan.ac.uk
+    institutionUrl: https://www.lancashire.ac.uk/
     degree: BSc (Hons) Software Engineering
-    url: https://www.uclan.ac.uk/undergraduate/courses/software-engineering-bsc
+    url: https://www.lancashire.ac.uk/
     detail: BSc (Hons) Software Engineering
   - order: 2
     period: 'July, 2023 – July, 2024 :'
     institution: Universal College Lanka
-    institutionUrl: https://ucl.lk
+    institutionUrl: https://ucl.lk/
     degree: UCL International Foundation Year (UIFY)
     url: https://ucl.lk/programs/ucl-international-foundation-year/
     detail: UCL International Foundation Year

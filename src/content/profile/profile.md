@@ -1,9 +1,15 @@
 ---
 name: "Vishal Rashmika"
-headline: "Software Engineer & Systems Developer | Cybersecurity Researcher"
+legalName: "J.M. Vishal Rashmika Perera"
+alternateNames:
+  - "Vishal Rashmika Perera"
+  - "Vishal Perera"
+  - "J.M. Vishal Rashmika Perera"
+  - "KernelMe"
+headline: "Software Engineer & Systems Developer"
 role: "Software Engineer & Systems Developer"
-location: "Sri Lanka"
-bio: "Vishal Rashmika is a Software Engineer and Systems Developer based in Sri Lanka specializing in systems programming, reverse engineering, cybersecurity, and developer tools. Serving as Co-Founder & Tech Lead at OlyraLabs, creator of developer tools including Office Suite for Obsidian, Canvas++, and agyq, and Year 2 Dean's List honoree at UCL / University of Central Lancashire."
+location: "Colombo, Western Province, Sri Lanka"
+bio: "Vishal Rashmika (full name: Vishal Rashmika Perera, also known as Vishal Perera) is a Software Engineer and Systems Developer based in Colombo, Western Province, Sri Lanka. Specializing in systems programming, reverse engineering, and developer tooling, he serves as Co-Founder & Tech Lead at OlyraLabs, creator of developer tools including Office Suite for Obsidian (5,500+ downloads), Canvas++ (240+ downloads), and agyq, and Year 2 Dean's List honoree at Universal College Lanka (UCL) and the University of Central Lancashire."
 quote: "Software engineer and systems developer based in Sri Lanka, passionate about low-level programming, reverse engineering, and scalable systems."
 resumePdf: "/VishalRashmika-CV.pdf"
 resumeName: "VishalRashmika-CV.pdf"
@@ -70,8 +76,8 @@ contacts:
     actionLabel: "Donate"
 ---
 
-# About Vishal Rashmika
+# About Vishal Rashmika (Vishal Rashmika Perera)
 
-Vishal Rashmika is a Software Engineer and Systems Developer based in Sri Lanka specializing in systems programming, reverse engineering, cybersecurity research, and high-performance developer tooling. Serving as Co-Founder & Tech Lead at OlyraLabs, he builds systems solutions and developer software used across the world—including Office Suite for Obsidian (5,500+ downloads), Canvas++ (240+ downloads), agyq (Antigravity CLI prompt daemon), and LangDetect.Net.
+Vishal Rashmika (legal name: **Vishal Rashmika Perera**, also known as **Vishal Perera**) is a Software Engineer and Systems Developer based in Colombo, Western Province, Sri Lanka. Specializing in systems programming, reverse engineering, and high-performance developer tooling, he serves as Co-Founder & Tech Lead at OlyraLabs. He builds software systems used globally, including [Office Suite for Obsidian](https://github.com/VishalRashmika/office-suite) (5,500+ downloads), [Canvas++](https://github.com/VishalRashmika/canvas-plus-plus) (240+ downloads), [agyq](https://github.com/VishalRashmika/agyq) (Antigravity CLI prompt daemon in Go), and [LangDetect.Net](https://www.nuget.org/packages/LangDetect.Net).
 
-Currently completing a BSc (Hons) in Software Engineering from the University of Central Lancashire at Universal College Lanka (UCL), he was named to the Year 2 Dean's List (Top 10 in class) and awarded an Academic Excellence Scholarship. An active Associate Member of The Radio Society of Sri Lanka (RSSL) and Smithsonian Institution volunteer, he is dedicated to low-level systems, reverse engineering x86-64 binaries, and building modern, reliable web applications.
+Currently pursuing a BSc (Hons) in Software Engineering from the [University of Central Lancashire](https://www.lancashire.ac.uk/) delivered at [Universal College Lanka (UCL)](https://ucl.lk/), he was named to the Year 2 Dean's List (Top 10 in class) and awarded an Academic Excellence Scholarship. An active Associate Member of [The Radio Society of Sri Lanka (RSSL)](https://rssl.lk) and digital transcription volunteer at the [Smithsonian Institution](https://transcription.si.edu), he is dedicated to low-level systems, disassembling x86-64 binaries, and building robust, elegant software.

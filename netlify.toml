@@ -5,19 +5,47 @@
 [build.environment]
   NODE_VERSION = "22"
 
+# PDF and static asset headers
+[[headers]]
+  for = "/*.pdf"
+  [headers.values]
+    Content-Type = "application/pdf"
+    Cache-Control = "public, max-age=604800"
+
 # Caching headers for Astro immutable assets
 [[headers]]
   for = "/_astro/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
-# Recommended security headers
+# Recommended security and SEO headers
 [[headers]]
   for = "/*"
   [headers.values]
     X-Frame-Options = "DENY"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
+
+# GSC 404 Resolution Redirects
+[[redirects]]
+  from = "/blossomtheme"
+  to = "https://blossomtheme.github.io/"
+  status = 301
+
+[[redirects]]
+  from = "/blossomtheme/*"
+  to = "https://blossomtheme.github.io/"
+  status = 301
+
+[[redirects]]
+  from = "/cv"
+  to = "/VishalRashmika-CV.pdf"
+  status = 301
+
+[[redirects]]
+  from = "/resume"
+  to = "/VishalRashmika-CV.pdf"
+  status = 301
 
 # Legacy vanity and social redirects
 [[redirects]]

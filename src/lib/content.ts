@@ -60,6 +60,7 @@ export interface CertificationItem {
   order: number;
   name: string;
   issuer: string;
+  issuerUrl?: string;
   date: string;
   url: string;
 }
@@ -88,7 +89,9 @@ export interface AchievementItem {
   order: number;
   title: string;
   issuer: string;
+  issuerUrl?: string;
   associatedWith?: string;
+  associatedWithUrl?: string;
   date: string;
   description: string;
   details?: string[];
@@ -155,6 +158,8 @@ export interface DonationItem {
 
 export interface ProfileData {
   name: string;
+  legalName?: string;
+  alternateNames?: string[];
   headline: string;
   role: string;
   location: string;

@@ -10,18 +10,11 @@ export default defineConfig({
     react(),
     sitemap({
       changefreq: 'weekly',
-      priority: 0.8,
+      priority: 1.0,
       lastmod: new Date(),
-      customPages: [
-        'https://vishalrashmika.com/llms.txt',
-        'https://vishalrashmika.com/llms-full.txt',
-      ],
       serialize(item) {
         if (item.url === 'https://vishalrashmika.com/' || item.url === 'https://vishalrashmika.com') {
           item.priority = 1.0;
-          item.changefreq = 'weekly';
-        } else if (item.url.includes('llms')) {
-          item.priority = 0.9;
           item.changefreq = 'weekly';
         }
         item.lastmod = new Date();

@@ -7,18 +7,25 @@ export const GET: APIRoute = async ({ site }) => {
   const profile = data.profile;
 
   const lines: string[] = [
-    `# ${profile.name}`,
+    `# Vishal Rashmika (Vishal Rashmika Perera)`,
     '',
-    `> ${profile.headline} based in ${profile.location}. Software engineer, systems developer, and cybersecurity researcher specializing in systems programming, reverse engineering, web applications, and scalable architecture.`,
+    `> ${profile.headline} based in ${profile.location}. Also known as Vishal Rashmika Perera and Vishal Perera. Software engineer and systems developer specializing in systems programming, reverse engineering, web applications, developer tooling, and scalable architecture.`,
     '',
     '## Overview',
-    profile.bio || `${profile.name} is a software developer and cybersecurity enthusiast based in Sri Lanka, focusing on systems programming, scalable applications, reverse engineering, and intentional user interfaces.`,
+    profile.bio || `Vishal Rashmika (full name: Vishal Rashmika Perera, also known as Vishal Perera) is a Sri Lankan software engineer and systems developer based in Colombo, Western Province, Sri Lanka, focusing on systems programming, scalable applications, reverse engineering, and intentional user interfaces.`,
+    '',
+    '## Name & Entity Disambiguation',
+    '- **Primary Professional Name:** Vishal Rashmika',
+    '- **Full Legal Name:** J.M. Vishal Rashmika Perera',
+    '- **Alternate Names / Known As:** Vishal Rashmika Perera, Vishal Perera, KernelMe, J. M. V. R. Perera',
+    '- **Official Canonical Website:** https://vishalrashmika.com',
+    '- **Location:** Colombo, Western Province, Sri Lanka',
     '',
     '## Core Competencies',
-    '- **Languages:** C, C++, x86-64 Assembly, Rust, Python, TypeScript, JavaScript, C# / .NET, SQL, HTML/CSS',
-    '- **Systems & Security:** Reverse Engineering, Penetration Testing, Linux System Internals, Binary Disassembly, Debugging & Symbol Analysis, Network Protocols, OCI Security',
-    '- **Web & Frameworks:** Astro (SSG / Islands), React 19, Tailwind CSS v4, Node.js, Express, Vite, RESTful APIs',
-    '- **Cloud & Infrastructure:** Oracle Cloud Infrastructure (OCI), Linux Administration, Git, Netlify, Agile / Scrum Leadership',
+    '- **Languages:** C, C++, x86-64 Assembly, Rust, Go, Python, TypeScript, JavaScript, C# / .NET, SQL, HTML/CSS',
+    '- **Systems & Engineering:** Reverse Engineering, Binary Disassembly, Debugging & Symbol Analysis, Linux Internals, CLI Architecture, Network Protocols',
+    '- **Web & Frameworks:** Astro (SSG / Islands Architecture), React 19, Tailwind CSS v4, Node.js, Express, Vite, RESTful APIs',
+    '- **Cloud & Infrastructure:** Oracle Cloud Infrastructure (OCI), Linux Administration, Git, Netlify',
     '',
     '## Key Projects',
     ...data.projects.map((p) => {
@@ -39,26 +46,30 @@ export const GET: APIRoute = async ({ site }) => {
       return `- **${role}** at **${exp.company}** (${exp.period}): ${desc}${skills}`;
     }),
     '',
-    '## Education',
+    '## Education & Academic Affiliations',
     ...data.education.map((edu) => {
       const detail = edu.detail ? ` - ${edu.detail}` : '';
-      return `- **${edu.degree}** — ${edu.institution} (${edu.period})${detail}`;
+      const link = edu.institutionUrl ? ` ([${edu.institution}](${edu.institutionUrl}))` : ` (${edu.institution})`;
+      return `- **${edu.degree}** — ${link} [${edu.period}]${detail}`;
     }),
     '',
     '## Academic Honors & Achievements',
     ...((data as any).achievements || []).map((ach: any) => {
-      const affil = ach.associatedWith ? ` (${ach.associatedWith})` : '';
-      return `- **${ach.title}** — Awarded by ${ach.issuer}${affil} [${ach.date}]: ${ach.description}`;
+      const affil = ach.associatedWith ? ` [${ach.associatedWith}${ach.associatedWithUrl ? `: ${ach.associatedWithUrl}` : ''}]` : '';
+      const issuer = ach.issuerUrl ? `[${ach.issuer}](${ach.issuerUrl})` : ach.issuer;
+      return `- **${ach.title}** — Awarded by ${issuer}${affil} (${ach.date}): ${ach.description}`;
     }),
     '',
     '## Community & Volunteering',
     ...((data as any).volunteering || []).map((vol: any) => {
-      return `- **${vol.role}** at **${vol.organization}** (${vol.period}): ${vol.description}`;
+      const org = vol.url ? `[${vol.organization}](${vol.url})` : vol.organization;
+      return `- **${vol.role}** at **${org}** (${vol.period}): ${vol.description}`;
     }),
     '',
     '## Notable Certifications & Badges',
     ...data.certifications.slice(0, 10).map((cert) => {
-      return `- [${cert.name}](${cert.url}) — Issued by ${cert.issuer} (${cert.date})`;
+      const issuer = (cert as any).issuerUrl ? `[${cert.issuer}](${(cert as any).issuerUrl})` : cert.issuer;
+      return `- [${cert.name}](${cert.url}) — Issued by ${issuer} (${cert.date})`;
     }),
     ...data.badges.map((b) => {
       return `- **${b.title}**: [Verify Credential](${b.url})`;
@@ -71,17 +82,13 @@ export const GET: APIRoute = async ({ site }) => {
     }),
     '',
     '## Verified Online Profiles & Contact',
-    `- Portfolio Website: ${baseUrl}`,
+    `- Canonical Portfolio Website: ${baseUrl}`,
     `- Interactive OS Simulation: ${baseUrl}/?mode=os`,
     `- Technical Blog: ${profile.blogUrl}`,
     `- Curriculum Vitae: ${baseUrl}${profile.resumePdf}`,
     `- PGP Armored Public Key: ${profile.publicKeyUrl}`,
     ...profile.contacts.map((c) => `- ${c.label}: [${c.detail}](${c.href})`),
     '',
-    '## Extended Context & Full Specifications',
-    `- [Full Portfolio Deep Dive](${baseUrl}/llms-full.txt): Complete technical specification with all 21 certifications, in-depth project descriptions, architecture details, and AI FAQ.`,
-    `- [XML Sitemap Index](${baseUrl}/sitemap-index.xml): Full sitemap for search crawlers.`,
-    `- [Robots Policy](${baseUrl}/robots.txt): Crawler and agent permission directives.`,
   ];
 
   return new Response(lines.join('\n'), {
