@@ -1,15 +1,22 @@
-# Vishal Rashmika
+# Vishal Rashmika (Vishal Rashmika Perera)
 
-> Software Engineer & Systems Developer | Cybersecurity Researcher based in Sri Lanka. Software engineer, systems developer, and cybersecurity researcher specializing in systems programming, reverse engineering, web applications, and scalable architecture.
+> Software Engineer & Systems Developer based in Colombo, Western Province, Sri Lanka. Also known as Vishal Rashmika Perera and Vishal Perera. Software engineer and systems developer specializing in systems programming, reverse engineering, web applications, developer tooling, and scalable architecture.
 
 ## Overview
-Vishal Rashmika is a Software Engineer and Systems Developer based in Sri Lanka specializing in systems programming, reverse engineering, cybersecurity, and developer tools. Serving as Co-Founder & Tech Lead at OlyraLabs, creator of developer tools including Office Suite for Obsidian, Canvas++, and agyq, and Year 2 Dean's List honoree at UCL / University of Central Lancashire.
+Vishal Rashmika (full name: Vishal Rashmika Perera, also known as Vishal Perera) is a Software Engineer and Systems Developer based in Colombo, Western Province, Sri Lanka. Specializing in systems programming, reverse engineering, and developer tooling, he serves as Co-Founder & Tech Lead at OlyraLabs, creator of developer tools including Office Suite for Obsidian (5,500+ downloads), Canvas++ (240+ downloads), and agyq, and Year 2 Dean's List honoree at Universal College Lanka (UCL) and the University of Central Lancashire.
+
+## Name & Entity Disambiguation
+- **Primary Professional Name:** Vishal Rashmika
+- **Full Legal Name:** J.M. Vishal Rashmika Perera
+- **Alternate Names / Known As:** Vishal Rashmika Perera, Vishal Perera, KernelMe, J. M. V. R. Perera
+- **Official Canonical Website:** https://vishalrashmika.com
+- **Location:** Colombo, Western Province, Sri Lanka
 
 ## Core Competencies
-- **Languages:** C, C++, x86-64 Assembly, Rust, Python, TypeScript, JavaScript, C# / .NET, SQL, HTML/CSS
-- **Systems & Security:** Reverse Engineering, Penetration Testing, Linux System Internals, Binary Disassembly, Debugging & Symbol Analysis, Network Protocols, OCI Security
-- **Web & Frameworks:** Astro (SSG / Islands), React 19, Tailwind CSS v4, Node.js, Express, Vite, RESTful APIs
-- **Cloud & Infrastructure:** Oracle Cloud Infrastructure (OCI), Linux Administration, Git, Netlify, Agile / Scrum Leadership
+- **Languages:** C, C++, x86-64 Assembly, Rust, Go, Python, TypeScript, JavaScript, C# / .NET, SQL, HTML/CSS
+- **Systems & Engineering:** Reverse Engineering, Binary Disassembly, Debugging & Symbol Analysis, Linux Internals, CLI Architecture, Network Protocols
+- **Web & Frameworks:** Astro (SSG / Islands Architecture), React 19, Tailwind CSS v4, Node.js, Express, Vite, RESTful APIs
+- **Cloud & Infrastructure:** Oracle Cloud Infrastructure (OCI), Linux Administration, Git, Netlify
 
 ## Key Projects
 - [Office Suite](https://github.com/VishalRashmika/office-suite) [TypeScript, Obsidian, Productivity, WYSIWYG, Open Source] - 5,500+ downloads ([Live Demo](https://github.com/VishalRashmika/office-suite) | [Source Code](https://github.com/VishalRashmika/office-suite)): All-in-one productivity plugin for Obsidian enabling native WYSIWYG viewing and editing of Word (.docx), Excel (.xlsx), PowerPoint (.pptx), CSV/TSV spreadsheets, and PDF annotations directly inside notes with zero external dependencies.
@@ -27,32 +34,32 @@ Vishal Rashmika is a Software Engineer and Systems Developer based in Sri Lanka 
 ## Professional Experience
 - **Co-Founder & Tech Lead** at **OlyraLabs** (FEB 2026 – PRESENT): Co-founded a four-person startup and serving as the Tech Lead, orchestrating development, technical architecture, and Agile lifecycle management for client projects. Skills: Agile, Scrum, Systems Design, Full-Stack.
 
-## Education
-- **BSc (Hons) Software Engineering** — University of Central Lancashire (October, 2024 – 2028 :) - BSc (Hons) Software Engineering
-- **UCL International Foundation Year (UIFY)** — Universal College Lanka (July, 2023 – July, 2024 :) - UCL International Foundation Year
-- **Secondary Education (GCSE ordinary level)** — St. John Paul II College, Wennappuwa, Sri Lanka (April, 2014 – July, 2023 :) - Secondary Education
-- **Level 3 diploma in technology (DITEC)** — ESOFT (December, 2019 – September, 2020 :) - Level 3 diploma in technology (DITEC)
-- **Primary Education** — St. James International School, Wennappuwa, Sri Lanka (January, 2011 – May, 2014 :) - Primary Education
+## Education & Academic Affiliations
+- **BSc (Hons) Software Engineering** —  ([University of Central Lancashire](https://www.lancashire.ac.uk/)) [October, 2024 – 2028 :] - BSc (Hons) Software Engineering
+- **UCL International Foundation Year (UIFY)** —  ([Universal College Lanka](https://ucl.lk/)) [July, 2023 – July, 2024 :] - UCL International Foundation Year
+- **Secondary Education (GCSE ordinary level)** —  (St. John Paul II College, Wennappuwa, Sri Lanka) [April, 2014 – July, 2023 :] - Secondary Education
+- **Level 3 diploma in technology (DITEC)** —  ([ESOFT](https://esoft.lk/)) [December, 2019 – September, 2020 :] - Level 3 diploma in technology (DITEC)
+- **Primary Education** —  (St. James International School, Wennappuwa, Sri Lanka) [January, 2011 – May, 2014 :] - Primary Education
 
 ## Academic Honors & Achievements
-- **Dean's List 2026–2027 & 10% Academic Excellence Scholarship** — Awarded by Universal College Lanka (UCL) (University of Central Lancashire) [Oct 2026]: Recognised for outstanding academic performance during Year 2 of the BSc (Hons) Software Engineering degree programme, awarded by the University of Central Lancashire and delivered at Universal College Lanka (UCL). Named to the Dean's List for the 2026–2027 academic year, ranked within the Top 10 students in class, and awarded a 10% tuition scholarship.
-- **UCL International Foundation Year Merit Scholarship** — Awarded by Universal College Lanka (UCL) (University of Central Lancashire) [Jan 2025]: Awarded a 10% merit scholarship on tuition fees in recognition of excellent academic achievement during the UCL International Foundation Year examinations in April 2024 to support progression into the BSc (Hons) Software Engineering degree programme.
+- **Dean's List 2026–2027 & 10% Academic Excellence Scholarship** — Awarded by [Universal College Lanka (UCL)](https://ucl.lk/) [University of Central Lancashire: https://www.lancashire.ac.uk/] (Oct 2026): Recognised for outstanding academic performance during Year 2 of the BSc (Hons) Software Engineering degree programme, awarded by the University of Central Lancashire and delivered at Universal College Lanka (UCL). Named to the Dean's List for the 2026–2027 academic year, ranked within the Top 10 students in class, and awarded a 10% tuition scholarship.
+- **UCL International Foundation Year Merit Scholarship** — Awarded by [Universal College Lanka (UCL)](https://ucl.lk/) [University of Central Lancashire: https://www.lancashire.ac.uk/] (Jan 2025): Awarded a 10% merit scholarship on tuition fees in recognition of excellent academic achievement during the UCL International Foundation Year examinations in April 2024 to support progression into the BSc (Hons) Software Engineering degree programme.
 
 ## Community & Volunteering
-- **Associate Member** at **The Radio Society of Sri Lanka** (Oct 2026 – Present): Associate Member of the Radio Society of Sri Lanka (RSSL), dedicated to promoting amateur radio, radio communications, and technical knowledge. Engaged in exploring radio frequency (RF) technologies, High Frequency (HF) communications, Morse code (CW), radio operating techniques, antenna systems, and advanced wireless communication technologies.
-- **Digital Transcription Volunteer** at **Smithsonian Institution** (Feb 2023 – Present): Contributing to digital transcription, historical archives preservation, and scientific records indexing to expand global public access to collections across the Smithsonian Institution Archives.
+- **Associate Member** at **[The Radio Society of Sri Lanka](https://rssl.lk)** (Oct 2026 – Present): Associate Member of the Radio Society of Sri Lanka (RSSL), dedicated to promoting amateur radio, radio communications, and technical knowledge. Engaged in exploring radio frequency (RF) technologies, High Frequency (HF) communications, Morse code (CW), radio operating techniques, antenna systems, and advanced wireless communication technologies.
+- **Digital Transcription Volunteer** at **[Smithsonian Institution](https://transcription.si.edu)** (Feb 2023 – Present): Contributing to digital transcription, historical archives preservation, and scientific records indexing to expand global public access to collections across the Smithsonian Institution Archives.
 
 ## Notable Certifications & Badges
-- [NASA International Space Apps Challenge 2026](/NASASpaceApps-2026.jpg) — Issued by NASA Space Apps Challenge (2026)
-- [DevDash'26 Inaugural Hackathon - Certificate of Participation](/devdash2026.jpg) — Issued by DevDash (2026)
-- [Advanced Learning Algorithms](https://coursera.org/share/e38ff1e359cd20001a949f7e9baefde8) — Issued by DeepLearning.AI (2024)
-- [LFEL1002: Getting Started with Rust](https://trainingportal.linuxfoundation.org/learn/certificates/getting-started-with-rust-lfel1002?id=c0926af9-5118-44de-9375-2044853067aa) — Issued by The Linux Foundation (2024)
-- [Linux For Developers](https://coursera.org/verify/XQVFDJLAUZPQ) — Issued by The Linux Foundation (2024)
-- [AI/ML Engineer - Stage 1](https://code.sliit.org/certificates/fuyex8cgdu) — Issued by SLIIT (2024)
-- [Open Source Software Development Methods](https://coursera.org/share/4a66565cf0325131533bb3d3f0d78437) — Issued by The Linux Foundation (2024)
-- [Supervised Machine Learning: Regression and Classification](https://coursera.org/verify/PA3Z2UNXPZ7W/) — Issued by DeepLearning.AI (2024)
-- [CS50P](https://cs50.harvard.edu/certificates/4bbc4f6a-7e94-47cb-9acb-bae4689f60fa) — Issued by CS50 (2023)
-- [CS50x](https://certificates.cs50.io/f2ca3ee3-1b32-4e3f-8f43-0154c6043ea6.pdf?size=letter) — Issued by CS50 (2023)
+- [NASA International Space Apps Challenge 2026](/NASASpaceApps-2026.jpg) — Issued by [NASA Space Apps Challenge](https://www.spaceappschallenge.org/) (2026)
+- [DevDash'26 Inaugural Hackathon - Certificate of Participation](/devdash2026.jpg) — Issued by [DevDash](https://ucl.lk/) (2026)
+- [LFEL1002: Getting Started with Rust](https://trainingportal.linuxfoundation.org/learn/certificates/getting-started-with-rust-lfel1002?id=c0926af9-5118-44de-9375-2044853067aa) — Issued by [The Linux Foundation](https://www.linuxfoundation.org/) (2024)
+- [Advanced Learning Algorithms](https://coursera.org/share/e38ff1e359cd20001a949f7e9baefde8) — Issued by [DeepLearning.AI](https://www.deeplearning.ai/) (2024)
+- [Linux For Developers](https://coursera.org/verify/XQVFDJLAUZPQ) — Issued by [The Linux Foundation](https://www.linuxfoundation.org/) (2024)
+- [AI/ML Engineer - Stage 1](https://code.sliit.org/certificates/fuyex8cgdu) — Issued by [SLIIT](https://www.sliit.lk/) (2024)
+- [Open Source Software Development Methods](https://coursera.org/share/4a66565cf0325131533bb3d3f0d78437) — Issued by [The Linux Foundation](https://www.linuxfoundation.org/) (2024)
+- [Supervised Machine Learning: Regression and Classification](https://coursera.org/verify/PA3Z2UNXPZ7W/) — Issued by [DeepLearning.AI](https://www.deeplearning.ai/) (2024)
+- [CS50P](https://cs50.harvard.edu/certificates/4bbc4f6a-7e94-47cb-9acb-bae4689f60fa) — Issued by [CS50](https://cs50.harvard.edu/) (2023)
+- [CS50x](https://certificates.cs50.io/f2ca3ee3-1b32-4e3f-8f43-0154c6043ea6.pdf?size=letter) — Issued by [CS50](https://cs50.harvard.edu/) (2023)
 - **Oracle Cloud Infrastructure badge**: [Verify Credential](https://catalog-education.oracle.com/pls/certview/sharebadge?id=CD85047A266BFDD5355A385B4EDDA1055C0A2EBA284B808E831E4F66D4882AFC)
 - **Cybersecurity Compliance badge**: [Verify Credential](https://www.credly.com/badges/6d1b5eb5-5424-449d-849e-73d93e499b21/public_url)
 - **Penetration Testing badge**: [Verify Credential](https://www.credly.com/badges/42f87a4e-910e-45b8-9f4d-da3e934152ab/public_url)
@@ -70,7 +77,7 @@ Vishal Rashmika is a Software Engineer and Systems Developer based in Sri Lanka 
 - [Bounty Hunter - TryHackMe Writeup](https://blog.vishalrashmika.com/posts/bounty-hunter/) (2022): Detailed walkthrough and exploitation breakdown of the Bounty Hunter room.
 
 ## Verified Online Profiles & Contact
-- Portfolio Website: https://vishalrashmika.com
+- Canonical Portfolio Website: https://vishalrashmika.com
 - Interactive OS Simulation: https://vishalrashmika.com/?mode=os
 - Technical Blog: https://blog.vishalrashmika.com
 - Curriculum Vitae: https://vishalrashmika.com/VishalRashmika-CV.pdf
@@ -88,8 +95,3 @@ Vishal Rashmika is a Software Engineer and Systems Developer based in Sri Lanka 
 - Behance: [Selected design work and visuals.](https://behance.net/vishalrashmika)
 - Medium: [Long-form writing and posts.](https://medium.com/@VishalRashmika)
 - Donate: [Support the portfolio and blog through Buy Me a Coffee.](https://www.buymeacoffee.com/vishalrashmika/)
-
-## Extended Context & Full Specifications
-- [Full Portfolio Deep Dive](https://vishalrashmika.com/llms-full.txt): Complete technical specification with all 21 certifications, in-depth project descriptions, architecture details, and AI FAQ.
-- [XML Sitemap Index](https://vishalrashmika.com/sitemap-index.xml): Full sitemap for search crawlers.
-- [Robots Policy](https://vishalrashmika.com/robots.txt): Crawler and agent permission directives.

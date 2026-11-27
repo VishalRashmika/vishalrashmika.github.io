@@ -1,19 +1,22 @@
-# Robots.txt for Vishal Rashmika Portfolio
+# Robots.txt for Vishal Rashmika (Vishal Rashmika Perera) Portfolio
 # Website: https://vishalrashmika.com
 # Full crawling and indexing permitted for all search engines and AI / LLM agents
 
 User-agent: *
 Allow: /
+Disallow: /*?mode=*
 
 # Search Engine Crawlers
 User-agent: Googlebot
 Allow: /
+Disallow: /*?mode=*
 
 User-agent: Googlebot-Image
 Allow: /
 
 User-agent: Bingbot
 Allow: /
+Disallow: /*?mode=*
 
 User-agent: Slurp
 Allow: /
@@ -25,12 +28,6 @@ User-agent: Baiduspider
 Allow: /
 
 User-agent: YandexBot
-Allow: /
-
-User-agent: Sogou
-Allow: /
-
-User-agent: Exabot
 Allow: /
 
 # Leading AI & LLM Search Crawlers / Model Training Agents
@@ -86,9 +83,6 @@ User-agent: FacebookBot
 Allow: /
 
 User-agent: Amazonbot
-Allow: /
-
-User-agent: Scrapy
 Allow: /
 
 # XML Sitemaps
